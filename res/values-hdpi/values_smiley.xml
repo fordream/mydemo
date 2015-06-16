@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="smiley_page_numRows">3</string>
+    <string name="smiley_page_numColumns">6</string>
+
+</resources>

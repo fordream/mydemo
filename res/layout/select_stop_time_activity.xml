@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:focusableInTouchMode="true"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/global_padding8"
+                android:text="选择禁言时长"
+                android:textColor="@color/select_stop_time_text_color"
+                android:textSize="@dimen/global_font_size8" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hor_degree"
+                android:background="@drawable/common_content_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/three_minite"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/point_detail_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="3分钟"
+                    android:textColor="@color/set_item_name_text_color"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <ImageView
+                    android:id="@+id/three_minite_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/global_padding8"
+                    android:src="@drawable/jianyan_tick"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hor_degree"
+                android:background="@drawable/common_content_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/ten_minite"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/point_detail_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="10分钟"
+                    android:textColor="@color/set_item_name_text_color"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <ImageView
+                    android:id="@+id/ten_minite_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/global_padding8"
+                    android:src="@drawable/jianyan_tick"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hor_degree"
+                android:background="@drawable/common_content_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/one_hour"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/point_detail_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="1小时"
+                    android:textColor="@color/set_item_name_text_color"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <ImageView
+                    android:id="@+id/one_hour_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/global_padding8"
+                    android:src="@drawable/jianyan_tick"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hor_degree"
+                android:background="@drawable/common_content_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/twelve_hour"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/point_detail_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="12小时"
+                    android:textColor="@color/set_item_name_text_color"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <ImageView
+                    android:id="@+id/twelve_hour_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/global_padding8"
+                    android:src="@drawable/jianyan_tick"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hor_degree"
+                android:background="@drawable/common_content_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/one_day"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/point_detail_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="1天"
+                    android:textColor="@color/set_item_name_text_color"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <ImageView
+                    android:id="@+id/one_day_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/global_padding8"
+                    android:src="@drawable/jianyan_tick"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hor_degree"
+                android:background="@drawable/common_content_divider_line" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hor_degree"
+                android:layout_marginTop="@dimen/global_padding1"
+                android:background="@drawable/common_content_divider_line" />
+
+            <FrameLayout
+                android:id="@+id/fl"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/point_detail_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/input_why"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="@dimen/global_padding3"
+                    android:background="@null"
+                    android:text="请输入禁言理由"
+                    android:textColor="@color/cue_words_text_color"
+                    android:textColorHint="@color/cue_words_text_color"
+                    android:textSize="@dimen/global_font_size8"
+                     />
+
+                <TextView
+                    android:id="@+id/input_word_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="@dimen/global_padding2"
+                    android:layout_marginRight="@dimen/global_padding8"
+                    android:textColor="@color/cue_words_text_color"
+                    android:textSize="@dimen/global_font_size4" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hor_degree"
+                android:background="@drawable/common_content_divider_line" />
+
+            <Button
+                android:id="@+id/stop_say_commit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/global_padding4"
+                android:layout_marginLeft="@dimen/global_padding8"
+                android:layout_marginRight="@dimen/global_padding8"
+                android:layout_marginTop="@dimen/global_padding9"
+                android:background="@drawable/select_stop_time_btn_selector"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

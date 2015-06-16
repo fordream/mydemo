@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <!-- 登录 -->
+    <string name="login_title">登录</string>
+    <string name="login_verify_account_isnull">帐号不能为空</string>
+    <string name="login_verify_account_verify_fail">您输入的手机号码格式不正确</string>
+    <string name="login_verify_password_isnull">密码不能为空</string>
+    <string name="login_verify_password_verify_fail">密码验证失败</string>
+    <string name="login_verify_fail">帐号或密码不正确</string>
+
+    <!-- 帐号信息修改 -->
+    <string name="account_modify_success">修改成功</string>
+    <string name="account_modify_fail">修改失败</string>
+    <string name="job_verify_fail">职业不能超过%1$d个汉字哦！</string>
+    <string name="report_post_word">不能超过%1$d个汉字哦！</string>
+    <string name="desc_verify_fail">您输入的描述超出%1$d个字符限制</string>
+    <string name="mood_verify_fail">签名不能超过%1$d个汉字哦！</string>
+    <string name="city_verify_fail">您输入的城市超出%1$d个字符限制</string>
+    <string name="city_verify_fail2">您没有选择任何城市</string>
+    <string name="account_game_type_verify_fail">游戏类型错误</string>
+    <string name="account_game_time_verify_fail">游戏时长错误</string>
+    <string name="account_modify_job_verify_fail">您未输入内容或输入内容不能为纯数字</string>
+    <string name="job_not_total_space">职业不能全为空格哦！</string>
+    <string name="name_not_total_space">昵称不能全为空格哦！</string>
+</resources>

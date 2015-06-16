@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_second_bg" >
+
+    <LinearLayout
+        android:id="@+id/listContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp" >
+
+        <!-- The PullToRefreshListView replaces a standard ListView widget. -->
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/refreshList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@null"
+            android:divider="@drawable/common_fengexian"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:smoothScrollbar="true"
+            android:stackFromBottom="false" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/nullContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:visibility="gone" >
+
+        <include layout="@layout/common_null_data_bg" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/filterContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+</RelativeLayout>

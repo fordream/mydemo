@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+
+            <!-- 实心 -->
+            <solid android:color="@color/common_btn_pre" />
+            <!-- 描边 -->
+            <stroke android:width=".5dp" android:color="@color/common_btn_pre" />
+            <!-- 圆角 -->
+            <corners android:radius="3dp" />
+
+        </shape></item>
+    <item><shape>
+
+            <!-- 实心 -->
+            <solid android:color="@color/common_btn_nor" />
+            <!-- 描边 -->
+            <stroke android:width=".5dp" android:color="@color/common_btn_nor" />
+            <!-- 圆角 -->
+            <corners android:radius="3dp" />
+
+        </shape></item>
+
+</selector>

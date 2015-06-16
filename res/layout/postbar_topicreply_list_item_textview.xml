@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iwgame.msgs.widget.MyTextView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/postbar_topicreply_list_postcontent_text"
+        android:textSize="@dimen/global_font_size2"
+        android:textColor="@color/topic_head_item_content_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_padding3"
+        android:lineSpacingMultiplier="1.2"
+        android:autoLink="web"
+        android:includeFontPadding="false" />

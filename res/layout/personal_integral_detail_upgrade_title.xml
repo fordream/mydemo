@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grade_bottom_line_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_integral_grade_item_height"
+        android:layout_marginLeft="@dimen/hor_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:background="@color/personal_grade_first_line_bg_color"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/global_padding1"
+        android:paddingRight="@dimen/hor_degree"
+        android:text="LV等级"
+        android:textColor="@color/grade_left_text_color"
+        android:textSize="@dimen/global_font_size3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_integral_grade_item_height"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:layout_marginLeft="@dimen/hor_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:background="@color/show_grade_textview_background_color"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/global_padding1"
+        android:paddingRight="@dimen/global_padding1"
+        android:text="经验值/条件"
+        android:textColor="@color/grade_left_text_color"
+        android:textSize="@dimen/global_font_size3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_integral_grade_item_height"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:layout_marginLeft="@dimen/hor_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:background="@color/show_grade_textview_background_color"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/global_padding1"
+        android:paddingRight="@dimen/global_padding1"
+        android:text="获取积分倍数"
+        android:textColor="@color/grade_left_text_color"
+        android:textSize="@dimen/global_font_size3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_integral_grade_item_height"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:layout_marginLeft="@dimen/hor_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:background="@color/show_grade_textview_background_color"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/global_padding1"
+        android:paddingRight="@dimen/global_padding1"
+        android:text="创建公会数"
+        android:textColor="@color/grade_left_text_color"
+        android:textSize="@dimen/global_font_size3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_integral_grade_item_height"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:layout_marginLeft="@dimen/hor_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:background="@color/show_grade_textview_background_color"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/global_padding1"
+        android:paddingRight="@dimen/global_padding1"
+        android:text="加入公会数"
+        android:textColor="@color/grade_left_text_color"
+        android:textSize="@dimen/global_font_size3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_integral_grade_item_height"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:layout_marginLeft="@dimen/hor_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:background="@color/show_grade_textview_background_color"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/global_padding1"
+        android:paddingRight="@dimen/global_padding1"
+        android:text="关注贴吧数"
+        android:textColor="@color/grade_left_text_color"
+        android:textSize="@dimen/global_font_size3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_integral_grade_item_height"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:layout_marginLeft="@dimen/hor_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:background="@color/show_grade_textview_background_color"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/global_padding1"
+        android:paddingRight="@dimen/global_padding1"
+        android:text="每日发帖数"
+        android:textColor="@color/grade_left_text_color"
+        android:textSize="@dimen/global_font_size3" />
+
+</LinearLayout>

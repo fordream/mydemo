@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 陪玩列表条目名称文字色值 -->
+    <color name="play_list_item_detail_dname_color">#7d7d7d</color>
+    <!-- 陪玩列表条目描述文字色值 -->
+    <color name="play_list_item_detail_desc_color">#3a3a3a</color>
+    <!-- 陪玩列表条目支持全服描述文字色值 -->
+    <color name="play_list_item_service_detail_desc_color">#459ff3</color>
+    <!-- 陪玩列表条目描述文字色值2(游币) -->
+    <color name="play_list_item_detail_desc_color2">#ff7826</color>
+    <!-- 陪玩列表条目陪玩关闭状态色值 -->
+    <color name="play_list_item_status_close_color">#7d7d7d</color>
+    <!-- 陪玩列表条目陪玩停封状态色值 -->
+    <color name="play_list_item_status_down_color">#7d7d7d</color>
+    <!-- 陪玩列表条目陪玩未通过状态色值 -->
+    <color name="play_list_item_status_approvalno_color">#ff2525</color>
+    <!-- 陪玩列表条目陪玩审核中状态色值 -->
+    <color name="play_list_item_status_init_color">#459ff3</color>
+    <!-- 陪玩列表条目陪玩发布状态色值 -->
+    <color name="play_list_item_status_publish_color">#459ff3</color>
+    <!-- 报名管理列表条目订单待确认状态色值 -->
+    <color name="play_list_item_order_status_init_color">#459ff3</color>
+    <!-- 报名管理列表条目订单待付款状态色值 -->
+    <color name="play_list_item_order_status_pay_color">#ff7826</color>
+    <!-- 报名管理列表条目订单申诉中状态色值 -->
+    <color name="play_list_item_order_status_appeal_color">#459ff3</color>
+    <!-- 报名管理列表条目订单待评价状态色值 -->
+    <color name="play_list_item_order_status_eval_color">#ff7826</color>
+    <!-- 报名管理列表条目订单已取消状态色值 -->
+    <color name="play_list_item_order_status_cancel_color">#7d7d7d</color>
+    <!-- 报名管理列表条目订单已结束状态色值 -->
+    <color name="play_list_item_order_status_end_color">#7d7d7d</color>
+    <!-- 报名管理列表条目订单已过期状态色值 -->
+    <color name="play_list_item_order_status_tiemout_color">#7d7d7d</color>
+	<!-- 创建和编辑陪玩的字体颜色值 -->
+	<color name="play_text_font_nor_color">#7d7d7d</color>
+	<color name="play_text_font_pre_color">#459ff3</color>
+	<color name="play_create_edit_title_color">#3a3a3a</color>
+	<color name="play_more_server_font_color">#459ff3</color>
+	<color name="play_ub_mr_font_color">#c3c8cb</color>
+	<color name="play_ub_font_color">#ff7826</color>
+	<color name="play_create_ub_color">#9e9e9e</color>
+	<color name="play_create_edit_hint_color">#c3c8cb</color>
+	<color name="play_create_edit_font_color">#000000</color>
+	<color name="play_create_protol_des_color">#5c5c5c</color>
+	<color name="play_create_protol_color">#6982ab</color>
+	<!-- 报名信息列表文字条目标题颜色值 -->
+	<color name="enroll_item_title_color">#3a3a3a</color>
+	<!-- 报名信息列表文字内容标题颜色值 -->
+	<color name="enroll_item_content_color">#000000</color>
+	<!-- 创建报名信息的背景颜色值 -->
+	<color name="enroll_background_color">#f7f7f7</color>
+	<!-- 创建陪玩时的没有字体内容的颜色 -->
+	<color name="enroll_font_color">#7d7d7d</color>
+	<!-- 陪玩管理颜色值 -->
+    <color name="play_manage_list_item_name_color">#3a3a3a</color>
+    <color name="play_manage_list_item_time_color">#7d7d7d</color>
+    <color name="play_manage_list_item_btn_txt_dis_color">#c3c7c9</color>
+    <color name="play_manage_list_item_btn_bg_dis_color">#ededed</color>
+    <color name="play_manage_list_item_status_color">#ff7826</color>
+    <!-- 订单详情 -->
+    <color name="play_order_detail_top_bg_color">#ffffff</color>
+    <color name="play_order_detail_bg_color">#ededed</color>
+    <color name="play_order_detail_item_key_color">#9e9e9e</color>
+    <color name="play_order_detail_item_value_color">#3a3a3a</color>
+    <color name="play_order_detail_ucoin_desc_color">#3a3a3a</color>
+    <color name="play_order_detail_ucoin_value_color">#ff7826</color>
+     <!-- 申诉默认字体颜色 -->
+    <color name="play_appeal_font_color">#c3c7c9</color>
+     <!-- 陪玩详情字体和背景颜色值 -->
+    <color name="play_detail_background_color">#ededed</color>
+    <color name="play_detail_picture_bg_color">#d8d8d8</color>
+    <color name="play_detail_image_border_color">#ffffff</color>
+    <color name="play_detail_name_color">#ffffff</color>
+    <color name="play_detail_ub_color">#ff7826</color>
+    <color name="play_detail_ver_line_color">#d9d9d9</color>
+    <color name="play_detail_join_num_color">#7d7d7d</color>
+    <color name="play_detail_remark_title_color">#9e9e9e</color>
+    <color name="play_detail_remark_content_color">#3a3a3a</color>
+    <color name="play_detail_hori_line_color">#d9d9d9</color>
+    <color name="play_detail_comment_title_color">#7d7d7d</color>
+    <color name="play_detail_cmment_people_color">#3a3a3a</color>
+    <color name="play_detail_good_comment">#3a3a3a</color>
+     <color name="play_detail_good_comment_per">#ff2525</color>
+    <color name="play_detail_comment_good_bg">#ff7826</color>
+    <color name="play_detail_comment_good">#ffffff</color>
+    <color name="play_detail_comment_often_bg">#f4f4f4</color>
+    <color name="play_detail_comment_often">#7d7d7d</color>
+    <color name="play_detail_manager_bg">#000000</color>
+    <color name="play_detail_appeal_bg">#459ff3</color>
+    <color name="play_detail_enroll_bg">#000000</color>
+    <color name="play_detail_other_bg">#ededed</color>
+    <color name="play_detail_certi_pay_bg">#73a9e6</color>
+    <color name="play_detail_certi_pay">#ffffff</color>
+    <color name="play_detail_appealing_bg">#000000</color>
+    <color name="play_detail_appealing">#f7f7f7</color>
+    <!-- 陪玩报名界面颜色值 -->
+    <color name="play_enroll_ub_color">#ff7826</color>
+    <!-- 陪玩申诉界面颜色值 -->
+    <color name="play_appeal_background">#ededed</color>
+    <color name="play_appeal_title_color">#3a3a3a</color>
+    <color name="play_appeal_tip_color">#9e9e9e</color>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/point_detail_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.iwgame.msgs.module.setting.vo.ObservableScrollView
+            android:id="@+id/total_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="vertical"
+            android:focusableInTouchMode="true"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/point_detail_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/point_detail_bg"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/goods_icon"
+                        android:layout_width="@dimen/global_icon2"
+                        android:layout_height="@dimen/global_icon2"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginTop="@dimen/global_padding3" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/goods_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_padding3"
+                            android:gravity="left|center_vertical"
+                            android:textColor="@color/shop_name_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <TextView
+                            android:id="@+id/have_receive_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/goods_name"
+                            android:gravity="center"
+                            android:text="已领："
+                            android:textColor="@color/grade_permission_desc"
+                            android:textSize="@dimen/global_font_size5" />
+
+                        <TextView
+                            android:id="@+id/have_receive_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/have_receive_desc"
+                            android:layout_toRightOf="@id/have_receive_desc"
+                            android:textColor="@color/grade_permission_desc"
+                            android:textSize="@dimen/global_font_size5" />
+
+                        <TextView
+                            android:id="@+id/remain_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/have_receive_num"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_toRightOf="@id/have_receive_num"
+                            android:gravity="center"
+                            android:text="剩余："
+                            android:textColor="@color/grade_permission_desc"
+                            android:textSize="@dimen/global_font_size5" />
+
+                        <TextView
+                            android:id="@+id/remain_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/remain_desc"
+                            android:layout_toRightOf="@id/remain_desc"
+                            android:gravity="center"
+                            android:textColor="@color/grade_permission_desc"
+                            android:textSize="@dimen/global_font_size5" />
+
+                        <TextView
+                            android:id="@+id/trans_time_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/have_receive_desc"
+                            android:text="开始兑换："
+                            android:textColor="@color/grade_permission_desc"
+                            android:textSize="@dimen/global_font_size5" />
+
+                        <TextView
+                            android:id="@+id/trans_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/trans_time_desc"
+                            android:layout_toRightOf="@id/trans_time_desc"
+                            android:gravity="center"
+                            android:textColor="@color/grade_permission_desc"
+                            android:textSize="@dimen/global_font_size5" />
+
+                        <TextView
+                            android:id="@+id/trans_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/trans_date"
+                            android:layout_marginLeft="@dimen/global_padding1"
+                            android:layout_toRightOf="@id/trans_date"
+                            android:gravity="center"
+                            android:textColor="@color/grade_permission_desc"
+                            android:textSize="@dimen/global_font_size5" />
+
+                        <TextView
+                            android:id="@+id/cosume_point_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/trans_time_desc"
+                            android:gravity="center"
+                            android:text="耗费积分："
+                            android:textColor="@color/grade_permission_desc"
+                            android:textSize="@dimen/global_font_size5" />
+
+                        <TextView
+                            android:id="@+id/need_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/cosume_point_desc"
+                            android:layout_toRightOf="@id/cosume_point_desc"
+                            android:gravity="center"
+                            android:textColor="@color/shop_need_point_color"
+                            android:textSize="@dimen/global_font_size5" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hor_degree"
+                    android:background="@color/integral_detail_fengexian" />
+
+                <LinearLayout
+                    android:id="@+id/good_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/global_padding1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </com.iwgame.msgs.module.setting.vo.ObservableScrollView>
+
+        <RelativeLayout
+            android:id="@+id/trans_btn_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center"
+            android:background="@color/show_grade_textview_background_color" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hor_degree"
+                android:background="@color/integral_detail_fengexian" />
+
+            <TextView
+                android:id="@+id/trans_btn"
+                android:layout_width="145dp"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="@dimen/global_font_size2" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

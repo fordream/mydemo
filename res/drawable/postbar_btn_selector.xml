@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+    <item Android:state_pressed="true"><shape>
+
+            <!-- 实心 -->
+            <solid Android:color="@color/topiclist_item_btn_txt_bg_pre" />
+            <!-- 圆角 -->
+            <corners Android:bottomLeftRadius="2dp" Android:bottomRightRadius="2dp" Android:topLeftRadius="2dp" Android:topRightRadius="2dp" />
+            <!-- 描边 -->
+            <stroke Android:width=".5dp" Android:color="@color/topiclist_item_btn_txt_bg_stroke" />
+        </shape></item>
+    <item><shape>
+
+            <!-- 实心 -->
+            <solid Android:color="@color/topiclist_item_btn_txt_bg_nor" />
+            <!-- 圆角 -->
+            <corners Android:bottomLeftRadius="2dp" Android:bottomRightRadius="2dp" Android:topLeftRadius="2dp" Android:topRightRadius="2dp" />
+            <!-- 描边 -->
+            <stroke Android:width=".5dp" Android:color="@color/topiclist_item_btn_txt_bg_stroke" />
+        </shape></item>
+
+</selector>

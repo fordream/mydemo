@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_first_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/subject_search"
+        layout="@layout/subject_search"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/listContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/lv_latestcontacts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@drawable/common_fengexian"
+                android:fadingEdge="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nullContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <include layout="@layout/common_null_data_bg" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:fadingEdge="none"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.iwgame.msgs.widget.SideBar
+                    android:id="@+id/sideBar"
+                    android:layout_width="25dp"
+                    android:layout_height="450dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

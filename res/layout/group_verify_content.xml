@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/global_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/common_set_bg_shap"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/contentTxt"
+            style="@style/global_page"
+            android:textColor="@color/common_input_hint_text_color"
+            android:textColorHint="@color/common_input_hint_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="请填写具体申请内容~"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLength="50"
+            android:minHeight="100dp"
+            android:minLines="4"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center|right"
+            android:textColor="@color/common_input_hint_text_color"
+            android:text="300"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

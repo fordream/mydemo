@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    style="@style/splendid_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg_selector" >
+
+    <LinearLayout
+        android:layout_width="@dimen/global_icon_1"
+        android:layout_height="@dimen/global_icon_1" >
+        <include layout="@layout/common_icon_big_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/gnameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="left"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/global_color6"
+                android:text=""
+                android:textSize="@dimen/global_font_size2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="ID:"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/global_color6"
+                android:textSize="@dimen/global_font_size2" />
+            <TextView 
+                android:id="@+id/group_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text=""
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/global_color6"
+                android:textSize="@dimen/global_font_size2"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:id="@+id/grade"
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:background="@drawable/common_item_vip_bg_shap"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:layout_marginRight="@dimen/global_padding1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/global_color1"
+                android:textSize="@dimen/global_font_size7" />
+           
+            <TextView
+                android:id="@+id/desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="公会人数："
+                android:textColor="@color/global_color3"
+                android:textSize="@dimen/global_font_size3" />
+            
+             
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <com.iwgame.msgs.widget.roundedimageview.RoundedImageView
+                android:id="@+id/gameIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/common_default_icon"
+                iwgame:border_color="@color/global_color1"
+                iwgame:border_width="0dp"
+                iwgame:corner_radius="3dp"
+                iwgame:oval="false" />
+
+            <TextView
+                android:id="@+id/desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:text="公会会长："
+                android:textColor="@color/global_color3"
+                android:textSize="@dimen/global_font_size3" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

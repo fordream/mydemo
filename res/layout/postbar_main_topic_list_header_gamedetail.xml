@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/topic_list_detail_up_bg" >
+
+    <LinearLayout
+        android:id="@+id/postbar_topic_list_header_gamedetail_icon_ll"
+        android:layout_width="@dimen/global_icon8"
+        android:layout_height="@dimen/global_icon8"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginTop="@dimen/global_padding3" >
+
+        <com.iwgame.msgs.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/global_icon8"
+            android:layout_height="@dimen/global_icon8"
+            android:scaleType="centerCrop"
+            android:src="@drawable/common_default_icon"
+            iwgame:border_color="@color/global_color1"
+            iwgame:border_width="0dp"
+            iwgame:corner_radius="10dp"
+            iwgame:oval="false" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/shareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_follow"
+        android:background="@drawable/share_button_selector"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_follow"
+        android:layout_width="@dimen/global_follow_button_width"
+        android:layout_height="@dimen/global_follow_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/global_padding3"
+        android:background="@null"
+        android:textColor="@color/global_color18"
+        android:textSize="@dimen/global_font_size3" />
+
+    <TextView
+        android:id="@+id/gameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/postbar_topic_list_header_gamedetail_icon_ll"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@id/shareBtn"
+        android:layout_toRightOf="@id/postbar_topic_list_header_gamedetail_icon_ll"
+        android:ellipsize="end"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:textColor="@color/topic_list_detail_title_text_color"
+        android:textSize="@dimen/global_font_size2" />
+
+    <View
+        android:id="@+id/rline"
+        android:layout_width="wrap_content"
+        android:layout_height=".5dp"
+        android:layout_below="@id/gameName"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginTop="@dimen/global_padding3"
+        android:layout_toRightOf="@id/postbar_topic_list_header_gamedetail_icon_ll"
+        android:background="@color/topiclist_head_rline" />
+
+    <LinearLayout
+        android:id="@+id/gameDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gameName"
+        android:layout_below="@+id/rline"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/user_num_view"
+            android:layout_width="-1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/user_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding13"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/topiclist_head_num"
+                android:textSize="@dimen/global_font_size8" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding13"
+                android:gravity="center"
+                android:text="游伴"
+                android:textColor="@color/topiclist_head_txt"
+                android:textSize="@dimen/global_font_size4" />
+        </LinearLayout>
+
+        <View
+            android:layout_width=".5dp"
+            android:layout_height="44dp"
+            android:background="@color/topiclist_head_rline" />
+
+        <LinearLayout
+            android:id="@+id/group_num_view"
+            android:layout_width="-1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/group_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding13"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/topiclist_head_num"
+                android:textSize="@dimen/global_font_size8" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding13"
+                android:gravity="center"
+                android:text="公会"
+                android:textColor="@color/topiclist_head_txt"
+                android:textSize="@dimen/global_font_size4" />
+        </LinearLayout>
+
+        <View
+            android:layout_width=".5dp"
+            android:layout_height="44dp"
+            android:background="@color/topiclist_head_rline" />
+
+        <LinearLayout
+            android:id="@+id/news_num_view"
+            android:layout_width="-1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/news_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding13"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/topiclist_head_num"
+                android:textSize="@dimen/global_font_size8" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding13"
+                android:gravity="center"
+                android:text="新闻"
+                android:textColor="@color/topiclist_head_txt"
+                android:textSize="@dimen/global_font_size4" />
+        </LinearLayout>
+
+        <View
+            android:layout_width=".5dp"
+            android:layout_height="44dp"
+            android:background="@color/topiclist_head_rline" />
+
+        <LinearLayout
+            android:id="@+id/raiders_num_view"
+            android:layout_width="-1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/raiders_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding13"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/topiclist_head_num"
+                android:textSize="@dimen/global_font_size8" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding13"
+                android:gravity="center"
+                android:text="攻略"
+                android:textColor="@color/topiclist_head_txt"
+                android:textSize="@dimen/global_font_size4" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fgx"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/gameDetail"
+        android:layout_marginTop="5dp"
+        android:background="@color/list_item_fengexian" />
+
+    <View
+        android:id="@+id/tmp_fg1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/horiscroll_layout"
+        android:background="@color/list_item_fengexian" />
+
+</RelativeLayout>

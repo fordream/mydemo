@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <LinearLayout
+        android:id="@+id/progressView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="125dp"
+        android:gravity="bottom|center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/loadingImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@anim/login_progress_round" 
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dianView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="135dp"
+        android:gravity="bottom|center"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/login_qqBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_login_qq" />
+                
+         
+        <ImageView
+            android:id="@+id/login_weiboBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding12"
+            android:background="@drawable/account_login_weibo" />
+          	
+        <ImageView
+            android:id="@+id/login_phoneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding12"
+            android:background="@drawable/account_login_phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/global_padding8"
+        android:gravity="bottom|center"
+        android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/login_point" />
+
+            <TextView
+                android:id="@+id/login_registerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:text="注册帐号"
+                android:textColor="@drawable/login_btn_text_color_selector"
+                android:textSize="@dimen/global_font_size2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_point" />
+    </LinearLayout>
+
+</FrameLayout>

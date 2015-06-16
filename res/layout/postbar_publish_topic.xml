@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/publish_topic_title_bg_color" >
+
+    <LinearLayout
+        android:id="@+id/tagsContnet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/publish_topic_tags_bg_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/lable"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginLeft="@dimen/global_padding3"
+            android:layout_marginRight="@dimen/global_padding1"
+            android:src="@drawable/post_lable" />
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="37dp"
+            android:scrollbars="none"
+            android:layout_marginRight="@dimen/global_padding3" >
+
+            <LinearLayout
+                android:id="@+id/tagsContent"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/titleLine1"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_below="@id/tagsContnet"
+        android:background="@color/public_topic_tag_title_fengexian" />
+
+    <EditText
+        android:id="@+id/postbar_publish_topic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleLine1"
+        android:layout_gravity="center"
+        android:background="@color/publish_topic_title_bg_color"
+        android:gravity="center_vertical"
+        android:hint="@string/postbar_publish_topic_title_hint"
+        android:maxLength="20"
+        android:minHeight="@dimen/global_padding6"
+        android:paddingLeft="@dimen/global_padding8"
+        android:paddingRight="@dimen/global_padding8"
+        android:singleLine="true"
+        android:textColor="@color/publish_topic_text_color"
+        android:textColorHint="@color/publish_topic_hint_text_color"
+        android:textSize="@dimen/global_font_size1" />
+
+    <View
+        android:id="@+id/topic_title_fgx"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/postbar_publish_topic_title"
+        android:background="@color/public_topic_title_content_fengexian" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topic_title_fgx" >
+
+        <EditText
+            android:id="@+id/postbar_publish_topic_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/publish_topic_content_bg_color"
+            android:gravity="top|left"
+            android:hint="@string/postbar_publish_topic_content_hint"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="@dimen/global_padding1"
+            android:minLines="@integer/postbar_publish_topic_content_minline"
+            android:paddingBottom="@dimen/global_padding8"
+            android:paddingLeft="@dimen/global_padding8"
+            android:paddingRight="@dimen/global_padding8"
+            android:paddingTop="@dimen/global_padding8"
+            android:textColor="@color/publish_topic_content_text_color"
+            android:textColorHint="@color/publish_topic_hint_text_color"
+            android:textSize="@dimen/global_font_size2" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/setTagContent"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@id/titleLine1"
+        android:background="@color/publish_topic_title_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/tagTxt"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/global_padding7"
+            android:layout_marginRight="@dimen/global_padding1"
+            android:layout_weight="1"
+            android:background="@drawable/postbar_publish_edittag_txt_selector"
+            android:hint="自定义标签名（4~18个字符）"
+            android:maxLength="36"
+            android:paddingLeft="@dimen/global_padding2"
+            android:paddingRight="@dimen/global_padding2"
+            android:singleLine="true"
+            android:textColor="@color/publish_topic_text_color"
+            android:textColorHint="@color/publish_topic_hint_text_color"
+            android:textSize="@dimen/global_font_size8" />
+
+        <Button
+            android:id="@+id/tagBtn"
+            android:layout_width="52dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="@dimen/global_padding7"
+            android:background="@drawable/publish_topic_tag_edittxt_bg"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/publish_topic_hint_text_color"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/historyTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setTagContent"
+        android:layout_marginLeft="@dimen/global_padding7"
+        android:layout_marginRight="71dp"
+        android:layout_marginTop="-6dp"
+        android:background="@drawable/publish_topic_historytag_bg_shap"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/historyTagTip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:layout_marginRight="@dimen/global_padding2"
+            android:layout_marginTop="@dimen/global_padding2"
+            android:drawableRight="@drawable/publish_topic_history_close_tip_nor"
+            android:singleLine="true"
+            android:text="最近使用标签"
+            android:textColor="@color/publish_topic_history_tag_tip_txt"
+            android:textSize="@dimen/global_font_size3" />
+
+        <TextView
+            android:id="@+id/historyTag1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:layout_marginRight="@dimen/global_padding2"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:textColor="@color/publish_topic_history_tag_txt"
+            android:textSize="@dimen/global_font_size8"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/historyTag2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:layout_marginRight="@dimen/global_padding2"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:textColor="@color/publish_topic_history_tag_txt"
+            android:textSize="@dimen/global_font_size8"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/historyTag3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:layout_marginRight="@dimen/global_padding2"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:textColor="@color/publish_topic_history_tag_txt"
+            android:textSize="@dimen/global_font_size8"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

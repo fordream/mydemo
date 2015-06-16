@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/user_add_search_layout_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding7"
+            android:layout_marginRight="@dimen/global_padding7"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/global_padding1"
+            android:paddingTop="@dimen/global_padding1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:background="@drawable/common_search_bg_shap"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/global_page_paddingleft"
+                android:paddingRight="@dimen/global_page_paddingright" >
+
+                <Button
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/common_search_btn_bg" />
+
+                <EditText
+                    android:id="@+id/searchTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="搜索"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/common_search_text_color"
+                    android:textColorHint="@color/common_search_hint_text_color"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <Button
+                    android:id="@+id/cleanBtn"
+                    android:layout_width="@dimen/global_clean_size"
+                    android:layout_height="@dimen/global_clean_size"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/common_close_bg"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/searchBtn"
+                android:layout_width="55dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="@dimen/global_list_item_paddingtop"
+                android:background="@drawable/common_btn_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/common_btn_text_color" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@drawable/common_content_divider_line" />
+
+        <TextView
+            android:id="@+id/listTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="28dp"
+            android:background="@color/main_search_list_title_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/global_padding3"
+            android:text="推荐贴吧"
+            android:textColor="@color/user_add_dec_text_color"
+            android:textSize="@dimen/global_font_size8" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@drawable/common_content_divider_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:orientation="vertical"
+        >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/refreshList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@null"
+            android:divider="@drawable/common_fengexian"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:smoothScrollbar="true"
+            android:stackFromBottom="false" />
+
+        <LinearLayout
+            android:id="@+id/null_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center_horizontal"
+            android:visibility="gone"
+            >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

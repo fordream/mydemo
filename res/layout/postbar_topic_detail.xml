@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iwgame.msgs.widget.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_first_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top" />
+
+    <include
+        android:id="@+id/postbar_topicreply_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/postbar_topicreply_list" />
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomContentView"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/topic_bottom_bg_color"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/likeContent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="33dp"
+            android:background="@drawable/topicdetail_bottom_btn_selector"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/global_padding3"
+            android:layout_marginRight="15dp" >
+
+            <ImageView
+                android:id="@+id/likeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/game_like2" />
+
+            <TextView
+                android:id="@+id/likeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点赞(0)"
+                android:layout_marginLeft="@dimen/global_padding7"
+                android:textColor="@color/topiclist_item_link_txt"
+                android:textSize="@dimen/global_font_size8" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/commentContent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="33dp"
+            android:background="@drawable/topicdetail_bottom_btn_selector"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/global_padding3" >
+
+            <ImageView
+                android:id="@+id/commentIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/postbar_comment2" />
+
+            <TextView
+                android:id="@+id/commentTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论(0)"
+                android:layout_marginLeft="@dimen/global_padding7"
+                android:textColor="@color/topiclist_item_link_txt"
+                android:textSize="@dimen/global_font_size8" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.iwgame.msgs.widget.ResizeLayout>

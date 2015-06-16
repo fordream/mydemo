@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 背景区 -->
+    <!-- 设置界面背景  bc-->
+    <color name="set_first_bg">#f4f4f4</color>
+    <!-- 设置界面条目大背景 c1-->
+    <color name="set_setting_item_bg">#ffffff</color>
+    <!-- 设置界面条目描边 c5-->
+    <color name="set_setting_item_stroke">#ededed</color>
+    <!-- 头像的边框 c1-->
+    <color name="detail_aratar_bg">#ffffff</color>
+    
+    <!-- 设置条目点击背景消失 c20 -->
+    <color name="set_common_item_dis_shap">#f4f4f4</color>
+    <!-- 设置条目点击背景按下 c20 -->
+    <color name="set_common_item_pre_shap">#f4f4f4</color>
+    <!-- 设置条目点击背景常态 white -->
+    <color name="set_common_item_nor_shap">#ffffff</color>
+    <!-- 退出，登录，下一步按钮按下  -->
+    <color name="commit_next_btn_shap_pre">#f10100</color>
+    <!-- 退出，登录，下一步按钮常态  -->
+    <color name="commit_next_btn_shap_nor">#ff4234</color>
+    <!-- 退出，登录，下一步按钮描边  -->
+    <color name="commit_next_btn_shap_stroke">#f10100</color>
+    
+    <!-- 申请吧主上方提示背景  游伴#fffdf6 -->
+    <color name="postbar_applymaster_tip_bg">#fffdf6</color>
+    
+    <!-- 文字区 -->
+    <!-- 设置游客资料等的字体颜色 c1-->
+    <color name="set_detail_text_color">#ffffff</color>
+    <!-- 设置游客签名的字体颜色-->
+    <color name="set_detail_qianming_text_color">#3d5b98</color>
+    <!-- 设置条目名称的字体颜色 c6-->
+    <color name="set_item_name_text_color">#3a3a3a</color>
+    <!-- 我的等级LV的颜色 black -->
+    <color name="set_item_level_text_color">#ef9c6a</color>
+    
+    <!-- c9 -->
+    <color name="set_item_bundtip_text_color">#000000</color>
+    <!-- 设置条目描述文字颜色  c7 -->
+    <color name="set_item_des_text_color">#9e9e9e</color>
+    <!-- 退出，登录，下一步文字颜色  c1 -->
+    <color name="commit_next_text_color">#ffffff</color>
+    
+    <!-- 设置条目内容的颜色值 c7 -->
+    <color name="set_item_content_text_color">#9e9e9e</color>
+    
+    
+    <!-- 申请吧主上方提示语句颜色 darkgray -->
+    <color name="postbar_applymaster_tip_text_color">#636363</color>
+    <!-- 绑定微博微博名字体颜色  c9-->
+    <color name="bund_weibo_name_text_color">#000000</color>
+    <!-- 绑定微博微博状态未绑定字体颜色 -->
+    <color name="bund_weibo_state_nobund_text_color">#58b0e7</color>
+    <!-- 绑定微博微博已绑定状态字体颜色 -->
+    <color name="bund_weibo_state_bund_text_color">#ff9459</color>
+     <!--YG 任务详情背景颜色值 -->
+     <color name="task_more_backgrounde">#ebdbb7</color>
+     <!-- 设置界面中的等级经验数值颜色值 -->
+     <color name="setting_grade_exp_num_color">#ef9c6a</color>
+     <!-- 积分商城兑换商品输入信息颜色值 -->
+     <color name="point_market_input_info_color">#9e9e9e</color>
+	<!--积分商城对话框按钮颜色 -->
+     <color name="point_market_dialog_btn_color">#ffffff</color>
+     <!-- 积分商城中商品详情名称颜色值 -->
+     <color name="shop_name_color">#d3844a</color>
+	<!-- 积分商城所需积分颜色值 -->
+     <color name="shop_need_point_color">#ffbf26</color>
+	<!-- 商品详情内容的颜色值 -->
+     <color name="shop_content_color">#7d7d7d</color>
+	<!-- 积分商城兑换完颜色值 -->
+     <color name="market_pay_over_color">#c3c7c9</color>
+	<!-- 物品详情按钮字体颜色 -->
+     <color name="market_btn_font_color">#ffffff</color>
+</resources>

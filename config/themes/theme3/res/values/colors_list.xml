@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 背景区 -->
+
+
+    <!-- 列表与item不同的背景，例如消息 -->
+    <color name="list_first_bg">#f4f4f4</color>
+    <!-- 列表与item相同的背景，例如发现 -->
+    <color name="list_second_bg">#ffffff</color>
+    <!-- item 背景 -->
+    <color name="list_item_bg_nor">#ffffff</color>
+    <!-- item 点击背景 -->
+    <color name="list_item_bg_pre">#f4f4f4</color>
+    <!-- 分割线  c5 -->
+    <color name="list_item_fengexian">#ececec</color>
+    <!-- 列表Item描边  c5   !!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <color name="list_item_stroke_color">#c3c7c9</color>
+
+    <!-- 通讯录关注列表关注选择背景 -->
+    <color name="common_follow_textview_bg_nor">#ffffff</color>
+    <color name="common_follow_textview_bg_pre">#f4f4f4</color>
+
+    <!-- 贴吧列表界面贴吧详情滑动区上方背景 c20 -->
+    <color name="topic_list_detail_up_bg">#ffffff</color>
+    <!-- 贴吧列表界面贴吧详情滑动区下方背景 c12 -->
+    <color name="topic_list_detail_down_bg">#e3e3e3</color>
+    <!-- 贴吧列表界面贴吧详情滑动区背景 c1 -->
+    <color name="topic_list_detail_srcoll_bg">#ffffff</color>
+
+    <!-- 帖子列表背景 c1 -->
+    <color name="topic_reply_list_bg">#ffffff</color>
+    <!-- 帖子标题区背景 c20 -->
+    <color name="topic_reply_header_title_layout_bg">#f4f4f4</color>
+    <!-- 帖子内容区背景 c1 -->
+    <color name="topic_reply_header_content_layout_bg">#ffffff</color>
+    <!-- 帖子回复的背景 -->
+    <color name="topic_reply_item_bg">#ffffff</color>
+    <!-- 帖子回复的回复的背景  c20 -->
+    <color name="topic_reply_item_preply_bg">#f4f4f4</color>
+    <!-- 帖子回复的回复的背景描边  c5 -->
+    <color name="topic_reply_item_preply_stroke_bg">#c3c7c9</color>
+    <!-- 帖子回复的回复分割线  c5 -->
+    <color name="topic_reply_item_preply_fengexian">#c3c7c9</color>
+
+    <!-- 集合贴区域背景  c20 -->
+    <color name="common_set_bg">#f4f4f4</color>
+    <!-- 集合贴条目背景  c1 -->
+    <color name="common_set_shap_bg">#ffffff</color>
+    <!-- 集合贴条目描边  c12 -->
+    <color name="common_set_shap_stroke_bg">#ededed</color>
+
+    <!-- 添加好友搜索框布局背景 c1 -->
+    <color name="user_add_search_layout_bg">#ffffff</color>
+    <!-- 搜索列表列表类型标题背景 c12 -->
+    <color name="main_search_list_title_bg">#ededed</color>
+
+    <!-- 踩赞中间竖线的颜色 -->
+    <color name="topic_list_detail_likenum_fengexian">#628db4</color>
+    
+    
+    <!-- 公会成员列表ITEM共享积分背景 -->
+    <color name="group_user_contribute_point_chart_bg">#ededed</color>
+    <!-- 公会成员列表ITEM共享积分背景 -->
+    <color name="group_user_contribute_point_chart_stroke">#c3c7c9</color>
+	<!-- 公会等级button中的文字颜色 -->
+    <color name="group_grade_button_text">#fff157</color>
+    <!-- 文字区 -->
+
+
+    <!-- item 第一级左边文字颜色（例如标题） -->
+    <color name="item_first_grade_left_color">#3a3a3a</color>
+    <!-- item 第一级右边文字颜色（例如ID） -->
+    <color name="item_first_grade_right_color">#9e9e9e</color>
+    <!-- item 第一级左边文字颜色2（例如标题） -->
+    <color name="item_first_grade_left_color2">#4fb2eb</color>
+    <!-- item 第二级文字颜色 -->
+    <color name="item_second_grade_color">#7d7d7d</color>
+    <!-- item 第三级文字颜色 -->
+    <color name="item_third_grade_color">#7d7d7d</color>
+
+    <!-- *贴吧* -->
+    <!-- 帖子标题颜色  c6 -->
+    <color name="topic_reply_header_title_color">#6c7fae</color>
+    <!-- 帖子回复楼层数  c4 -->
+    <color name="topic_reply_header_comments_color">#9e9e9e</color>
+    <!-- 楼主名字的颜色 c18 -->
+    <color name="topic_reply_header_nickname_color">#628db4</color>
+    <!-- 楼主ID的颜色 c4 -->
+    <color name="topic_reply_header_posterid_color">#606366</color>
+    <!-- 距离和时间的颜色 c7 -->
+    <color name="topic_reply_header_date_loc_color">#9e9e9e</color>
+    <!-- 帖子内容的颜色 c6 -->
+    <color name="topic_reply_header_content_color">#3a3a3a</color>
+
+    <!-- 帖子列表详情标题字体颜色 c6 -->
+    <color name="topic_list_detail_title_text_color">#3a3a3a</color>
+    <!-- 帖子列表详情踩赞数字体颜色 c2 -->
+    <color name="topic_list_detail_likenum_color">#628db4</color>
+    <!-- 帖子列表详情游伴公会名称字体颜色 c3 -->
+    <color name="topic_list_detail_ll_tmp_color">#7d7d7d</color>
+    <!-- 帖子列表详情游伴公会数字体颜色 c7 -->
+    <color name="topic_list_detail_ll_tmp_num_color">#9e9e9e</color>
+    <!-- 帖子列表item右侧发帖数字体颜色 c18 -->
+    <color name="topic_list_item_commont_text_color">#628db4</color>
+
+    <!-- 回复名字的颜色 c4 -->
+    <color name="topic_reply_item_nickname_color">#606366</color>
+    <!-- 回复ID的颜色 c4 -->
+    <color name="topic_reply_item_posterid_color">#606366</color>
+    <!-- 楼层的颜色 c4 -->
+    <color name="topic_reply_item_level_color">#606366</color>
+    <!-- 时间和距离的颜色 c7 -->
+    <color name="topic_reply_item_date_loc_color">#9e9e9e</color>
+    <!-- 内容的颜色c6 -->
+    <color name="topic_reply_item_content_color">#3a3a3a</color>
+    <!-- 删除内容的颜色 c7 -->
+    <color name="topic_reply_item_del_color">#9e9e9e</color>
+    <!-- 回复按钮的颜色 c18 -->
+    <color name="topic_reply_item_reply_color">#628db4</color>
+
+    <!-- 回复的回复名字的颜色 c4 -->
+    <color name="topic_reply_item_preply_nickname_color">#606366</color>
+    <!-- 回复的回复时间的颜色 c7 -->
+    <color name="topic_reply_item_preply_date_color">#9e9e9e</color>
+    <!-- 回复的回复内容的颜色 c3 -->
+    <color name="topic_reply_item_preply_content_color">#7d7d7d</color>
+
+    <!-- 帖子回复提示内容的颜色 c1 -->
+    <color name="topic_reply_bottom_tips_text_color">#ffffff</color>
+    <!-- 帖子集合贴标题的颜色 c6 -->
+    <color name="topic_reply_set_name_text_color">#3a3a3a</color>
+    <!-- 翻页当前页数 -->
+    <color name="topic_reply_pages_current_page_color">#3a3a3a</color>
+    <!-- 页数显示 -->
+    <color name="topic_reply_current_pagenum_color">#9e9e9e</color>
+
+    <!-- 添加好友“推荐好友”字体颜色 c19 -->
+    <color name="user_add_dec_text_color">#444444</color>
+    
+    <!-- c4 -->
+    <color name="reply_my_nickname_text_color">#606366</color>
+    <!-- c7 -->
+    <color name="reply_my_gamename_text_color">#9e9e9e</color>
+    <!-- c3 -->
+    <color name="reply_my_topic_name_text_color">#7d7d7d</color>
+    <!-- c18 -->
+    <color name="reply_my_reply_text_color">#468ed1</color>
+    
+    <!-- 公会成员列表ITEM共享积分字体颜色 -->
+    <color name="group_user_contribute_point_chart_text_color">#606366</color>
+    <!-- 通讯录界面没有内容提示语句 -->
+    <color name="user_null_data_text_color">#9e9e9e</color>
+
+    <!-- 聊天文本 -->
+    <color name="chat_msg_text_color">#3a3a3a</color>
+    <!-- 聊天分享底部文本链接 -->
+    <color name="chat_share_bottom_text_color">#000000</color>
+    <!-- 聊天系统消息文本的颜色 -->
+    <color name="chat_msg_in_system_text_color">#ffffff</color>
+    <!-- 消息列表侧滑删除 -->
+    <color name="msg_slideitem_color">#da3030</color>
+    <!-- 消息列表昵称 -->
+    <color name="chat_msg_nickname_text_color">#7d7d7d</color>
+    <!-- 聊天室系统公告 -->
+    <color name="mchat_announce_text_color">#000000</color>
+    <!-- 聊天室系统公告背景色 -->
+    <color name="mchat_announce_bg_color">#e6f7d777</color>
+    <!-- 通讯录中关注模块sidebar颜色值 -->
+    <color name="sidebar_color">#ff000000</color>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_color1"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/listContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.iwgame.widget.slideitemlistview.SlideItemListView
+                android:id="@+id/listView_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/list_first_bg"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@drawable/common_fengexian"
+                >
+            </com.iwgame.widget.slideitemlistview.SlideItemListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nullContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <include layout="@layout/common_null_data_bg" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

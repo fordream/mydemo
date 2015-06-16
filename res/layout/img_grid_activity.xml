@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/image_select_picture_no_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="top"
+        android:background="@drawable/common_title_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/titleTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:text="图片"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sel_bucket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+			android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="相册"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/image_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/transparent"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:verticalSpacing="4dp" >
+    </GridView>
+    
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/image_select_layout_footer_bg" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/common_image_selected" 
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/image_selected_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="0/10"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sel"
+            android:layout_width="61dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/image_select_btn_selector"
+            android:text="完成"
+            android:enabled="false"
+            android:textColor="@color/image_select_btn_text_dis" />
+    </RelativeLayout>
+
+</LinearLayout>

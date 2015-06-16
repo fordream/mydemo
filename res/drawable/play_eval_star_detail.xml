@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/peiwan_pingjia_detail" android:state_pressed="true"/>
+   
+      <item android:drawable="@drawable/peiwan_pingjia_detail2" android:state_pressed="false"/>
+      <item android:drawable="@drawable/peiwan_pingjia_detail" android:state_focused="true"/>
+   
+      <item android:drawable="@drawable/peiwan_pingjia_detail2" android:state_focused="false"/>
+       <item android:drawable="@drawable/peiwan_pingjia_detail2" />
+      
+   
+    
+
+</selector>

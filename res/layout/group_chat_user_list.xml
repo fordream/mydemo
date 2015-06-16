@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_second_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@color/list_second_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_dialog"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@anim/progress_round" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:gravity="center_vertical"
+            android:text="刷新..."
+            style="@style/text_item_first_grade_right2" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_group_chat_users"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/list_second_bg"
+        android:divider="@drawable/common_fengexian"
+        android:cacheColorHint="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        android:smoothScrollbar="true"
+        android:stackFromBottom="false" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/user_detail_btn"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/global_padding9"
+            android:layout_marginRight="@dimen/global_padding9"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/time_say_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/speaking_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="发言时间"
+                    android:textColor="@drawable/group_user_list_selector"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <ImageView
+                    android:id="@+id/speakint_time_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/global_padding1"
+                    android:background="@drawable/group_user_list_bg_selector1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/last_login_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/last_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="活跃时间"
+                    android:textColor="@drawable/group_user_list_selector"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <ImageView
+                    android:id="@+id/last_login_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/global_padding1"
+                    android:background="@drawable/group_user_list_bg_selector1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/contri_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/global_padding9"
+                android:gravity="center"
+                android:text="贡献排名"
+                android:textColor="@drawable/group_user_list_selector"
+                android:textSize="@dimen/global_font_size2" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

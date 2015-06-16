@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_padding9"
+        android:orientation="vertical" >
+        
+        <LinearLayout 
+            android:id="@+id/bundphone_prompt_layout"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:visibility="gone"
+            >
+            <TextView 
+                android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:textSize="@dimen/global_font_size5"
+        		android:textColor="@color/global_color3"
+        		android:layout_marginLeft="@dimen/global_padding8"
+        		android:text="发布社区信息需要绑定手机，为了您的账号安全，请绑定"
+        		android:layout_marginBottom="@dimen/global_padding3"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/global_list_item_height_small"
+            android:background="@drawable/common_register_bg_shap"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding8"
+                android:text="手机号码"
+                android:textColor="@color/register_input_name_text_color"
+                android:textSize="@dimen/global_font_size2" />
+
+            <EditText
+                android:id="@+id/act_reg_accountTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/global_padding3"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:hint="请填写11位手机号码"
+                android:textColor="@color/register_input_value_text_color"
+                android:textColorHint="@color/register_input_hint_text_color"
+                android:textSize="@dimen/global_font_size2" />
+
+            <Button
+                android:id="@+id/act_reg_cleanNumBtn"
+                android:layout_width="@dimen/global_clean_size"
+                android:layout_height="@dimen/global_clean_size"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="@dimen/global_padding3"
+                android:layout_marginRight="@dimen/global_padding8"
+                android:background="@drawable/common_close_bg"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setaccount_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding8"
+        android:layout_marginRight="@dimen/global_padding8"
+        android:layout_marginTop="@dimen/global_padding3"
+        android:text=""
+        android:textColor="@color/global_color19"
+        android:textSize="@dimen/global_font_size8" />
+
+    <Button
+        android:id="@+id/act_reg_accountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_padding4"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginRight="@dimen/global_padding3"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:background="@drawable/commit_next_btn_selector"
+        android:text="下一步"
+        android:textColor="@color/commit_next_text_color"
+        android:textSize="@dimen/global_font_size2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding8"
+        android:layout_marginRight="@dimen/global_padding8"
+        android:layout_marginTop="@dimen/global_padding1"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/act_reg_checkBox"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="已阅读并同意"
+            android:textColor="@color/common_sproto_text1_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sproto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="“游伴服务条款&amp;隐私政策”"
+            android:textColor="@color/common_sproto_text2_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/setaccount_login_layout"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/global_padding3"
+        >
+        <Button 
+            android:id="@+id/setaccount_login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:background="@android:color/transparent"
+            android:text="已有账号，点此登录"
+            android:textSize="14sp"
+            android:textColor="@color/common_sproto_text2_color"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

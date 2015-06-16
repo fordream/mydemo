@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 游伴的配置文件 -->
+
+
+    <!-- **************************************** 背景区******************************************** -->
+    <!--YG     积分与经验值头 背景 -->
+    <color name="point_experence_detail_bg">#ededed</color>
+    <!--YG     积分明细与经验值明细页面 背景 -->
+    <color name="point_detail_bg">#ffffff</color>
+     <!-- 积分经验值明细中的任务名颜色值 -->
+    <color name="point_task_name_color">#796253</color>
+     <!-- 积分经验值明细中的任务数值的颜色值 -->
+    <color name="point_task_num_color">#ff7826</color>
+    <!-- 底部列表的背景颜色值 -->
+    <color name="point_detail_list_bg">#ffffff</color>
+    <!-- 表示在公会等级界面或者个人等级界面显示公会等级文字的背景颜色值 c12 -->
+    <color name="show_grade_textview_background_color">#ededed</color>
+    <!-- 公会资料页面的分割线 -->
+    <color name="group_detail_fengexian_color">#000000</color>
+    <!-- 公会资料底部当点击时的背景色值 -->
+    <color name="group_detail_bottom_click_color1">#606366</color>
+    <!-- 公会资料页面底部当点击的时候的背景颜色值2 -->
+    <color name="group_detail_bottom_click_color2">#459ff3</color>
+    <color name="user_detail_btn_pres1">#fffc7167</color>
+    <!-- 一些 界面 底部的按钮在未被点击中时的背景颜色值 -->
+    <color name="user_detail_btn1">#e6f4f4f4</color>
+    <!-- 用户资料页面底部的分割线的颜色值-->
+    <color name="user_detail_bottom_fengexian">#dfdfdf</color>
+      <!-- 用户资料页面显示帖子贴吧公会关注粉丝的背景-->
+    <color name="user_detail_postbar_group_follow">#ffffff</color>
+        <!-- 表示的是公会资料页面顶部的头像那一块的背景颜色值-->
+    <color name="group_detail_top_bg_color">#fcefd1</color>
+    
+      <!-- 贡献榜的背景颜色值-->
+    <color name="contri_integral_gongxianbang_bg_color">#c3c7c9</color>
+    
+        <!-- 头像的描边 -->
+    <color name="icon_miaobian">#ece9e9</color>
+    
+    
+    <!-- 积分任务页面titile的背景色 -->
+    <color name="point_task_detail_title_bg_color">#ffffff</color>
+    
+    <!-- 积分商城页面上面 显示当前个人积分的背景颜色值 -->
+    <color name="point_market_show_point_bg">#ededed</color>
+    
+    <!-- 用户等级或者公会等级页面的进度条的颜色值 -->
+    <color name="progress_bg_color">#ff7826</color>
+      <!-- 公会等级或个人等级页面title的背景颜色值 -->
+    <color name="group_or_personal_title_bg">#ededed</color>
+    
+        <!-- 等级页面的显示等级那一栏的颜色值 -->
+    <color name="grade_first_line_bg_color">#ededed</color>
+        <!--YG     等级页面的显示等级那一栏的颜色值 -->
+    <color name="personal_grade_first_line_bg_color">#ffffff</color>
+      <!-- 公会等级或者个人等级右边的第一行的背景的颜色的颜色值 -->
+    <color name="group_person_right_bg_color">#ffffff</color>
+    <!-- 公会等级或者个人等级右边的第一行以下的背景的颜色的颜色值 -->
+    <color name="group_person_right_top_bg_color">#ffffff</color>
+     <!-- 公会资料页面编辑公会资料的按钮 -->
+    <color name="group_detail_edit_bg_color">#459ff3</color>
+      <!-- 公会资料页面编辑公会资料的按钮按下时的颜色值 -->
+    <color name="group_detail_edit_bg_color_pre">#468ed1</color>
+    
+       <color name="select_stop_time_bottom_color_nor">#da3030</color>
+      <!-- 公会资料页面编辑公会资料的按钮按下时的颜色值 -->
+    <color name="select_stop_time_bottom_color_dis">#b10810</color>
+     <!-- 公会管理页面 和公会资料页面底部的背景色 -->
+     <color name="group_manage_or_detail_bottom_color_nor">#e63a3a3a</color>
+      <!-- 公会管理页面 和公会资料页面底部的按下的背景色 -->
+     <color name="group_manage_or_detail_bottom_color_pre">#ff3a3a3a</color>
+      <!-- 在图片浏览页面底部的背景颜色值 -->
+     <color name="image_brower_bottom_bg">#bf191919</color>
+    <!-- ************************************************************************************ -->
+
+
+    <!-- **********************************文字区************************************************** -->
+    <!-- 当前积分的描述的颜色值 -->
+    <color name="cur_point_desc">#9e9e9e</color>
+    <!-- 积分明细里面积分的显示颜色 -->
+    <color name="cur_point_num">#ffbf26</color>
+    <!-- YG     积分与经验值数字字体颜色 -->
+    <color name="cur_num">#ff7826</color>
+    <!-- 分割线的颜色值 -->
+    <color name="integral_detail_fengexian">#c3c7c9</color>
+    <!-- 等级界面的进度条的颜色值 -->
+    <color name="progress_grade_color">#606366</color>
+    <!-- 等级权限描述的文字颜色值 c7 -->
+    <color name="grade_permission_desc">#7d7d7d</color>
+    <!-- 用户等级底端的线条颜色值 -->
+    <color name="grade_bottom_line_color">#e3e3e3</color>
+    <!-- 公会或者个人等级里面显示等级的颜色值 -->
+    <color name="personal_or_group_grade_color">#ff7826</color>
+    <!-- 公会等级或者个人等级显示等级条目的背景颜色值 -->
+    <color name="personal_or_group_item_color">#ffffff</color>
+    <!-- 积分任务页面的文字的颜色值 -->
+    <color name="point_task_words_color">#ffffff</color>
+    <!-- 公会详情页面的公会的文字颜色值 c6 -->
+    <color name="group_detail_notice_color">#3a3a3a</color>
+      <!-- 公会详情页面的公会的文字颜色值 c6 -->
+    <color name="group_detail_notice_color1">#9e9e9e</color>
+    <!-- 公会资料页面的文字颜色显示为黑色 -->
+    <color name="group_detail_textcolor_color">#000000</color>
+    <!-- 表示的是公会详情页面的boder的颜色值 -->
+    <color name="group_detail_boder_color">#ffffff</color>
+    
+    <!-- 下面的两个表示的是用户资料页面底部的文字的颜色值 -->
+    <color name="user_detail_bottom_text_color">#da5d54</color>
+    <color name="user_detail_bottom_press_text_color">#ffffff</color>
+    
+    
+         <!-- 表示的是用户资料页面左上角文字的颜色值-->
+    <color name="user_detail_left_top_text_color">#ffffff</color>
+    <!-- 表示的是用户资料页面条目的文字颜色 -->
+    <color name="user_detail_item_text_color">#9e9e9e</color>
+     <!-- 贡献积分页面，输入框里面的提示文字的颜色值-->
+    <color name="contri_integral_edit_color_hint">#c3c7c9</color>
+    <!-- 用户资料页面的公会 关注数 粉丝数的颜色值-->
+    <color name="user_detail_group_follow_nummber_text_color">#c3c7c9</color>
+      <!-- 贡献榜的的文字颜色值-->
+    <color name="contri_integral_gongxianbang_text_bg_color">#ffffff</color>
+      <!-- 贡献榜的的我的排名的颜色值-->
+    <color name="contri_integral_rankofmine_text_bg_color">#e35c45</color>
+    
+     <!-- 禁言页面选择禁言时长的文字颜色值-->
+    <color name="select_stop_time_text_color">#444444</color>
+    
+     <!-- 在积分商城页面 商品列表里面的兑换时间的 兑换截止的时间的颜色值-->
+    <color name="goods_list_change_time_text_color">#ff2525</color>
+     <!--在发现页面弹出筛选框 里面的一些文字的颜色值-->
+    <color name="discover_select_dialog_text_color">#444444</color>
+     <!--发现页面弹框的背景颜色值-->
+    <color name="discover_select_dialog_select_textcolor">#ff3c3c</color>
+     <!--发现页面弹框的背景颜色值 未选中的背景颜色值-->
+    <color name="discover_select_dialog_unselect_textcolor">#eef6fe</color>
+     <!--发现页面弹框的被选中后的文字的颜色值-->
+    <color name="discover_select_dialog_textview_select_textcolor">#eef6fe</color>
+    <!--发现页面弹框的未被选中后的文字的颜色值-->
+    <color name="discover_select_dialog_textview_unselect_textcolor">#000000</color>
+    <!-- 我页面的图片下面的提示文字的颜色值 -->
+    <color name="me_album_tips">#9e9e9e</color>
+    <!-- 在弹框的时候，弹出我知道 了  的颜色值 -->
+    <color name="i_know_it_text_color">#ff3c3c</color>
+    <!-- 在个人等级和公会等级页面 等级的颜色值 -->
+    <color name="grade_level_color">#ffbf26</color>
+      <!-- 公会等级页面和用户等级页面 进度条的背景颜色值-->
+    <color name="progress_backgroup_color">#ededed</color>
+    <color name="progress_bg_color2">#8cce38</color>
+       <!-- 公会等级或个人等级页面title的背景颜色值 -->
+    <color name="group_or_personal_title_textcolor">#7d7d7d</color>
+    <!-- 公会等级和个人等级左边文字的颜色值 -->
+    <color name="grade_left_text_color">#7d7d7d</color>
+      <!-- 等级右下角那一块区域的颜色值 -->
+    <color name="grade_activity_right_bottom_textcolor">#7d7d7d</color>
+     <!-- 等级界面的升级按钮的文字的颜色值 -->
+    <color name="upgrade_btn_text_color_nor">#ffffff</color>
+    <!-- 等级界面的升级按钮的文字的颜色值 -->
+    <color name="upgrade_btn_text_color_dis">#9e9e9e</color>
+    <!-- 在发现碳上方的文字的颜色值  比如说 你想看到的用户 -->
+    <color name="discover_dialog_title_text_color">#444444</color>
+    <!-- 整个游伴项目里面的提示文字的颜色值 -->
+    <color name="cue_words_text_color">#c3c7c9</color>
+      <!-- 列表的第二行的文字颜色值 -->
+    <color name="list_second_text_color">#7d7d7d</color>
+    <!-- 积分任务页面中看到 的详情十字 的颜色值 -->
+    <color name="task_detail_text_color">#468ed1</color>
+    <!-- 公会资料页面顶部的标题等信息显示的颜色值 -->
+    <color name="group_detail_name_text_color">#ffffff</color>
+    <!-- 公会资料页面顶部的标题iD等信息显示的颜色值 -->
+    <color name="group_detail_id_text_color">#ffffff</color>
+    <!-- 游伴里面举报页面下面的标签的文字颜色值 -->
+    <color name="report_activity_lable_text_color">#ffffff</color>
+   <!-- 公会编辑页面 和用户资料编辑页面 下面的编辑资料四个文字的颜色值 -->
+   <color name="group_or_user_edit_hint_color">#9e9e9e</color>
+      <!-- 积分商城里面的兑换纪录页面的的已发货 待发货等按钮的颜色值 -->
+   <color name="goods_trans_state_text_color">#ff7826</color>
+   <!-- 在积分任务页面的任务描述文字 -->
+   <color name="point_task_detail_item_desc_text_color">#7d7d7d</color>
+      <!-- 在推荐贴吧页面  如果是已经推荐的  则显示已推荐按钮的背景颜色值 -->
+   <color name="have_recommend_text_color">#e8e8e8</color>
+   
+     <!-- 在图片浏览页面 的保存和 举报按钮的颜色值   正常情况下的颜色值和按下的颜色值 -->
+   <color name="image_brower_text_color_nor">#ffffff</color>
+   <color name="image_brower_text_color_pre">#c7c7c7</color>
+    
+   <!-- 用户资料页面的帖子贴吧 公会关注 粉丝的 文字颜色值 -->
+   <color name="other_user_detail_follow_fans_group_text_color">#7d7d7d</color>
+   
+     <!-- 公会成员列表页面的分割线的颜色值 -->
+   <color name="group_user_list_fengexian">#c3c7c9</color>
+    <!-- ************************************************************************************ -->
+
+
+    <!-- ********************************************公会用的颜色值********************************* -->
+    <!-- 公会和用户等级界面的等级颜色值 -->
+    <color name="user_or_group_grade_num_bg">#ffffff</color>
+    <!-- 升级按钮，里面的文字  不能升级 的时候的颜色值  c7 -->
+    <color name="upgrade_btn_txt_color">#9e9e9e</color>
+	<!-- 对话框中的文字提示颜色值 -->
+	<color name="dialog_font_color">#636363</color>
+	<!-- 公会名片分割线颜色值 -->
+	<color name="group_card_line_color">#c3c7c9</color>
+	<!-- 商品详情页面最底端的按钮的背景颜色值 -->
+    <color name="goods_detail_bottom_btn_nor_color">#bd5025</color>
+    <color name="goods_detail_bottom_btn_pre_color">#aa4017</color>
+	<!-- 商品详情页面已兑换颜色值 -->
+    <color name="goods_detail_already_charge_color">#a38c7d</color>
+	<!-- 商品详情页面兑换完颜色值 -->
+    <color name="goods_detail_charge_over_color">#b8a48b</color>
+     <!-- 注册中添加用户头像的button颜色值 -->
+    <color name="user_register_set_detail_nor_color">#da3030</color>
+    <color name="user_register_set_detail_pre_color">#b10810</color>
+</resources>

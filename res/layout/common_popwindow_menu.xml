@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_popwindow_menu_bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listView_popwindow"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/common_list_divider"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none" />
+
+</LinearLayout>

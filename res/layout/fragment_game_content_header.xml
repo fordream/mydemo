@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_size8_color19_default"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_content_title_height"
+        android:background="@color/global_color12"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/global_padding8"
+        android:text="@string/game_title_followgame_info" >
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/global_color5" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/global_color1"
+        android:paddingBottom="@dimen/global_padding1"
+        android:paddingLeft="@dimen/global_padding1"
+        android:paddingRight="@dimen/global_padding1"
+        android:paddingTop="@dimen/global_padding3"
+        android:stretchColumns="*" >
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/global_color5" />
+
+    <TextView
+        style="@style/text_size8_color19_default"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_content_title_height"
+        android:background="@color/global_color12"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/global_padding8"
+        android:text="@string/game_title_gamelist_info" >
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/global_controlgap_small"
+        android:paddingLeft="@dimen/global_page_paddingleft"
+        android:paddingRight="@dimen/global_page_paddingright"
+        android:paddingTop="@dimen/global_controlgap_small" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RadioGroup
+                android:id="@+id/alikeTab"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/sysTab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/game_alike_top_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="系统推荐"
+                    android:textColor="@drawable/postbar_post_list_header_textcolor_selector"
+                    android:textSize="@dimen/text_small"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/comTab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/game_alike_top_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="好友关注"
+                    android:textColor="@drawable/postbar_post_list_header_textcolor_selector"
+                    android:textSize="@dimen/text_small" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/nearTab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/game_alike_top_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="附近的人"
+                    android:textColor="@drawable/postbar_post_list_header_textcolor_selector"
+                    android:textSize="@dimen/text_small" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/overBgView"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/widget_gridview_overbg" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/game_user_list" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nullContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <include layout="@layout/common_null_data_bg" />
+    </LinearLayout>
+
+</LinearLayout>

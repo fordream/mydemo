@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- 发布帖子，帖子内容在edittext中的最小行数 -->
+    <integer name="postbar_publish_topic_content_minline">3</integer>
+    <!-- 发布帖子，帖子内容在edittext中的显示出来的行数 -->
+    <integer name="postbar_publish_topic_content_line">4</integer>
+    <!--  接受 接受到的消息的广播的等级，聊天页面 -->
+    <integer name="receiver_priority_messagebroadcast_chatactivity" >500</integer>
+    <!--  接受 接受到的消息的广播的等级，receiver 推送到任务栏 -->
+    <integer name="receiver_priority_messagebroadcast_receiver" >400</integer>
+    <!--  接受 接受到的消息的广播的等级，首面 -->
+    <integer name="receiver_priority_messagebroadcast_mainactivity" >300</integer>
+    
+
+</resources>

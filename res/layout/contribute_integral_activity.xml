@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg"
+    android:fadingEdge="vertical"
+    android:focusableInTouchMode="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/set_first_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/group_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding8"
+            android:layout_marginRight="@dimen/global_padding8"
+            android:layout_marginTop="@dimen/global_padding9"
+            android:textColor="@color/progress_grade_color"
+            android:textSize="@dimen/global_font_size2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding8"
+            android:layout_marginRight="@dimen/global_padding8"
+            android:layout_marginTop="@dimen/global_padding9"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前公会总积分:"
+                android:textColor="@color/progress_grade_color"
+                android:textSize="@dimen/global_font_size2" />
+
+            <TextView
+                android:id="@+id/current_group_total_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding1"
+                android:textColor="@color/progress_grade_color"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding8"
+            android:layout_marginRight="@dimen/global_padding8"
+            android:layout_marginTop="@dimen/global_padding3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edit_donate_integral_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/global_padding3"
+                android:layout_weight="1"
+                android:background="@drawable/common_search_bg_shap"
+                android:hint="输入贡献积分"
+                android:inputType="number"
+                android:paddingLeft="@dimen/global_padding1"
+                android:textColor="@color/common_search_text_color"
+                android:textColorHint="@color/common_search_hint_text_color" />
+
+            <Button
+                android:id="@+id/confirm_donate_integral"
+                android:layout_width="@dimen/confir_donate_integral_btn_width"
+                android:layout_height="@dimen/contribute_integral_edit_height"
+                android:background="@drawable/common_btn_ls_selector"
+                android:text="确定贡献"
+                android:textColor="@color/common_btn_text_color"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding8"
+            android:layout_marginRight="@dimen/global_padding8"
+            android:layout_marginTop="@dimen/global_padding3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的积分："
+                android:textColor="@color/progress_grade_color"
+                android:textSize="@dimen/global_font_size2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_main_score_icon" />
+
+            <TextView
+                android:id="@+id/remain_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding1"
+                android:textColor="@color/shop_need_point_color"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding8"
+            android:layout_marginRight="@dimen/global_padding8"
+            android:layout_marginTop="@dimen/global_padding9"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/global_padding2"
+                android:background="@drawable/group_tips_tag" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/contri_point_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="输入的积分必须在这个范围：1≤积分≤500"
+                    android:textColor="@color/contri_integral_edit_color_hint"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="输入的积分必须为整数"
+                    android:textColor="@color/contri_integral_edit_color_hint"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <TextView
+                    android:id="@+id/contri_point_limite_descri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="每日最多只能贡献500积分"
+                    android:textColor="@color/contri_integral_edit_color_hint"
+                    android:textSize="@dimen/global_font_size2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/groupe_upgrade_btn_height"
+            android:layout_marginTop="@dimen/global_padding3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/contri_integral_gongxianbang_bg_color"
+                android:gravity="center"
+                android:text="贡献榜"
+                android:textColor="@color/contri_integral_gongxianbang_text_bg_color"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/set_first_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/rank_of_mine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding8"
+                android:layout_marginRight="@dimen/global_padding8"
+                android:layout_marginTop="@dimen/global_padding7"
+                android:gravity="center"
+                android:textColor="@color/contri_integral_rankofmine_text_bg_color"
+                android:textSize="@dimen/global_font_size3" />
+
+            <LinearLayout
+                android:id="@+id/no_contribute_iv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/global_padding8"
+                android:layout_weight="1"
+                android:background="@color/set_first_bg"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/group_score_blank" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/show_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/global_padding8"
+                android:layout_weight="1"
+                android:background="@color/set_first_bg"
+                android:orientation="vertical"
+                android:visibility="visible" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iwgame.msgs.widget.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_top_height"
+        android:background="@color/black"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.iwgame.msgs.widget.BackButton
+            android:id="@+id/leftBtn"
+            android:layout_width="57dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_vertical" />
+
+        <com.iwgame.msgs.widget.TitleTextView
+            android:id="@+id/titleTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:shadowColor="@color/common_shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</com.iwgame.msgs.widget.ResizeLayout>

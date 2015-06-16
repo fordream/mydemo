@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical"
+     android:background="@color/point_experence_detail_bg" >
+
+    <RelativeLayout
+       	
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<ImageView 
+		    android:id="@+id/cur_bg"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginTop="@dimen/global_padding15"
+		    />
+        <TextView
+            android:id="@+id/cur_personal_detailed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding9"
+            android:layout_marginTop="@dimen/global_padding14"
+            android:gravity="center"
+            android:textColor="@color/point_detail_bg"
+			
+            android:textSize="@dimen/global_font_size2" />
+
+        <TextView
+            android:id="@+id/cur_personal_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/cur_personal_detailed"
+            android:gravity="center"
+          	android:layout_marginRight="@dimen/global_padding8"
+            android:textColor="@color/cur_num"
+            android:textSize="@dimen/global_font_size9" />
+
+        <TextView
+            android:id="@+id/cur_seven_days_detailed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cur_bg"
+            android:layout_marginLeft="@dimen/global_padding9"
+            android:layout_marginTop="@dimen/global_padding1"
+            android:textColor="@color/cur_point_desc"
+            android:textSize="@dimen/global_font_size4" />
+     
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hor_degree"
+        android:layout_marginTop="@dimen/global_padding3"
+        android:background="@color/integral_detail_fengexian" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/point_detail_bg"
+         >
+
+        <LinearLayout
+            android:id="@+id/no_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/listContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/point_detail_list_bg"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/refreshList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@null"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@color/transparent"
+                android:smoothScrollbar="true"
+                android:stackFromBottom="false" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

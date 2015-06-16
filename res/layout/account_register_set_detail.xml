@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding9"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="@dimen/global_icon_5"
+                    android:layout_height="@dimen/global_icon_5"
+                    android:background="@drawable/account_register_avatar_bg_selector"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/ccount_register_avatar_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="63dp"
+                    android:layout_marginTop="63dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:gravity="center_horizontal"
+                android:text="设置头像后认识帅哥美女几率更高哦~"
+                android:textColor="@color/register_detail_line_text_color"
+                android:textSize="@dimen/global_font_size3" />
+
+            <Button
+                android:id="@+id/setAvatarBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/global_padding4"
+                android:layout_marginLeft="@dimen/global_padding3"
+                android:layout_marginRight="@dimen/global_padding3"
+                android:layout_marginTop="@dimen/global_padding8"
+                android:background="@drawable/common_btn_ls_register_selector"
+                android:text="设置头像"
+                android:textColor="@color/global_color1"
+                android:textSize="@dimen/global_font_size2"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/confirmBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/global_padding4"
+                android:layout_marginLeft="@dimen/global_padding3"
+                android:layout_marginRight="@dimen/global_padding3"
+                android:layout_marginTop="@dimen/global_padding8"
+                android:background="@drawable/common_btn_ls_register_selector"
+                android:text="注册"
+                android:textColor="@color/global_color1"
+                android:textSize="@dimen/global_font_size2"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/jumpView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/global_padding8"
+                android:layout_marginRight="@dimen/global_padding8"
+                android:layout_marginTop="@dimen/global_padding7"
+                android:text="跳过"
+                android:textColor="@color/global_color7"
+                android:textSize="@dimen/global_font_size3"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <FrameLayout
+        android:id="@+id/fl_inner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/header_footer_top_bottom_padding"
+        android:paddingLeft="@dimen/header_footer_left_right_padding"
+        android:paddingRight="@dimen/header_footer_left_right_padding"
+        android:paddingTop="@dimen/header_footer_top_bottom_padding" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:layout_gravity="left" >
+
+                <ImageView
+                    android:id="@+id/pull_to_refresh_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/default_ptr_rotate" />
+
+                <ProgressBar
+                    android:id="@+id/pull_to_refresh_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="5dp" >
+
+                <TextView
+                    android:id="@+id/pull_to_refresh_text"
+                    style="@style/text_medium_listrefresh_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:text="@string/pull_to_refresh_pull_label"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/pull_to_refresh_sub_text"
+                    style="@style/text_medium_listrefresh_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</merge>

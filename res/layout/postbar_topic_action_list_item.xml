@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/global_page"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left|center_vertical"
+    android:minHeight="@dimen/global_list_item_height_small"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/postbar_topic_action_list_item_name"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/dialog_content_text_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_role_background">
+    
+    
+    <TextView android:id="@+id/no_game_role"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/no_role_tip"
+        android:textSize="@dimen/global_font_size8"
+        android:textColor="@color/no_user_role_info"
+        android:visibility="gone"/>
+    
+    
+    <LinearLayout
+            android:id="@+id/roleContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           android:orientation="vertical"
+			>
+          <ListView 
+              android:id="@+id/role_info_listview"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+               android:layout_marginBottom ="50dp"
+              android:divider="@null"
+              android:listSelector="#00000000"
+              >
+          </ListView>
+        </LinearLayout>
+    
+	<RelativeLayout 
+	    android:id="@+id/add_game_role_parent"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/global_padding18"
+	    android:layout_alignParentBottom="true"
+	     android:background="@color/black">
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        >
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:src="@drawable/add_game_role__selector"/>
+	        <TextView 
+	            android:id="@+id/add_game_role_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+           		android:layout_marginLeft="5dp"
+           		android:textSize="@dimen/global_font_size1"
+           		android:text="添加新角色 >"
+	            android:textColor="@color/setting_font_skip__selector"/>
+	        
+	    </LinearLayout>
+	    
+	</RelativeLayout>
+</RelativeLayout>

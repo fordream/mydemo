@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/show_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center_vertical|left"
+        android:paddingBottom="@dimen/global_padding8"
+        android:paddingTop="@dimen/global_padding8"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginRight="@dimen/global_padding3"
+        android:textColor="@color/point_market_input_info_color"
+        android:textSize="@dimen/global_font_size2"
+        android:textColorHint="@color/dialog_font_color" />
+
+    <View
+        android:id="@+id/show_content_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hor_degree"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginRight="@dimen/global_padding3"
+        android:layout_marginTop="4dp"
+        android:background="@color/group_card_line_color" />
+
+</LinearLayout>

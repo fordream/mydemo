@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通讯录 -->
+    <string name="user_search_verify_fail">输入用户昵称关键字或ID哦！</string>
+    <string name="user_contact_no_user">没有用户</string>
+    <string name="user_get_user_detail_info_fail">获取用户信息失败</string>
+    <string name="user_add_follow_success">添加关注成功</string>
+    <string name="user_cannel_follow_success">取消关注成功</string>
+    <string name="user_cannel_black_success">移除黑名单成功</string> 
+    <string name="user_addfriend_contact">添加通讯录好友</string> 
+    <string name="user_addfriend_weibo">添加新浪微博好友</string> 
+
+    <!-- 注册 -->
+    <string name="common_main_btn_login">手机号登录</string>
+    <string name="common_main_btn_register">游客进入</string>
+    <string name="num_verify_isnull">你还未输入手机号哦！</string>
+    <string name="num_verify_fail">您输入的手机号码格式不正确</string>
+    <string name="vcode_verify_fail">需要输入验证码哦！</string>
+    <string name="pw_verify_fail">密码验证错误</string>
+    <string name="reg_checkbox_verify_fail">需要阅读并同意服务条款和隐私政策哦！</string>
+    <string name="password_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="nickname_verify_fail">您输入的昵称超出%1$d个字符限制</string>
+    <string name="remarkname_verify_fail">不能超过%1$d个汉字或%2$d个字符哦！</string>
+    <string name="nickname_verify_more_fail">输入的昵称不能超过8个汉字或16个字符哦！</string>
+    <string name="captcha_sms_receiver_tip">验证码短信接收中</string>
+    
+    <string name="bundphone_notset_newavater">你还未设置新头像哦~</string>
+    <string name="register_notset_avater">你还未设置新头像哦~</string>
+    <!-- 用户列表 -->
+    <string name="user_list_bar_ismanager">您已是吧主了</string>
+    
+    <string name="user_contact_invite_msg_content">同城游戏伙伴、精品游戏攻略、热辣游戏资讯。来游伴找我（ID:%1$s）！ %2$s</string>
+    <string name="user_weixin_invite_msg_content">同城游戏伙伴、精品游戏攻略、热辣游戏资讯。来游伴找我（ID:%1$s）！ %2$s</string>
+    <string name="user_weixin_invite_msg_title">终结孤单，游我相伴！</string>
+    <string name="bundphonetitle">您必须绑定手机后才能%1$s哦！</string>
+    <string name="bundphone_ready_register_tip">此手机号码已经注册，是否\n直接登入游伴？</string>
+	<string name="load_error_tip">配置文件加载失败，确定重试或退出？</string>
+	
+</resources>

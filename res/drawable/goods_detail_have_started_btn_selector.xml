@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+
+            <!-- 实心 -->
+            <solid android:color="@color/goods_detail_charge_over_color" />
+            <!-- 圆角 -->
+            <corners android:radius="3dp" />
+
+            <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+        </shape></item>
+    <item><shape>
+
+            <!-- 实心 -->
+            <solid android:color="@color/goods_detail_charge_over_color" />
+            <!-- 圆角 -->
+            <corners android:radius="3dp" />
+
+            <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+        </shape></item>
+
+</selector>

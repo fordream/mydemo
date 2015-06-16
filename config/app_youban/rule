@@ -1,0 +1,123 @@
+{
+    "apptype": "youban",
+    "divisionurl": "http://183.136.130.173:8081/index.html",
+    "showRoleList":true,
+    "appname": "游伴",
+	"v":{
+		"c":2030901,
+		"d":"版本描述.",
+		"u":"http://183.136.130.173:81/msgs/apk/msgs-2.2.1.3.apk",
+		"uc":2020103
+	},
+    "startup": 1,
+    "gid": 0,
+    "recbarmsg":
+	{
+		"open":false,
+		"pkg":"com.youban.msgs",
+		"url":"http://www.51uban.com"
+	},
+    "msg":{
+		"remind":
+		{
+			"check":false,
+			"pkg":"com.youban.msgs"
+		}
+	},
+    "discover": {
+        "group": true,
+        "user": true,
+        "game": true
+    },
+    "game":{
+    	"model":1,
+    	"domain":"",
+    	"guide":true
+    },
+    "user": {
+        "defaultSelect": 0,
+        "mode": 1,
+        "menu": [
+            {
+                "show": true,
+                "name": "全部关注",
+                "gid": 0
+            },
+            {
+                "show": true,
+                "name": "魔兽关注",
+                "gid": 103
+            },
+            {
+                "show": false,
+                "name": "游伴关注",
+                "gid": -1
+            }
+        ]
+    },
+    "addfriend": {
+        "fate": true
+    },
+    "setting": {
+        "logout": true,
+        "noBundingMes": "未绑定手机"
+    },
+    "bunding": {
+        "bundingLoginBTIsShow": false
+    },
+    "login": {
+        "backButtonIsShow": true
+    },
+	"display":
+	{
+		"type":1,
+		"height":0,
+		"webview":
+		{
+			"backgroundcolor":0xffffffff
+		},
+		"itop": {
+            "title": {
+                "textcolor": "ffffff",
+                "textsize": 20
+            },
+            "desc": {
+                "text": "",
+                "textcolor": "ffffff",
+                "textsize": 0
+            }
+        },
+		"atop":{
+			"title":
+			{
+				"textcolor":0xffffffff,
+				"textsize":20
+			},
+			"desc":
+			{
+				"text":"",
+				"textcolor":0xffffffff,
+				"textsize":0
+			}
+		},
+		"loading":
+		{
+			"text":"Copy right© 2013-2015  51uban.com",
+			"textcolor":0xff7d7d7d
+		}
+	},	
+	"share":{
+		"title":{
+			"addqqfriend":"邀请加入游伴",
+			"qzone":"游伴手机客户端",
+			"weixin":"终结孤单，游我陪伴！"
+		},
+		"site":{
+			"text":"游伴",
+			"url":"http://www.51uban.com"
+		}
+	},
+	"play":{
+		"multiservergids":[103]
+	}
+}

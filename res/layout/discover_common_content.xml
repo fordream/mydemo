@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroudcolor"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_top_height"
+        android:background="@drawable/common_title_bg" >
+
+        <com.iwgame.msgs.widget.TitleTextView
+            android:id="@+id/titleTxt"
+            style="@style/text_large_white_default"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:shadowColor="@color/common_shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/rightView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/titleTabContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp" >
+
+            <View
+                android:id="@+id/userTitleTab"
+                android:layout_width="5dp"
+                android:layout_height="2dp"
+                android:layout_marginRight="1.5dp"
+                android:background="@color/discover_title_tab_bg_pre_color" />
+
+            <View
+                android:id="@+id/gameTitleTab"
+                android:layout_width="5dp"
+                android:layout_height="2dp"
+                android:layout_marginRight="1.5dp"
+                android:background="@color/discover_title_tab_bg_nor_color" />
+
+            <View
+                android:id="@+id/groupTitleTab"
+                android:layout_width="5dp"
+                android:layout_height="2dp"
+                android:layout_marginRight="1.5dp"
+                android:background="@color/discover_title_tab_bg_nor_color" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomView_ImageBrower"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomHitView"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/global_bottom_height"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</LinearLayout>

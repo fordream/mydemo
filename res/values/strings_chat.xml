@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="chat_userchat_title">与%1$s的聊天</string>
+    <string name="chat_userchat_menu_openuserdetail">查看资料</string>
+    <string name="chat_userchat_menu_cleanchatLog">清空聊天记录</string>
+    <string name="chat_userchat_menu_adduserToblacklist">加入黑名单</string>
+    <string name="chat_userchat_has_adduserToblacklist">对方已经被你加入到黑名单了！</string>
+    <string name="chat_userchat_menu_report">举报</string>
+    <string name="groupchat_tab_name_chat">聊天室</string>
+    <string name="groupchat_tab_name_users">成员列表</string>
+    <string name="groupchat_title_right_name">资料</string>
+    <string name="groupchat_title_middle_name">%1$s</string>
+    <string name="groupchat_users_date">[%1$s]</string>
+    <string name="groupchat_users_date2">[在线:%1$s]</string>
+    <string name="groupchat_users_action_setadmin">设为管理员</string>
+    <string name="groupchat_users_action_canceladmin">取消管理员</string>
+    <string name="groupchat_users_action_delgroupuser">移出公会</string>
+    <string name="groupchat_users_action_setadmin_content">确认将%1$s设为管理员</string>
+    <string name="groupchat_users_action_canceladmin_content">确认将%1$s取消管理员</string>
+    <string name="groupchat_users_action_delgroupuser_content">确认将%1$s移出公会</string>
+    
+    <string name="chat_userchat_sendmsg_has_touserblacklist">对方已经把你加入到黑名单了！</string>
+    
+    <string name="chat_userchat_voice_nor">点击开始说话</string>
+    <string name="chat_userchat_voice_pre">松开结束说话</string>
+    <string name="chat_userchat_voice_tiptime_info">说话时间还剩下%1$s秒</string>
+    <string name="chat_userchat_voice_fail">录制声音异常，有可能你的存储空间不够，请检查！</string>
+    
+    <string name="chat_forwarding_title">选择</string>
+     <string name="chat_forwarding_title_latestcontacts">最近联系</string>
+    <string name="chat_forwarding_title_follow">关注</string>
+    <string name="chat_forwarding_title_group">公会</string>
+    <string name="chat_forwarding_action_forwarding_title">确定转发到：</string>
+    <string name="chat_forwarding_action_share_title">确定分享到：</string>
+    <string name="chat_forwarding_content_title">%1$s(%2$d人)</string>
+    
+    <string name="chat_userchat_username">%1$s:</string>
+    
+    <string name ="chat_share_desc_info">查看详情</string>
+    <string name ="chat_role_desc_info">查看详情</string>
+    <string name ="chat_share_topic_title_info">分享[%1$s]吧帖子：%2$s</string>
+     
+          <string name="groupchat_menu_desc_info">公会资料</string>
+     <string name="groupchat_menu_point_info">贡献积分</string>
+    <string name="groupchat_menu_setting_info">消息提醒</string>
+    <string name="join_group_yanzheng">加入验证</string>
+    <string name="groupchat_menu_manage_info">管理公会</string>
+    <string name="groupchat_menu_report_info">举报</string>
+    <string name="groupchat_menu_quit_info">退出</string>
+    <string name="groupchat_users_contribute_point_chart">贡献排名:%1$d</string>
+     <string name="groupchat_users_uservip">LV%1$d</string>
+     
+     <string name="chat_sendmsg_over_tip">抱歉，发送字数超过%1$d字，建议精简文字后再发送</string>
+    
+</resources>

@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/play_detail_background_color" >
+
+    <ScrollView
+        android:id="@+id/play_info_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="@color/play_detail_background_color"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/play_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/play_detail_picture_bg_color" >
+
+                <ImageView
+                    android:id="@+id/play_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/peiwan_fabu_bg" >
+
+                    <com.iwgame.msgs.widget.CircleImageView
+                        android:id="@+id/play_user_icon"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding7"
+                        android:src="@drawable/common_user_icon_default"
+                        iwgame:border_color_c="@color/play_detail_image_border_color"
+                        iwgame:border_width_c="1dp" />
+
+                    <LinearLayout
+                        android:id="@+id/play_user_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/global_padding3"
+                        android:layout_toRightOf="@id/play_user_icon"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/play_info_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/play_detail_name_color"
+                            android:textSize="@dimen/global_font_size8" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/play_info_gender_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/user_man_icon" />
+
+                            <TextView
+                                android:id="@+id/play_info_user_age"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/play_detail_name_color"
+                                android:textSize="@dimen/global_font_size5" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/global_padding3"
+                        android:layout_marginTop="@dimen/global_padding3"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/peiwan_weizhi" />
+
+                        <TextView
+                            android:id="@+id/play_info_position_values"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="@color/play_detail_name_color"
+                            android:textSize="@dimen/global_font_size5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="|"
+                            android:textColor="@color/play_detail_name_color" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/peiwan_time" />
+
+                        <TextView
+                            android:id="@+id/play_info_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:textColor="@color/play_detail_name_color"
+                            android:textSize="@dimen/global_font_size5" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/global_padding3" >
+
+                    <TextView
+                        android:id="@+id/play_info_sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:textColor="@color/play_detail_ub_color"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/play_info_enroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="1dp"
+                            android:layout_height="25dp"
+                            android:background="@color/play_detail_ver_line_color" />
+
+                        <TextView
+                            android:id="@+id/play_info_joinnum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/global_padding9"
+                            android:textColor="@color/play_detail_join_num_color"
+                            android:textSize="@dimen/global_font_size4" />
+
+                        <LinearLayout
+                            android:id="@+id/skip_playmanage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/global_padding1"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/play_info_skip_enroll"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/common_icon_jt_selector" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/global_padding7"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:layout_marginTop="@dimen/global_padding8"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:text="备注"
+                        android:textColor="@color/play_detail_remark_title_color"
+                        android:textSize="@dimen/global_font_size5" />
+
+                    <TextView
+                        android:id="@+id/play_info_remark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/global_padding1"
+                        android:layout_marginRight="@dimen/global_padding1"
+                        android:ellipsize="end"
+                        android:gravity="top"
+                        android:maxLines="2"
+                        android:textColor="@color/play_detail_remark_content_color"
+                        android:textSize="@dimen/global_font_size5" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:background="@color/play_detail_hori_line_color" />
+
+                <LinearLayout
+                    android:id="@+id/play_info_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/global_padding8"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:layout_marginRight="@dimen/global_padding8"
+                    android:layout_marginTop="@dimen/global_padding7"
+                    android:background="@color/white"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding1"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/check_more_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:layout_marginTop="@dimen/global_padding3"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/play_remark_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="暂无评价"
+                        android:textColor="@color/play_detail_comment_title_color"
+                        android:textSize="@dimen/global_font_size4" />
+
+                    <LinearLayout
+                        android:id="@+id/play_remark_star_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/play_remark_text"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/user_remark_star1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:background="@drawable/peiwan_pingjia"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/user_remark_star2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/peiwan_pingjia"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/user_remark_star3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/peiwan_pingjia"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/user_remark_star4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/peiwan_pingjia"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/user_remark_star5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/peiwan_pingjia"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/skip_more_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/common_icon_jt_selector" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/user_remark_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/global_padding7"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:layout_marginTop="@dimen/global_padding2"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/remark_user_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0人评价"
+                        android:textColor="@color/play_detail_cmment_people_color"
+                        android:textSize="@dimen/global_font_size4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_padding2"
+                        android:text="好评"
+                        android:textColor="@color/play_detail_good_comment"
+                        android:textSize="@dimen/global_font_size4" />
+
+                    <TextView
+                        android:id="@+id/remark_percent_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="0%"
+                        android:textColor="@color/play_detail_good_comment_per"
+                        android:textSize="@dimen/global_font_size4" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/remark_line"
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:background="@color/play_detail_hori_line_color"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/remark_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/global_padding2"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:layout_marginTop="@dimen/global_padding2"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/remark_good"
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:background="@color/play_detail_comment_good_bg"
+                        android:gravity="center"
+                        android:text="好(0)"
+                        android:textColor="@color/play_detail_comment_good"
+                        android:textSize="@dimen/global_font_size4" />
+
+                    <TextView
+                        android:id="@+id/remark_often"
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="@dimen/global_padding2"
+                        android:background="@color/play_detail_comment_often_bg"
+                        android:gravity="center"
+                        android:text="一般(0)"
+                        android:textColor="@color/play_detail_comment_often"
+                        android:textSize="@dimen/global_font_size4" />
+
+                    <TextView
+                        android:id="@+id/remark_bad"
+                        android:layout_width="55dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="@dimen/global_padding2"
+                        android:background="@color/play_detail_comment_often_bg"
+                        android:gravity="center"
+                        android:text="差(0)"
+                        android:textColor="@color/play_detail_comment_often"
+                        android:textSize="@dimen/global_font_size4" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:background="@color/play_detail_hori_line_color" />
+
+                <LinearLayout
+                    android:id="@+id/play_remark_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/play_manage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/play_detail_manager_bg"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/play_manage_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/play_manage__selector" />
+
+            <TextView
+                android:id="@+id/play_manage_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:text="管理"
+                android:textColor="@color/setting_font_skip__selector" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/play_remark_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/play_detail_appeal_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/play_remark_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="评价"
+            android:textColor="@color/white"
+            android:textSize="@dimen/global_font_size2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/play_appeal_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/play_detail_appeal_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/play_appeal_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="申诉中"
+            android:textColor="@color/white"
+            android:textSize="@dimen/global_font_size2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/play_apply"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+         android:background="@color/play_detail_appeal_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/play_enroll_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="报名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/global_font_size2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/play_game_over"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/play_detail_other_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/play_enroll_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="游戏结束"
+            android:textColor="@color/play_detail_remark_title_color"
+            android:textSize="@dimen/global_font_size2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/play_pay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/play_enroll_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/play_detail_certi_pay_bg"
+            android:gravity="center"
+            android:text="确认付款"
+            android:textColor="@color/play_detail_certi_pay"
+            android:textSize="@dimen/global_font_size2" />
+
+        <TextView
+            android:id="@+id/play_enroll_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/play_detail_appealing_bg"
+            android:gravity="center"
+            android:text="申诉        "
+            android:textColor="@color/play_detail_appealing"
+            android:textSize="@dimen/global_font_size2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/play_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/play_enroll_paid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/play_detail_certi_pay_bg"
+            android:gravity="center"
+            android:text="确认付款"
+            android:textColor="@color/play_detail_certi_pay"
+            android:textSize="@dimen/global_font_size2" />
+
+        <TextView
+            android:id="@+id/play_enroll_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/play_detail_appealing_bg"
+            android:gravity="center"
+            android:text="取消报名"
+            android:textColor="@color/play_detail_appealing"
+            android:textSize="@dimen/global_font_size2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/play_top_layout"
+        android:layout_width="match_parent"
+        android:background="@drawable/common_title_bg"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/play_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                 android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/play_leftBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:background="@drawable/back_button_selector"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/play_center"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.iwgame.msgs.widget.TitleTextView
+                    android:id="@+id/play_titleTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:shadowColor="@color/common_shadow_color"
+                    android:shadowDx="0"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:singleLine="true"
+                    android:text="陪玩详情" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/play_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:visibility="invisible"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/play_rightView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/play_rightbtn"
+                        android:background="@drawable/common_menu_more_nor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       
+                        
+                     />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/play_left1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+         android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/play_leftbtn1"
+              android:layout_width="40dp"
+                android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_peiwan_back" />
+    </LinearLayout>
+
+   
+
+    <LinearLayout
+        android:id="@+id/play_right1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+       android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+    
+         
+            <Button
+                android:id="@+id/play_rightbtn1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/common_peiwan_more" />
+      
+    </LinearLayout>
+  
+</RelativeLayout>

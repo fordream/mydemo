@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_message_login_reward_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/mondayRewardContent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dailylogin_integral_pre"
+                android:gravity="bottom|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/mondayReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="5"
+                    android:textColor="@color/login_message_point_color"
+                    android:textSize="@dimen/global_font_size8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text=".积分"
+                    android:textColor="@color/login_message_point_color"
+                    android:textSize="@dimen/global_font_size6" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding16"
+                android:text="第1天"
+                android:textColor="@color/message_dialog_login_reward_day"
+                android:textSize="@dimen/global_font_size5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/tuesdayRewardContent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dailylogin_integral_pre"
+                android:gravity="bottom|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tuesdayReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text=".积分"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size6" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding16"
+                android:text="第2天"
+                android:textColor="@color/message_dialog_login_reward_day"
+                android:textSize="@dimen/global_font_size5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/wednesdayRewardContent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dailylogin_integral_pre"
+                android:gravity="bottom|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wednesdayReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="15"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text=".积分"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size6" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding16"
+                android:text="第3天"
+                android:textColor="@color/message_dialog_login_reward_day"
+                android:textSize="@dimen/global_font_size5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/thursdayRewardContent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dailylogin_integral_pre"
+                android:gravity="bottom|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/thursdayReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="20"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text=".积分"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size6" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding16"
+                android:text="第4天"
+                android:textColor="@color/message_dialog_login_reward_day"
+                android:textSize="@dimen/global_font_size5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_padding1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/fridayRewardContent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dailylogin_integral_pre"
+                android:gravity="bottom|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/fridayReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="25"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text=".积分"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size6" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding16"
+                android:text="第5天"
+                android:textColor="@color/message_dialog_login_reward_day"
+                android:textSize="@dimen/global_font_size5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/saturdayRewardContent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dailylogin_integral_pre"
+                android:gravity="bottom|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/saturdayReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="30"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text=".积分"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size6" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding16"
+                android:text="第6天"
+                android:textColor="@color/message_dialog_login_reward_day"
+                android:textSize="@dimen/global_font_size5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/sundayRewardContent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dailylogin_integral_pre"
+                android:gravity="bottom|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sundayReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="35"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text=".积分"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/global_font_size6" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding16"
+                android:text="第7天"
+                android:textColor="@color/message_dialog_login_reward_day"
+                android:textSize="@dimen/global_font_size5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loginRewardLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/global_padding8"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:singleLine="true"
+        android:text="看看还能挣取哪些积分?>"
+        android:textColor="@color/message_dialog_reward_link"
+        android:textSize="@dimen/global_font_size5" />
+
+</LinearLayout>

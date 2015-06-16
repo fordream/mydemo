@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/global_padding3"
+    android:paddingRight="@dimen/global_padding3" >
+
+    <LinearLayout
+        android:id="@+id/dialogContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/common_dialog_2_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/global_dialog_title_height"
+            android:layout_marginLeft="@dimen/global_padding3"
+            android:layout_marginRight="@dimen/global_padding3"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:textColor="@color/dialog_title_text_color"
+            android:textSize="@dimen/global_font_size1" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/dialogLine"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/dialog_up_fengexian_bg" 
+            android:visibility="gone"/>
+
+        
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/login_error_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="登录失败，点击重试或取消退出"
+                android:layout_centerInParent="true"
+                android:textColor="@color/dialog_content_text_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/loadingImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@anim/login_progress_round" 
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/login_error_tips"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_dialog_bottom_height"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dialog_down_fengexian_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cannelBtn"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/common_dialog_btn_selector"
+                android:text="@string/global_cannel"
+                android:textColor="@color/dialog_cancel_btn_text_color"
+                android:textSize="@dimen/global_font_size2" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="@color/dialog_down_btn_fengexian_bg" />
+
+            <FrameLayout 
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                
+                <Button
+                android:id="@+id/commitBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/common_dialog_btn_selector"
+                android:text="@string/global_ok"
+                android:textColor="@color/dialog_commit_btn_text_color"
+                android:textSize="@dimen/global_font_size2" />
+                
+                <Chronometer
+                android:id="@+id/login_error_reg_chronometer"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:background="@color/dialog_btn_bg_nor"
+                android:textColor="@color/register_captcha_chronometer_text_color"
+                android:visibility="gone"
+                android:textSize="@dimen/global_font_size2" />
+            </FrameLayout>
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

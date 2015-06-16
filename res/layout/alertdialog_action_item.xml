@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/alertdialog_action_item_action"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+         
+            android:text="" 
+            android:layout_gravity="center"
+            android:gravity="center"
+            />

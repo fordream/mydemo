@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="ec_common">请稍后再试</string>
+    <string name="network_error">您的网络不可用，请检查网络</string>
+    <string name="global_login_other">您被踢下线了，请重新登录！</string>
+    <string name="global_expired">会话失效，请重新登录！</string>
+    <string name="service_unable">服务器维护中，请稍后再试!</string>
+    <string name="storage_error">手机内存空间所剩不多了</string>
+    <string name="copyright_notice_above">Copy right© 2013-2015  51uban.com</string>
+    <string name="copyright_notice_down">All rights reserved</string>
+
+    <!-- 所有app常量文字 -->
+    <string name="param_error">参数不正确</string>
+    <string name="title_set_account_activity">注册新帐号</string>
+    <string name="title_bund_phone_activity">绑定手机号</string>
+    <string name="title_set_account_hint">系统将向您发送一条免费短信验证码来继续注册流程</string>
+    <string name="title_bund_phone_hint">系统将向您发送一条验证码来继续绑定流程，我们不会收取任何相关费用. </string>
+    <string name="title_verify_captcha_activity">填写验证码</string>
+    <string name="title_set_detail_info_activity">完善资料</string>
+    <string name="title_set_detail_info_title">设置头像</string>
+    <string name="title_set_detail_info_menu">完成</string>
+    <string name="title_set_password_activity">设置密码</string>
+    <string name="title_set_mobilenum_activity">找回密码</string>
+    <string name="title_verify_captcha_activity2">输入验证码</string>
+    <string name="title_reset_password_activity">重置密码</string>
+
+    <!-- 同步 -->
+    <string name="sync_fail">同步失败</string>
+
+    <!-- 位置 -->
+    <string name="location_loading">正在获取位置信息</string>
+    <string name="global_dialog_tip_title">提示</string>
+    <!-- 数据已经全部加载完 -->
+    <string name="global_data_load_ok">没有更多数据了！</string>
+    <!-- 敏感词管理 -->
+    <string name="global_words_error">您输入的内容包含非法或敏感字符，请检查后重新输入</string>
+    <string name="global_words_error2">包含非法或敏感字符，请检查后重新输入</string>
+    <string name="global_words_nikename_error">输入的昵称不能含有非法字符哦！</string>
+    <!-- 复制文本 -->
+    <string name="common_dialog_action_item_text_copy">复制文本</string>
+    <!-- 删除 -->
+    <string name="common_dialog_action_item_text_del">删除</string>
+    
+    <!-- 转发 -->
+    <string name="common_dialog_action_item_forwarding">转发</string>
+    <!-- 重发 -->
+     <string name="common_dialog_action_item_repeat">重发</string>
+     <!-- 转发 -->
+    <string name="common_dialog_action_item_repeatreceiver">重收</string>
+    
+    <string name="common_sendphoto_isnull" >你选择的图片是空的缓存图片，无法发送</string>
+    
+    <string name="common_add_photo_error" >图片加载失败！</string>
+    
+    <string name= "global_ok">确定</string>
+    <string name= "global_cannel">取消</string>
+    
+    <string name="com_sina_weibo_sdk_login_with_weibo_account">用微博登录</string>
+    <string name="com_sina_weibo_sdk_login">登录</string>
+    <string name="com_sina_weibo_sdk_logout">注销</string>
+
+    <string name="com_haveno_location">没有获取到您的位置，请检测网络</string>
+
+    
+    
+    <string name="personal_integral_detail_title">个人积分明细</string>
+    <string name="personal_experience_detail_title">个人经验值明细</string>
+    <string name="your_integral">您的积分</string>
+    <string name="integral_upgrade_detail">积分升级详情 </string>
+    <string name="new_hand_task">新手任务</string>
+    <string name="every_day_task">每日任务</string>
+    <string name="easy_get_integral">我的任务</string>
+    <string name="my_game_role">游戏角色</string>
+    <string name="choose_game">选择游戏</string>
+    <string name="no_role_tip">你还木有添加游戏角色哦，首次添加游戏角色可获得100积分奖励哦！</string>
+    <string name="i_know_it">我知道了</string>
+    <string name="personal_point">个人等级</string>
+    <string name="group_grade">公会等级</string>
+    <string name="check_information">查看自己信息，请进入我的资料页</string>
+    <string name="stop_say_success">禁言成功</string>
+    <string name="group_card_not_null">名片不能为空哦！</string>
+    <string name="group_card_not_space">名片不能为空格哦！</string>
+    <string name="group_card_not_limit">名片上限为20个字哦！</string>
+</resources>

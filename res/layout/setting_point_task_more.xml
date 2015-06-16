@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/setting_point_task_more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:focusable="false"
+        android:src="@drawable/postbar_thumbimg_default" />
+
+</LinearLayout>

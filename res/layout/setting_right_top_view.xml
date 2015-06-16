@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="46dp"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/leftBtn"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="left" 
+        android:background="@drawable/common_share_btn"
+        />
+
+    <ImageView 
+        android:id="@+id/edit"
+        android:layout_width="57dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

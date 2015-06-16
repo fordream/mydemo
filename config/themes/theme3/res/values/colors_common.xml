@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 深灰 -->
+    <color name="darkgray">#636363</color>
+    <!-- 条目按下颜色值 -->
+    <color name="itempre">#d2d2d2</color>
+    <!-- 浅灰 -->
+    <color name="lightgray">#c2c2c2</color>
+    <!-- 背景 -->
+    <color name="backgroudcolor">#f4f4f4</color>
+    <!-- 蓝色 -->
+    <color name="blue">#3598dc</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 浅蓝 -->
+    <color name="lightblue">#D1ECFF</color>
+    <!-- 湖蓝 -->
+    <color name="skyblue">#6FC5FF</color>
+    <color name="listrefresh_text">#9e9e9e</color>
+
+    <!-- 筛选线条颜色值 -->
+    <color name="choose_line">#298bbc</color>
+
+    <!-- 列表条目颜色 -->
+    <color name="list_item_pre">#d9d9d9</color>
+    <color name="setting_item_pre">#d7d7d7</color>
+
+    <!-- 列表条目按下的颜色值 -->
+    <color name="list_item_press">#d2d2d2</color>
+
+    <!-- 颜色值 -->
+    <color name="global_color1">#ffffff</color>
+    <color name="global_color2">#459ff3</color>
+    <color name="global_color3">#7d7d7d</color>
+    <color name="global_color4">#606366</color>
+    <color name="global_color5">#c3c7c9</color>
+    <color name="global_color6">#3a3a3a</color>
+    <color name="global_color7">#9e9e9e</color>
+    <color name="global_color8">#868686</color>
+    <color name="global_color9">#000000</color>
+    <color name="global_color10">#eef6fe</color>
+    <color name="global_color11">#e5eaee</color>
+    <color name="global_color12">#ededed</color>
+    <color name="global_color13">#ff8ec9</color>
+    <!-- <color name="global_color13">#ff3985</color> -->
+    <color name="global_color14">#ff2525</color>
+    <color name="global_color15">#ff7826</color>
+    <color name="global_color16">#ffbf26</color>
+    <color name="global_color17">#3882c7</color>
+    <color name="global_color18">#468ed1</color>
+    <color name="global_color19">#444444</color>
+    <color name="global_color20">#f4f4f4</color>
+    <color name="global_color21">#013b70</color>
+    <color name="global_color22">#da3030</color>
+    <color name="global_color23">#b10810</color>
+    <color name="global_color24">#6981ad</color>
+    <color name="tablehost_topline">#d8d8d8</color>
+    <color name="user_detail_btn">#e63a3a3a</color>
+    <color name="user_detail_btn_pres">#ff3a3a3a</color>
+    <color name="sex_and_age_bg">#69b7f2</color>
+    <color name="follow_textview_bgcolor">#73a9e6</color>
+    <color name="activity_state_color_green">#5ebb5c</color>
+    <color name="goods_state_pop_item">#e5ffffff</color>
+    <color name="wow_title_color">#ffaf75</color>
+    <color name="weibo_bind_state_color">#ff9459</color>
+    <color name="weibo_not_bind_state_color">#58b0e7</color>
+
+    <!-- 文字区 -->
+
+
+    <!--YG      Tab切换选中文字的颜色 gc2 -->
+    <color name="tab_select_color_pre">#459ff3</color>
+    <!-- YG     Tab切换未选中文字的颜色 gc3 -->
+    <color name="tab_select_color_nor">#7d7d7d</color>
+    <!--YG      搜索框文字颜色  c4 -->
+    <color name="common_search_text_color">#606366</color>
+    <!--YG      搜索框提示文字颜色  c5 -->
+    <color name="common_search_hint_text_color">#c3c7c9</color>
+    <!--YG      通用按钮文字颜色-->
+    <color name="common_btn_text_color">#ffffff</color>
+    <!-- 通用按钮已执行文字颜色 -->
+    <color name="common_btn_dis_text_color">#9e9e9e</color>
+    <!--YG     管理按钮文字颜色 -->
+    <color name="common_manager_btn_text_color">#ffffff</color>
+
+    <!-- 登录页面注册按钮常态 -->
+    <color name="login_page_regester_text_color_nor">#6981ad</color>
+    <!-- 登录页面注册按钮点击 -->
+    <color name="login_page_regester_text_color_pre">#e86f39</color>
+    <!-- 登录页面注册按钮点击 -->
+    <color name="login_page_login_btn_color">#ffffff</color>
+
+    <!--YG      对话框标题颜色 c18 -->
+    <color name="dialog_title_text_color">#468ed1</color>
+    <!-- 对话框内容颜色 darkgray -->
+    <color name="dialog_content_text_color">#636363</color>
+    <!-- YG    对话框取消按钮颜色 c3 -->
+    <color name="dialog_cancel_btn_text_color">#7d7d7d</color>
+    <!-- YG     对话框确认按钮颜色 c2 -->
+    <color name="dialog_commit_btn_text_color">#468ed1</color>
+
+    <!-- YG      底部按钮字体颜色 c2 -->
+    <color name="common_bottom_btn_select_text_color">#215d90</color>
+    <!--YG      底部按钮颜色 -->
+    <color name="common_bottom_btn_text_color">#94ceff</color>
+    
+    <!-- YG      公会成员列表底部按钮字体颜色 -->
+    <color name="group_list_bottom_btn_select_text_color">#94ceff</color>
+    <!-- YG     公会成员列表底部按钮颜色 -->
+    <color name="group_list_bottom_btn_text_color">#d1d1d1</color>
+
+    <!-- 注册绑定账号第一行提示语句 c3 -->
+    <color name="register_account_first_line_text_color">#7d7d7d</color>
+    <!-- 注册绑定账号第二行提示语句 c19 -->
+    <color name="register_account_second_line_text_color">#444444</color>
+    <!-- 条款提示1 c5 -->
+    <color name="common_sproto_text1_color">#c3c7c9</color>
+    <!-- 条款提示2 c18 -->
+    <color name="common_sproto_text2_color">#6981ad</color>
+    <!-- 设置验证码（验证码已发送到手机）提示 -->
+    <color name="register_captcha_first_line_text_color">#000000</color>
+    <!-- 设置验证码（手机号码显示）提示 -->
+    <color name="register_captcha_phonenum_text_color">#444444</color>
+    <!-- 设置验证码（重新输入）提示 -->
+    <color name="register_captcha_act_reg_getvcodebtn_color">#000000</color>
+    <!-- 设置验证码输入框 c9 -->
+    <color name="register_captcha_input_text_color">#000000</color>
+    <!-- 设置验证码输入框提示 c5 -->
+    <color name="register_captcha_input_hint_text_color">#c3c7c9</color>
+    <!-- 设置验证码输入框提示 c7 -->
+    <color name="register_captcha_chronometer_text_color">#9e9e9e</color>
+    <!-- 设置头像提示 c24 -->
+    <color name="register_detail_line_text_color">#6981ad</color>
+    <!-- 设置头像提示 c19 -->
+    <color name="findps_line_text_color">#444444</color>
+
+    <!-- 注册输入框输入项名字颜色 c9 -->
+    <color name="register_input_name_text_color">#000000</color>
+    <!-- 注册输入框输入项内容颜色 c3 -->
+    <color name="register_input_value_text_color">#7d7d7d</color>
+    <!-- 注册输入框输入项提示颜色    c5 -->
+    <color name="register_input_hint_text_color">#c3c7c9</color>
+
+    <!--YG     通用输入框输入项内容颜色 c3 -->
+    <color name="common_input_value_text_color">#7d7d7d</color>
+    <!-- 通用输入框输入项提示颜色    c5 -->
+    <color name="common_input_hint_text_color">#c3c7c9</color>
+
+    <!-- 发帖界面选择标签颜色  c19 -->
+    <color name="public_publish_selected_topic_text_color">#444444</color>
+    <!-- 发帖界面未选择标签颜色    c4 -->
+    <color name="public_publish_unselected_topic_text_color">#606366</color>
+    <!-- c9 -->
+    <color name="public_publish_title_text_color">#000000</color>
+    <!-- c5 -->
+    <color name="public_publish_title_hint_text_color">#c3c7c9</color>
+    <color name="public_publish_content_text_color">#000000</color>
+    <color name="public_publish_content_hint_text_color">#c3c7c9</color>
+
+    <!-- 弹框菜单字体颜色颜色  darkgray -->
+    <color name="common_menu_dialog_item_text_color">#636363</color>
+
+    <!-- 注册推荐贴吧页面提示语颜色  c19 -->
+    <color name="game_regiest_recommend_tips_color">#444444</color>
+    <!-- 注册推荐条目贴吧名字颜色值  c4 -->
+    <color name="game_regiest_recommend_item_gamename_color">#606366</color>
+    <!-- 注册推荐条目点我进入颜色值  c7 -->
+    <color name="game_regiest_recommend_goin_tip_color">#9e9e9e</color>
+    
+    
+    <!-- 图片选择器完成按钮不可用时字体颜色 -->
+    <color name="image_select_btn_text_dis">#919191</color>
+    <!-- 图片选择器完成按钮可用时字体颜色 -->
+    <color name="image_select_btn_text">#ffffff</color>
+
+    <!-- 背景区 -->
+
+
+    <!--YG     通用按钮的颜色值 -->
+    <color name="common_btn_dis">#ffffff</color>
+    <!--YG      通用按钮的描边 -->
+    <color name="common_btn_dis_stroke">#ffffff</color>
+    <!--YG      gc18 -->
+    <color name="common_btn_pre">#3b7cc5</color>
+    <!--YG     描边 gc18 -->
+    <color name="common_btn_pre_stroke">#3b7cc5</color>
+    <!-- YG      follow_textview_bgcolor -->
+    <color name="common_btn_nor">#73a8e6</color>
+    <!-- YG     描边 follow_textview_bgcolor -->
+    <color name="common_btn_nor_stroke">#73a8e6</color>
+
+    <!-- 翻页取消按钮描边 -->
+    <color name="common_btn_noclick_bg_stroke">#e8e8e8</color>
+    
+    <!-- 搜索框背景颜色 关注页面 -->
+    <color name="common_search_bg_color">#ffffff</color>
+    <!-- 搜索框背景描边颜色 -->
+    <color name="common_search_bg_stroke_color">#c3c7c9</color>
+    <!-- 发送按钮文字颜色  c1 -->
+    <color name="send_msg_text_ll_bg">#ffffff</color>
+
+    <!-- YG    dialog上方分割线颜色 c18 -->
+    <color name="dialog_up_fengexian_bg">#468ed1</color>
+    <!-- YG    dialog下方分割线颜色 c5 -->
+    <color name="dialog_down_fengexian_bg">#c3c7c9</color>
+    <!-- dialog下方按钮之间的分割线颜色 c5 -->
+    <color name="dialog_down_btn_fengexian_bg">#c3c7c9</color>
+    <!-- YG    dialog按钮常态 c1 -->
+    <color name="dialog_btn_bg_nor">#ffffff</color>
+    <!-- YG    dialog按钮点击 c20 -->
+    <color name="dialog_btn_bg_pre">#f4f4f4</color>
+
+    <!-- 注册流程输入框背景颜色 c1 -->
+    <color name="common_register_shap_bg">#ffffff</color>
+    <!-- 注册流程输入框描边颜色 c5 -->
+    <color name="common_register_shap_stroke">#c3c7c9</color>
+	<!-- 登录页面放下按钮分割线颜色 -->
+	<color name="login_down_btn_fengexian_bg">#e8e8e8</color>
+    
+    <!-- 输入框背景颜色 -->
+    <color name="common_input_bg_color">#ffffff</color>
+    <!-- 输入框背景描边颜色 -->
+    <color name="common_input_bg_stroke_color">#c3c7c9</color>
+
+    <!-- 发帖界面输入框背景 c12 -->
+    <color name="public_topic_view_bg">#ededed</color>
+    <!-- 发帖界面标签选择背景 c11 -->
+    <color name="public_topic_tags_selected_view_bg">#e5eaee</color>
+    <!-- 发帖界面标签区背景 c1 -->
+    <color name="public_topic_tags_view_bg">#ffffff</color>
+    <!-- 发帖界面标题和内容中间的分割线 -->
+    <color name="public_topic_title_content_fengexian">#d9dfe3</color>
+
+    <!-- 弹框菜单颜色  #e5ffffff -->
+    <color name="common_menu_dialog_bg_shap">#e5ffffff</color>
+    <!-- 弹框菜单描边颜色  c5 -->
+    <color name="common_menu_dialog_stroke_shap">#c3c7c9</color>
+    <!-- 弹框菜单描边颜色  c5 -->
+    <color name="common_menu_dialog_fengexian">#c3c7c9</color>
+
+    <!-- 底部按钮背景颜色值 -->
+    <color name="common_bottom_layout_bg">#000000</color>
+
+    <!-- shadowColor -->
+    <color name="common_shadow_color">#66000000</color>
+    
+    <color name="common_btn_txt_nor">#3498db</color>
+    <color name="common_btn_txt_dis">#c2c2c2</color>
+    
+    
+    <!-- 图片选择按钮的颜色值 -->
+    <color name="image_select_btn_dis">#414141</color>
+    <!-- 图片选择按钮的描边 -->
+    <color name="image_select_btn_dis_stroke">#323232</color>
+    <!-- gc18 -->
+    <color name="image_select_btn_pre">#518ace</color>
+    <!-- 描边 gc18 -->
+    <color name="image_select_btn_pre_stroke">#518ace</color>
+    <!-- follow_textview_bgcolor -->
+    <color name="image_select_btn_nor">#73a8e6</color>
+    <!-- 描边 follow_textview_bgcolor -->
+    <color name="image_select_btn_nor_stroke">#73a8e6</color>
+    
+    <!-- 无图区背景 -->
+    <color name="image_select_picture_no_bg">#191919</color>
+    <!-- 下方区域背景颜色 -->
+    <color name="image_select_layout_footer_bg">#3a3a3a</color>    
+    <!-- 图片加载失败背景 -->
+    <color name="image_select_load_fail_img_bg">#f9f9f9</color>
+    <!-- 设置公会公告内容背景颜色 -->
+	<color name="group_notice_bg_color">#ffffff</color>
+	<!-- 编辑公会资料字体颜色值 -->
+  	<color name="edit_group_info_color">#636363</color>
+  	
+  	<!-- 通讯录服务器公会颜色值 -->
+    <color name="user_service_group_name_color">#9e9e9e</color>
+    <!-- 用户资料修改备注对话框线颜色值 -->
+    <color name="user_detail_edite_remarkname_dialog_line_color">#c3c7c9</color>
+</resources>

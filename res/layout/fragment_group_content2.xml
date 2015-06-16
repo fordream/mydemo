@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_first_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/common_user_no_add_group" />
+
+    <ImageView
+        android:id="@+id/addGroupBtn"
+        android:layout_width="130dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/group_add_group_btn" />
+
+</LinearLayout>

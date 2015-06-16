@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Disabled -->
+    <item android:drawable="@drawable/image_select_btn_dis_shap" android:state_enabled="false" android:state_pressed="false"/>
+    <!-- Pressed -->
+    <item android:drawable="@drawable/image_select_btn_pre_shap" android:state_enabled="true" android:state_pressed="true"/>
+    <!-- Nor -->
+    <item android:drawable="@drawable/image_select_btn_nor_shap" android:state_enabled="true" android:state_pressed="false"/>
+
+</selector>

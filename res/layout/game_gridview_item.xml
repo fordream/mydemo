@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="@dimen/global_icon_1"
+        android:layout_height="@dimen/global_icon_1"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/gameIcon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/common_default_icon" />
+
+        <TextView
+            android:id="@+id/postbarCount"
+            android:layout_width="20dp"
+            android:layout_height="15dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/gname"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grade_bottom_line_color"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="公会等级"
+        android:layout_marginLeft="@dimen/vertical_degree"
+        android:layout_marginTop="@dimen/vertical_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:background="@color/grade_first_line_bg_color"
+        android:textColor="@color/grade_left_text_color"
+        android:textSize="@dimen/global_font_size5" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="耗费积分"
+         android:layout_marginTop="@dimen/vertical_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:background="@color/grade_first_line_bg_color"
+        android:textColor="@color/grade_left_text_color"
+        android:textSize="@dimen/global_font_size5" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="容纳成员"
+         android:layout_marginTop="@dimen/vertical_degree"
+        android:layout_marginRight="@dimen/vertical_degree"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:background="@color/grade_first_line_bg_color"
+        android:textColor="@color/grade_left_text_color"
+        android:textSize="@dimen/global_font_size5" />
+</LinearLayout>

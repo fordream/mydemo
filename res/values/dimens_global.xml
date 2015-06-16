@@ -1,0 +1,187 @@
+<!-- 全局值配置文件 -->
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="global_activity_horizontal_margin">128dp</dimen>
+    <dimen name="global_activity_vertical_margin">16dp</dimen>
+    
+	<!-- 所有详细页面同主屏幕左边距 -->
+    <dimen name="global_page_paddingleft">10dp</dimen>
+    <!-- 所有详细页面同主屏幕右边距 -->
+    <dimen name="global_page_paddingright">10dp</dimen>
+    <!-- 所有详细页面同主屏幕右边距 -->
+    <dimen name="global_page_paddingtop">7.5dp</dimen>
+    <!-- 所有详细页面同主屏幕右边距 -->
+    <dimen name="global_page_paddingbottom">7.5dp</dimen>
+
+    <!-- 所有列表条目左边距 -->
+    <dimen name="global_list_item_paddingleft">10dp</dimen>
+    <!-- 所有列表条目右边距 -->
+    <dimen name="global_list_item_paddingright">10dp</dimen>
+    <!-- 所有列表条目上边距 -->
+    <dimen name="global_list_item_paddingtop">7.5dp</dimen>
+    <!-- 所有列表条目底边距 -->
+    <dimen name="global_list_item_paddingbottom">7.5dp</dimen>
+    
+    <!-- 所有列表条目高度 -->
+    <dimen name="global_list_item_height1">93dp</dimen>
+    <!-- 弹出窗口所有列表条目高度 -->
+    <dimen name="global_list_item_height2">44dp</dimen>
+    <dimen name="global_list_item_height_large">69dp</dimen>
+    
+    <dimen name="global_list_item_height_medium">55dp</dimen>
+    <dimen name="global_list_item_height_medium2">54dp</dimen>
+     <dimen name="global_list_item_height_small">45dp</dimen>
+    
+    <!--icon的大小，1级 54dp -->
+    <dimen name="global_icon_1">78dp</dimen>
+     <!--icon的大小，2级  -->
+    <dimen name="global_icon_2">44dp</dimen>
+     <!--icon的大小，3级  -->
+    <dimen name="global_icon_3">38dp</dimen>
+     <!--icon的大小，4级  -->
+    <dimen name="global_icon_4">30dp</dimen>
+    <!--icon的大小，注册和创建头像  -->
+    <dimen name="global_icon_5">75dp</dimen>
+    <!--icon的大小，公会头像  -->
+    <dimen name="global_icon_6">60dp</dimen>
+    <!-- icon的圆角 ，用于1级大小的icon上 -->
+    <dimen name="global_icon_radius_1">5dp</dimen>
+    <!-- icon的圆角 ，用于2,3,4级大小的icon上 -->
+    <dimen name="global_icon_radius_2">3dp</dimen>
+    
+    <!-- 文本中的表情大小的宽度 -->
+    <dimen name="global_string_smiley_width">30dp</dimen>
+    <!-- 文本中的表情大小的高度 --> 
+    <dimen name="global_string_smiley_heigth">30dp</dimen>
+    <!-- 文本中的表情大小的宽度2 -->
+    <dimen name="global_string_smiley_width_level2">20dp</dimen>
+    <!-- 文本中的表情大小的高度2 --> 
+    <dimen name="global_string_smiley_heigth_level2">20dp</dimen>
+    <!-- 文本中的性别大小的宽度 -->
+    <dimen name="global_string_sex_width">13dp</dimen>
+    <!-- 文本中的性别大小的高度 --> 
+    <dimen name="global_string_sex_heigth">13dp</dimen>
+    <!-- 控件描边的宽度 -->
+    <dimen name="global_stroke">0.5dp</dimen>
+    <!-- 控件之间的间隔 -->
+    <dimen name="global_controlgap_small">5dp</dimen>
+    <dimen name="global_controlgap_medium">7.5dp</dimen>
+    <dimen name="global_controlgap_large">10dp</dimen>
+     <dimen name="global_controlgap_verylarge">20dp</dimen>
+    <!-- 帖子中图片缩略图最大宽度 -->
+    <dimen name="global_ThumbImg_maxwidth_topic">250dp</dimen>
+    
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_micro">13sp</dimen>
+    <!-- 用于角上的上标 -->
+        <dimen name="text_verymicro">8sp</dimen>
+    <dimen name="text_micro2">10sp</dimen>
+    
+    <dimen name="global_list_tag_width">25dp</dimen>
+    <dimen name="global_list_tag_height">13.5dp</dimen>
+
+    <dimen name="global_top_height">46dp</dimen>
+    
+    <dimen name="global_bottom_height">55dp</dimen>
+    
+    <!-- 控件之间间隔 -->
+    <dimen name="global_padding1">7dp</dimen>
+    <dimen name="global_padding2">9dp</dimen>
+    <dimen name="global_padding3">13dp</dimen>
+    <!-- 
+    <dimen name="global_padding4">29dp</dimen>
+     -->
+    <dimen name="global_padding4">40dp</dimen>
+    <dimen name="global_padding5">33dp</dimen>
+    <!-- 
+    <dimen name="global_padding6">51dp</dimen>
+     -->
+    <dimen name="global_padding6">48dp</dimen>
+    <dimen name="global_padding7">11dp</dimen>
+    <dimen name="global_padding8">17dp</dimen>
+    <dimen name="global_padding9">20dp</dimen>
+    <dimen name="global_padding10">14dp</dimen>
+    <dimen name="global_padding11">38dp</dimen>
+    <dimen name="global_padding12">18dp</dimen>
+    <dimen name="global_padding13">3dp</dimen>
+    <dimen name="global_padding14">40dp</dimen>
+    <dimen name="global_padding15">30dp</dimen>
+    <dimen name="global_padding16">5dp</dimen>
+    <dimen name="global_padding17">8dp</dimen>
+    <dimen name="global_padding18">50dp</dimen>
+    <!-- 图片icon的大小 -->
+    <dimen name="global_icon1">76dp</dimen>
+    <dimen name="global_icon2">60dp</dimen>
+    <dimen name="global_icon3">48dp</dimen>
+    <dimen name="global_icon4">43dp</dimen>
+    <!-- 
+    <dimen name="global_icon5">37dp</dimen>
+     -->
+     <dimen name="global_icon5">48dp</dimen>
+    <dimen name="global_icon6">17dp</dimen>
+    <dimen name="global_icon7">13dp</dimen>
+    
+     <dimen name="global_icon8">68dp</dimen>
+    
+    
+    <!-- 文字大小 -->
+    <dimen name="global_font_size1">19sp</dimen>
+    <dimen name="global_font_size2">16sp</dimen>
+    <dimen name="global_font_size3">13sp</dimen>
+    <dimen name="global_font_size4">12sp</dimen>
+    <dimen name="global_font_size5">11sp</dimen>
+    <dimen name="global_font_size6">9sp</dimen>
+    <dimen name="global_font_size7">8sp</dimen>
+    <dimen name="global_font_size8">14sp</dimen>
+    <dimen name="global_font_size9">20sp</dimen>
+    <dimen name="global_font_size10">25sp</dimen>
+    <dimen name="global_font_size11">38sp</dimen>
+    
+    
+    <dimen name="global_dialog_title_height">63dp</dimen>
+    <dimen name="global_dialog_content_height">97dp</dimen>
+    <dimen name="global_dialog_bottom_height">45dp</dimen>
+    
+    <dimen name="global_bg_jt_height">-6.5dp</dimen>
+    
+    <dimen name="global_menu_group_height">35dp</dimen>
+    <dimen name="global_menu_group_item_height">40dp</dimen>
+    <dimen name="global_menu_search_height">40dp</dimen>
+    
+    <dimen name="global_pagenum_width">40dp</dimen>
+    <dimen name="global_pagenum_gallery_width">280dp</dimen>
+    
+    <dimen name="global_content_title_height">28dp</dimen>
+    
+    <dimen name="global_follow_button_width">66dp</dimen>
+    <dimen name="global_follow_button_height">29dp</dimen>
+    
+    <dimen name="global_clean_size">22dp</dimen>
+    <!-- 设置默认的软键盘的高度为288dp -->
+    <dimen name="keyborad_height_default">288dp</dimen>
+    
+    
+    <dimen name="show_table_item_height">35dp</dimen>
+    <dimen name="hor_degree">0.5dp</dimen>
+    <dimen name="vertical_degree">1dp</dimen>
+    <dimen name="new_hand_task_item_height">71dp</dimen>
+    <dimen name="divider_line_width">0.5dp</dimen>
+    <dimen name="integral_task_item_button_height">21dp</dimen>
+    <dimen name="integral_task_item_button_width">65dp</dimen>
+    <dimen name="every_day_task_item_height">65dp</dimen>
+    <dimen name="every_day_task_title_item_height">28dp</dimen>
+    <dimen name="group_upgrade_btn_width">97dp</dimen>
+    <dimen name="groupe_upgrade_btn_height">35dp</dimen>
+    <dimen name="group_integral_table_margin_top">42dp</dimen>
+    <dimen name="group_integral_grade_item_height">30dp</dimen>
+    <dimen name="contribute_integral_edit_height">40dp</dimen>
+    <dimen name="confir_donate_integral_btn_width">103dp</dimen>
+    <dimen name="new_hand_task_item_title_height">45dp</dimen>
+    <dimen name="shape_item_height">20dp</dimen>
+    <dimen name="shape_item_width">38dp</dimen>
+    <dimen name="sex_age_width">24dp</dimen>
+    <dimen name="sex_age_height">13dp</dimen>
+</resources>

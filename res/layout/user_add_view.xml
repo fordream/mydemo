@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding9"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/addsearchfriendItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_top_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:background="@drawable/common_item_addsearchfriend_icon_selector"
+                            android:duplicateParentState="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="添加好友"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/addContactfriendItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_middle_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:background="@drawable/common_item_addcontranctfriend_icon_selector"
+                            android:duplicateParentState="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="添加通讯录好友"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/addwebofriendItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_middle_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:background="@drawable/common_item_addsinauser_icon_selector"
+                            android:duplicateParentState="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="添加新浪微博好友"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/common_bg_shap"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/addweixinfriendItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_bottom_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:background="@drawable/common_item_addweixinfriend_icon_selector"
+                            android:duplicateParentState="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="添加微信好友"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/common_bg_shap"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/addqqfriendItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_bottom_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:background="@drawable/user_search_qq_icon_nor"
+                            android:duplicateParentState="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="添加QQ好友"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addfateitemparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/addfatefriendItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_top_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:background="@drawable/common_item_addfateuser_icon_selector"
+                            android:duplicateParentState="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="缘分好友"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/joingroupItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_top_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:background="@drawable/common_item_ingroup_icon_selector"
+                            android:duplicateParentState="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="加入公会"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/creatgroupItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_bottom_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:background="@drawable/common_item_creatgroup_icon_selector"
+                            android:duplicateParentState="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="创建公会"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

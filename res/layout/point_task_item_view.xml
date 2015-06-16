@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_item_new_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_hand_task_item_height"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="92dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/global_padding8"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/new_hand_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:text="新手任务的主题描述"
+                android:textColor="@color/task_child_task_name_color"
+                android:textSize="@dimen/global_font_size8" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:orientation="vertical" >
+			<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+            <TextView
+                android:id="@+id/new_hand_task_point"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="100积分/首次"
+                android:textColor="@color/task_child_point_exp_values_color"
+                android:textSize="@dimen/global_font_size4" />
+             <ImageView
+                    android:id="@+id/new_hand_task_point_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tasklist_jifen_nor"
+                    android:layout_marginLeft="11dp" />
+           
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		      android:layout_marginTop="@dimen/global_padding1"
+		    android:orientation="horizontal">
+            <TextView
+                android:id="@+id/new_hand_task_exp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+              
+                android:text="50经验值/次"
+                android:textColor="@color/task_child_point_exp_values_color"
+                android:textSize="@dimen/global_font_size4" />
+             <ImageView
+                    android:id="@+id/new_hand_task_exp_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tasklist_exp_nor"
+                    android:layout_marginLeft="11dp" />
+
+                <ImageView
+                    android:id="@+id/new_hand_task_exp_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tasklist_exp_nor" 
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/global_padding16"/>
+
+                <ImageView
+                    android:id="@+id/new_hand_task_exp_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tasklist_exp_nor" 
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/global_padding16"/>
+
+                <ImageView
+                    android:id="@+id/new_hand_task_exp_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tasklist_exp_nor"
+                    android:visibility="gone" 
+                    android:layout_marginLeft="@dimen/global_padding16"/>
+
+                <ImageView
+                    android:id="@+id/new_hand_task_exp_img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tasklist_exp_nor" 
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/global_padding16"/>
+           </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+               
+
+
+            
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/common_item_right_nor" />
+    </LinearLayout>
+	</LinearLayout>
+    <ImageView
+        android:id="@+id/line_fenge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width"
+        android:layout_marginLeft="@dimen/global_padding8"
+        android:background="@drawable/common_content_divider_line" />
+    
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listContent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/discover_filter_item_bg_text"
+    android:orientation="vertical" >
+
+    <!-- The PullToRefreshListView replaces a standard ListView widget. -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/refreshList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/common_fengexian"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:stackFromBottom="false" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_dialog_bottom_height"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dialog_down_fengexian_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cannelBtn"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/common_dialog_btn_selector"
+                android:text="重置"
+                android:textColor="@color/dialog_commit_btn_text_color"
+                android:textSize="@dimen/global_font_size2" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="@color/dialog_down_btn_fengexian_bg" />
+
+            <Button
+                android:id="@+id/commitBtn"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/common_dialog_btn_selector"
+                android:text="完成"
+                android:textColor="@color/dialog_commit_btn_text_color"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dialog_down_btn_fengexian_bg" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nullTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="122dp"
+        android:gravity="center"
+        android:textColor="@color/progress_grade_color"
+        android:textSize="@dimen/global_font_size3"
+        android:visibility="gone" />
+
+</LinearLayout>

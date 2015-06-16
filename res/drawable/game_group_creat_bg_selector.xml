@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+            <!-- 实心 -->
+            <solid android:color="@color/global_color20" />
+
+            <!-- 渐变 -->
+            <!--
+            <gradient
+                android:startColor="#ff8c00"
+                android:endColor="#FFFFFF"
+                android:angle="270" />
+            -->
+            <!-- 描边 -->
+            <stroke
+                android:width=".5px"
+                android:color="@color/global_color5" />
+            <!-- 圆角 -->
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+            <!-- 实心 -->
+            <solid android:color="@color/global_color1" />
+
+            <!-- 渐变 -->
+            <!--
+            <gradient
+                android:startColor="#ff8c00"
+                android:endColor="#FFFFFF"
+                android:angle="270" />
+            -->
+            <!-- 描边 -->
+            <stroke
+                android:width=".5px"
+                android:color="@color/global_color5" />
+            <!-- 圆角 -->
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+
+</selector>

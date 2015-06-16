@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/point_detail_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding9"
+        android:background="@color/point_detail_bg" >
+
+          <TextView
+            android:id="@+id/personal_integral_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/global_padding2"
+            android:layout_marginRight="@dimen/global_padding9"
+            android:gravity="center"
+            android:textColor="@color/grade_permission_desc"
+            android:textSize="@dimen/global_font_size8" />
+        
+        
+        <TextView
+            android:id="@+id/personal_integral_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_padding2"
+            android:layout_toLeftOf="@id/personal_integral_total"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/point_task_name_color"
+            android:textSize="@dimen/global_font_size8" />
+
+        <ImageView
+            android:id="@+id/personal_integral_detail_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personal_integral_action"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/global_padding1"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/setting_main_score_label" />
+
+        <TextView
+            android:id="@+id/personal_integral_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/personal_integral_detail_picture"
+            android:layout_alignTop="@id/personal_integral_detail_picture"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/global_padding1"
+            android:layout_toRightOf="@id/personal_integral_detail_picture"
+            android:gravity="center"
+            android:textColor="@color/point_task_num_color"
+            android:textSize="@dimen/global_font_size8" />
+
+
+        <TextView
+            android:id="@+id/personal_integral_time_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/personal_integral_total"
+            android:layout_marginRight="@dimen/global_padding9"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/grade_permission_desc"
+            android:textSize="@dimen/global_font_size8" />
+
+        <TextView
+            android:id="@+id/personal_integral_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/personal_integral_time_second"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@id/personal_integral_time_second"
+            android:layout_alignBottom="@id/personal_integral_time_second"
+            android:textColor="@color/grade_permission_desc"
+            android:textSize="@dimen/global_font_size8" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hor_degree"
+        android:layout_marginLeft="@dimen/global_padding8"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/common_content_divider_line" />
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/keyborad_height_default"
+    android:background="@drawable/chat_msg_addattachments_bg"
+    android:minHeight="@dimen/keyborad_height_default"
+    android:paddingTop="@dimen/global_padding9" >
+
+    <HorizontalScrollView
+        android:id="@+id/sendmsg_ImageBrower_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding2"
+        android:layout_marginRight="@dimen/global_padding2"
+        android:background="@android:color/transparent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/sendmsg_ImageBrower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/sendmsg_imageBrower_tipTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendmsg_ImageBrower_content"
+        android:layout_marginBottom="@dimen/global_padding3"
+        android:layout_marginTop="@dimen/global_padding3"
+        android:gravity="center_horizontal"
+        android:text="还没有上传图片哦"
+        android:textColor="@color/message_send_add_image_txt_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendmsg_imageBrower_tipTxt"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/sendmsg_msg_pictureContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/sendmsg_msg_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/chat_msg_addattachments_picture_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding2"
+                android:text="相册"
+                android:textColor="@color/message_send_add_image_icon_txt_color"
+                android:textSize="@dimen/global_font_size4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sendmsg_msg_photoContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding4"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/sendmsg_msg_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/chat_msg_addattachments_photo_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding2"
+                android:text="拍照"
+                android:textColor="@color/message_send_add_image_icon_txt_color"
+                android:textSize="@dimen/global_font_size4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sendmsg_msg_microphoneContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding4"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/sendmsg_msg_microphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_msg_microphone_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding2"
+                android:text="语音"
+                android:textColor="@color/message_send_add_image_icon_txt_color"
+                android:textSize="@dimen/global_font_size4" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

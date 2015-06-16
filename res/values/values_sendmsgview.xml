@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 发消息view的背景 -->
+    <color name="sendmsgview_backgroudcolor">#FFFFFF</color>
+    
+    
+    
+    
+    <!-- 发消息view的高度 -->
+    <dimen name="sendmsgview_height">46dp</dimen>
+     <!-- 发消息view的里面元素上下margin -->
+     <dimen name="sendmsgview_marginTop">3dp</dimen>
+    <dimen name="sendmsgview_marginBottom">3dp</dimen>
+    
+    <dimen name="sendmsgview_edittext_maxHeight">100dip</dimen>
+    <dimen name="sendmsgview_edittext_minHeight">34dp</dimen>
+    
+    <!-- 发消息view的控件与控件之间的间隙-->
+    <dimen name="sendmsgview_controls_gap">4dp</dimen>
+    <!-- 发消息view的 button 宽度 和高度 -->
+    <dimen name="sendmsgview_button_width">40dp</dimen>
+    <dimen name="sendmsgview_button_height">40dp</dimen>
+    <!-- 发消息view的 button （发送） 宽度 和高度 -->
+    <dimen name="sendmsgview_sendbutton_width">49dp</dimen>
+    <dimen name="sendmsgview_sendbutton_height">40dp</dimen>
+    <!-- 输入框字体大小 -->
+    <!-- 
+      <dimen name= "sendmsgview_font_size">16sp</dimen>
+     -->
+    <string name="sendmsgview_hint_default">请输入内容 </string>
+    
+     <string name="sendmsgview_voice_cannel_info">滑到这里取消发送</string>
+     <string name="sendmsgview_voice_cannel_info2">松开手指取消发送</string>
+     <string name="sendmsgview_voice_short_info">录音时间太短!</string>
+    
+    
+  
+    
+</resources>

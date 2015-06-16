@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/game_register_item_bg_selector"
+    android:orientation="vertical" >
+
+    <com.iwgame.msgs.widget.roundedimageview.RoundedImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/global_icon8"
+        android:layout_height="@dimen/global_icon8"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/global_padding7"
+        android:layout_marginRight="@dimen/global_padding7"
+        android:layout_marginTop="@dimen/global_padding7"
+        android:scaleType="fitXY"
+        android:src="@drawable/common_default_icon"
+        iwgame:border_width="0dp"
+        iwgame:corner_radius="10dp"
+        iwgame:oval="false" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:textColor="@color/game_regiest_recommend_item_gamename_color"
+        android:textSize="@dimen/global_font_size4" />
+
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="点我进入"
+        android:layout_marginBottom="9dp"
+        android:textColor="@color/game_regiest_recommend_goin_tip_color"
+        android:textSize="@dimen/global_font_size6" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公会 -->
+    <string name="group_creat_title">创建公会</string>
+    <string name="group_name_verify_fail">公会名称不能超过%1$d个汉字或%2$d个字符哦！</string>
+    <string name="group_create_name_verify_fail">不能超过%1$d个汉字或%2$d个字符哦！</string>
+    <string name="group_desc_verify_fail">不能超过%1$d个汉字或%2$d个字符哦！</string>
+    <string name="group_create_desc_verify_fail">不能超过%1$d个汉字或%2$d个字符哦！</string>
+    <string name="group_notice_verify_fail">不能超过%1$d个汉字或%2$d个字符哦！</string>
+    <string name="group_name_isnull">需要输入公会名称哦！</string>
+    <string name="group_avatar_isnull">需要上传公会头像哦！</string>
+    <string name="group_des_isnull">公会简介不能为空</string>
+    <string name="group_gid_isnull">需要选择对应的贴吧哦！</string>
+    <string name="group_creat_success">创建公会成功</string>
+    <string name="group_transfer_success">转让公会成功</string>
+    <string name="group_transfer_fail">转让公会失败</string>
+    <string name="group_approve_success">批准成功</string>
+    <string name="group_manager_cannel_success">取消管理员成功</string>
+    <string name="group_op_success">操作成功</string>
+    <string name="group_modify_success">修改成功</string>
+    <string name="group_unselectde_user">没有选择成员</string>
+    <string name="group_transfer_group_tip">确定转让公会会长吗？</string>
+    <string name="group_out_group_tip">确定退出该公会吗？</string>
+    <string name="group_apply_count_max">一天只能申请同一公会%1$d次</string>
+    <string name="group_creat_count_max">您当前等级未达到创建公会的条件哦！</string>
+    <string name="group_creat_count_max2">您当前最多只能创建%1$d个公会哦！</string>
+    <string name="group_creat_point_notenough">您的积分余额不足！</string>
+    <string name="group_words_name_error">您输入的公会名称内容包含非法或敏感字符</string>
+    <string name="group_words_desc_error">您输入的公会描述内容包含非法或敏感字符</string>
+    <!-- 创建公会 -->
+    <string name="group_creat_info_not_full">信息不完整，创建公会失败</string>
+    <string name="group_creat_info_point_notenough">您的积分不足，创建公会失败</string>
+    <string name="group_creat_fail">您创建或加入的公会数受限了，创建公会失败</string>
+    <string name="group_service_verify_fail">需要阅读并同意游伴公会协议哦！</string>
+    <!-- 申请公会 -->
+    <string name="group_apply_success">申请成功</string>
+    <string name="group_apply_content_isnull">申请内容为空</string>
+    <string name="group_apply_already_in">用户已在公会中</string>
+    <string name="group_apply_over_join_group">加入的公会超出最大限制</string>
+    <string name="group_apply_over_max_count">您今日申请已到最大申请次数</string>
+    <string name="group_apply_fail">申请失败</string>
+    <!-- 加入公会 -->
+    <string name="group_join_success">加入公会成功</string>
+    <string name="group_join_group_over_count">你加入的公会数已达上限了哦!</string>
+    <string name="group_join_group_members_over_count">当前公会人数已满，选择其它公会加入哦！</string>
+    <string name="group_join_group_already_in">您已经在该该公会中</string>
+    <string name="group_join_group_needrole">此公会只有完善了角色服务器信息后才能加入</string>
+    <!-- 邀请公会 -->
+    <string name="group_invite_success">你的邀请信息已发送</string>
+    <string name="group_invite_fail">公会邀请失败,请确认公会成员人数是否已满</string>
+    <!-- 设置管理员 -->
+    <string name="group_set_manager_success">设置管理员成功</string>
+    <string name="group_set_manager_fail">设置管理员失败</string>
+    <string name="group_set_manager_not_join_fail">当前操作有非公会成员</string>
+    <!-- 删除公会成员 -->
+    <string name="group_delete_user_success">删除公会成员成功</string>
+    <string name="group_delete_user_fail">删除公会成员失败</string>
+
+</resources>

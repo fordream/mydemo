@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudcolor"
+    android:orientation="vertical" >
+
+    <com.iwgame.msgs.widget.PullToRefreshView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/global_color1"
+        android:orientation="vertical" >
+
+        <!--
+    这里放置listview,gridview或者scrollview的布局 ,PullToRefreshView
+	要设置android:orientation="vertical"属性
+	否则,显示不正确
+        -->
+
+        <ListView
+            android:id="@+id/listView_news_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/common_fengexian"
+            android:fadingEdge="none" />
+    </com.iwgame.msgs.widget.PullToRefreshView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/play_order_detail_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/play_order_detail_top_bg_color"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/global_padding8"
+        android:paddingLeft="@dimen/global_padding9"
+        android:paddingRight="@dimen/global_padding9"
+        android:paddingTop="@dimen/global_padding9" >
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/global_padding9"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:text="总计"
+        android:textColor="@color/play_order_detail_ucoin_desc_color"
+        android:textSize="@dimen/global_font_size3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/global_padding9"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ucoinDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/global_padding1"
+            android:text="0U币/小时*0小时="
+            android:textColor="@color/play_order_detail_ucoin_desc_color"
+            android:textSize="@dimen/global_font_size3" />
+
+        <TextView
+            android:id="@+id/ucoinValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0U币"
+            android:textColor="@color/play_order_detail_ucoin_value_color"
+            android:textSize="@dimen/global_font_size3" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/chatBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_padding4"
+        android:layout_marginLeft="@dimen/global_padding8"
+        android:layout_marginRight="@dimen/global_padding8"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/common_btn_ls_selector"
+        android:text="聊天"
+        android:textColor="@color/commit_next_text_color"
+        android:textSize="@dimen/global_font_size1"
+        android:visibility="gone" />
+
+</LinearLayout>

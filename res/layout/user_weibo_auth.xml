@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_dialog_group_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/user_weibo_binding_bg_shap"
+        android:padding="@dimen/global_padding9"
+        android:text="您尚未绑定新浪微博，需要绑定您的新浪微帐号"
+        android:textColor="@color/global_color3"
+        android:textSize="@dimen/text_medium" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bindingBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/common_btn_ls_selector"
+        android:text="立即绑定"
+        android:textColor="@color/global_color21"
+        android:textSize="@dimen/global_font_size2" />
+
+</LinearLayout>

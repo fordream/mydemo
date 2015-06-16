@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:text="验证"
+        android:textColor="@color/discover_dialog_title_text_color"
+        android:textSize="@dimen/global_font_size8" />
+
+    <LinearLayout
+        android:id="@+id/verifySelect"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="@dimen/global_padding7"
+        android:layout_marginRight="@dimen/global_padding7"
+        android:layout_marginTop="@dimen/global_padding2"
+         android:layout_marginBottom="@dimen/global_padding8"
+        android:orientation="vertical" />
+    <TextView
+        android:id="@+id/belong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:text="所属游戏"
+        android:textColor="@color/discover_dialog_title_text_color"
+        android:textSize="@dimen/global_font_size8" />
+
+    <FrameLayout
+        android:id="@+id/gameSelectFL"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="@dimen/global_padding7"
+        android:layout_marginRight="@dimen/global_padding7"
+        android:layout_marginTop="@dimen/global_padding2" >
+        <TextView
+            android:id="@+id/gameSelect"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:background="@drawable/common_selectview_selector"
+            android:text="不筛选"
+            android:textColor="@color/discover_group_dialog_text_color"
+            android:textSize="@dimen/global_font_size2" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/gamecontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/global_padding9"
+        android:layout_marginLeft="@dimen/global_padding7"
+        android:layout_marginRight="@dimen/global_padding7"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:padding="@dimen/global_padding1"
+        android:background="@drawable/common_discover_dialong_game_bg" >
+
+        <HorizontalScrollView
+            android:id="@+id/gameSelectItemView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:scrollbars="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/gameSelect1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/gameSelect2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/gameDefaultSelectItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/discover_group_dialog_text_color"
+            android:textSize="@dimen/global_font_size2"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:id="@+id/loading_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/global_padding9"
+        android:layout_marginLeft="@dimen/global_padding7"
+        android:layout_marginRight="@dimen/global_padding7"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:padding="@dimen/global_padding1"
+        android:background="@drawable/common_discover_dialong_game_bg" 
+        android:orientation="vertical"
+        android:gravity="center"
+        ></LinearLayout>
+</LinearLayout>

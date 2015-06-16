@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/point_detail_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/global_padding1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/change_record_icon"
+            android:layout_width="@dimen/global_icon1"
+            android:layout_height="@dimen/global_icon1"
+            android:layout_marginBottom="@dimen/global_padding7"
+            android:layout_marginTop="@dimen/global_padding7"
+            android:src="@drawable/common_default_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding7"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                style="@style/text_item_first_grade_left"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="已领："
+                    style="@style/text_item_four_grade"/>
+
+                <TextView
+                    android:id="@+id/have_receive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    style="@style/text_item_four_grade" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_padding2"
+                    android:gravity="center"
+                    android:text="剩余："
+                   style="@style/text_item_four_grade" />
+
+                <TextView
+                    android:id="@+id/surplus_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    style="@style/text_item_four_grade" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/goods_desc_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="开始兑换:"
+                    style="@style/text_item_four_grade"/>
+
+                <TextView
+                    android:id="@+id/change_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_padding1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/goods_list_change_time_text_color"
+                    android:textSize="@dimen/global_font_size5" />
+
+                <TextView
+                    android:id="@+id/change_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                     android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/goods_list_change_time_text_color"
+                    android:textSize="@dimen/global_font_size5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/cosume_point_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="耗费积分："
+                   style="@style/text_item_four_grade" />
+
+                <TextView
+                    android:id="@+id/cosume_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/shop_need_point_color"
+                    android:textSize="@dimen/global_font_size5" />
+
+                <TextView
+                    android:id="@+id/need_grade_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="所需等级："
+                    style="@style/text_item_four_grade" />
+
+                <TextView
+                    android:id="@+id/need_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                     android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/shop_need_point_color"
+                    android:textSize="@dimen/global_font_size5" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/global_font_size3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="@dimen/global_padding1"
+            android:layout_marginRight="@dimen/global_padding3"
+            android:background="@drawable/common_icon_jt_selector"
+            android:duplicateParentState="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hor_degree"
+        android:background="@drawable/common_content_divider_line" />
+
+</LinearLayout>

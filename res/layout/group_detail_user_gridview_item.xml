@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/global_icon1"
+        android:layout_height="@dimen/global_icon1"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/common_user_icon_default" />
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/detailInfo"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/global_icon_5"
+                android:layout_height="@dimen/global_icon_5"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/common_default_icon"
+                android:background="@drawable/aratar_bg"
+                android:padding="2dp"
+                android:layout_marginTop="@dimen/global_padding9" >
+            </ImageView>
+
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头像编辑"
+                android:layout_marginTop="@dimen/global_padding1"
+                android:textSize="@dimen/global_font_size5"
+                android:textColor="@color/group_or_user_edit_hint_color"
+                android:layout_gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding8"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:id="@+id/groupNameItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/global_list_item_height_small"
+                    android:background="@drawable/common_item_top_selector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="公会名"
+                        android:textColor="@color/user_detail_item_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:id="@+id/groupName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/group_detail_notice_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:id="@+id/descItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_item_middle_selector"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/global_padding3"
+                    android:paddingTop="@dimen/global_padding3" >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:text="简介"
+                        android:textColor="@color/user_detail_item_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:textColor="@color/group_detail_notice_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:id="@+id/noticeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_item_top_selector"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/global_padding3"
+                    android:paddingTop="@dimen/global_padding3" >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:text="公告"
+                        android:textColor="@color/user_detail_item_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:id="@+id/notice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:textColor="@color/group_detail_notice_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/global_padding2"
+    android:layout_marginRight="@dimen/global_padding2"
+    android:layout_marginTop="@dimen/global_padding3" >
+
+    <TextView
+        android:id="@+id/postbar_topicreply_preply_item_posternickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/topiclist_reply_item_name_txt"
+        android:textSize="@dimen/global_font_size3" />
+
+    <com.iwgame.msgs.widget.MyTextView
+        android:id="@+id/postbar_topicreply_preply_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="@dimen/global_padding2"
+        android:layout_toRightOf="@+id/postbar_topicreply_preply_item_posternickname"
+        android:autoLink="web"
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/topiclist_reply_item_content_txt"
+        android:textSize="@dimen/global_font_size3"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/search_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <com.iwgame.msgs.widget.SearchImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/global_padding3" />
+
+        <ImageView
+            android:id="@+id/creatPlayIcon"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/group_creat_menu"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/select_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:paddingLeft="@dimen/global_padding3"
+        android:paddingRight="@dimen/global_padding3"
+        android:text="筛选"
+        android:textSize="@dimen/global_font_size8"
+        android:visibility="gone" />
+
+</LinearLayout>

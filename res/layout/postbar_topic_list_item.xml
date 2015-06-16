@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg_selector"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/tmp_fg_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_padding7"
+        android:background="@color/topic_list_detail_down_bg" />
+
+    <View
+        android:id="@+id/tmp_fg_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/list_item_fengexian"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/postbar_topic_list_item_del"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/global_list_item_height_medium"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/setting_main_favorite__delete_selector"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/tmp_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/global_padding7"
+            android:layout_toLeftOf="@+id/postbar_topic_list_item_del"
+            android:gravity="center|top"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/global_padding3"
+            android:paddingRight="@dimen/global_padding3" >
+
+            <ImageView
+                android:id="@+id/postbar_topic_list_item_islock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:src="@drawable/postbar_lock"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/postbar_topic_list_item_istop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:src="@drawable/postbar_top"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/postbar_topic_list_item_isgift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:src="@drawable/postbar_gift"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/postbar_topic_list_item_isnotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/postbar_inform"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/postbar_topic_list_item_isessence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:src="@drawable/postbar_elite"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/postbar_topic_list_item_isji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:src="@drawable/postbar_ji"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/postbar_topic_list_item_ishot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:src="@drawable/postbar_hot"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/postbar_topic_list_item_isnews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:src="@drawable/postbar_news"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/postbar_topic_list_item_ishavepic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:src="@drawable/postbar_piciure_btn"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/postbar_topic_list_item_title_gap"
+                android:layout_width="8dp"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/postbar_topic_list_item_title"
+                style="@style/text_topic_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="@dimen/global_padding7"
+                android:includeFontPadding="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/postbar_topic_list_item_showorhide_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tmp_ll"
+            android:layout_toLeftOf="@+id/postbar_topic_list_item_del"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/global_padding2"
+            android:paddingLeft="@dimen/global_padding3"
+            android:paddingRight="@dimen/global_padding3"
+            android:paddingTop="@dimen/global_padding1"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/postbar_topic_list_item_master"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:src="@drawable/game_icon_people" />
+
+            <TextView
+                android:id="@+id/postbar_topic_list_item_nickname"
+                style="@style/text_topic_nikename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:includeFontPadding="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/postbar_topic_list_item_date"
+                style="@style/text_topic_loc_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:includeFontPadding="false" />
+
+            <TextView
+                android:id="@+id/postbar_topic_list_item_loc"
+                style="@style/text_topic_loc_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:includeFontPadding="false" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding7"
+                android:focusable="false"
+                android:src="@drawable/postbar_dialogue" />
+
+            <TextView
+                android:id="@+id/postbar_topic_list_item_comments"
+                style="@style/text_topic_comment_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/global_padding1"
+                android:includeFontPadding="false" />
+
+            <TextView
+                android:id="@+id/postbar_topic_list_item_visits"
+                style="@style/text_topic_comment_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:includeFontPadding="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/tmp_fg_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/list_item_fengexian" />
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7.5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <com.iwgame.msgs.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/global_icon_1"
+            android:layout_height="@dimen/global_icon_1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/common_default_icon"
+            iwgame:border_color="@color/detail_aratar_bg"
+            iwgame:border_width="0dp"
+            iwgame:corner_radius="10dp"
+            iwgame:oval="false" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/global_padding1"
+                    android:gravity="top|left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/gameName"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/item_first_grade_left_color"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/global_padding1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/gameType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/item_second_grade_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/gamePlatformType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/item_second_grade_color"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/global_padding1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/publisher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/item_third_grade_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/descContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/gameDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.5dp"
+                android:maxLines="3"
+                android:textColor="@color/item_third_grade_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/gameDesc2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.5dp"
+                android:textColor="@color/item_third_grade_color"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/moreBtn"
+            android:layout_width="72.5dp"
+            android:layout_height="30.5dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginTop="7.5dp"
+            android:background="@drawable/game_info_more_btn"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

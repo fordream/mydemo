@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.iwgame.msgs.widget.roundedimageview.RoundedImageView
+                android:id="@+id/gamelogo"
+                android:layout_width="@dimen/global_icon8"
+                android:layout_height="@dimen/global_icon8"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                iwgame:border_color="@color/global_color1"
+                iwgame:border_width="0dp"
+                iwgame:corner_radius="10dp"
+                iwgame:oval="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/game_topiccount"
+                style="@style/text_size5_color1_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:background="@drawable/news_count_bg"
+                android:gravity="center"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/gamename"
+        style="@style/text_size3_color4_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/global_padding1"
+        android:layout_marginTop="@dimen/global_padding1"
+        android:singleLine="true" />
+
+</LinearLayout>

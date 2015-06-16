@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="postbar_action_publish">发布帖子</string>
+    <string name="postbar_seq_newcomment">按最新回复</string>
+    <string name="postbar_seq_createtime">按发布时间</string>
+    <string name="postbar_userpostlist_title">他的帖子</string>
+    <string name="postbar_userpostlist_my_title">我的帖子</string>
+    <string name="postbar_myfavorite_title">我的收藏</string>
+    <string name="postbar_news_title">新闻</string>
+    <string name="postbar_raiders_title">攻略</string>
+    <string name="postbar_myfavorite_edit_info">编辑</string>
+    <string name="postbar_myfavorite_edit_ok">完成</string>
+    <string name="postbar_searchpost_title">搜索帖子</string>
+    <string name="postbar_master_action_dialog_title">更多</string>
+    <string name="postbar_master_action_dialog_setessence">设为精华帖</string>
+    <string name="postbar_master_action_dialog_settop">置顶帖子</string>
+    <string name="postbar_master_action_dialog_deltopic">删除帖子</string>
+    <string name="postbar_master_action_dialog_locktopic">锁帖</string>
+    <string name="postbar_master_action_dialog_setnotice">设为公告帖</string>
+    <string name="postbar_master_action_dialog_delessence">取消精华帖</string>
+    <string name="postbar_master_action_dialog_deltop">取消置顶</string>
+    <string name="postbar_master_action_dialog_delnotice">取消公告贴</string>
+    <string name="postbar_master_action_dialog_unlocktopic">解锁</string>
+    <string name="postbar_info_landlord">楼主</string>
+    <string name="postbar_info_floor">%1$s楼</string>
+    <string name="postbar_reply_sendedit_hint">回复%1$s</string>
+    <string name="postbar_reply_action_dialog_copy">复制</string>
+    <string name="postbar_reply_action_dialog_reply">回复</string>
+    <string name="postbar_reply_action_dialog_del">删除</string>
+    <string name="postbar_reply_info_reply">回复</string>
+    
+    <string name="postbar_reply_info_isdel_copy">该楼层已经删除，不可以复制!</string>
+    <string name="postbar_reply_info_isdel_reply">该楼层已经删除，不可以回复！</string>
+    <string name="postbar_reply_info_isdel_del">该回复已经被管理员删除掉了！</string>
+    
+    
+    <string name="postbar_publish_topic_activity_title">发帖</string>
+    <string name="postbar_publish_topic_activity_title_tag">选择标签</string>
+    <string name="postbar_publish_topic_publish">发送</string>
+    <string name="postbar_publish_topic_publish_next">下一步</string>
+    <string name="postbar_publish_topic_publish_submit">发表</string>
+    <string name="postbar_publish_topic_title_hint">标题（最多20个字）</string>
+    <string name="postbar_publish_topic_content_hint">你想说些什么呢？</string>
+    <string name="postbar_applymaster_activity_title">申请吧主</string>
+    <string name="postbar_applymaster_info">申请人必须至少有一篇精华帖，吧内部主帖不少于五篇，回复不少于100条。</string>
+    <string name="postbar_applymaster_name_hint">请输入姓名</string>
+    <string name="postbar_applymaster_cardid_hint">请输入身份证号</string>
+    <string name="postbar_applymaster_content_hint">申请吧主理由</string>
+    <string name="postbar_applymaster_ok">提交</string>
+    <string name="postbar_replymy_activity_title">帖子通知</string>
+    <string name="postbar_replymy_from_info">来自%1$s吧</string>
+    <string name="postbar_replymy_mycontent_reply">对我的回复：%1$s</string>
+    <string name="postbar_replymy_mycontent_topic">对我的帖子：%1$s</string>
+    <string name="postbar_replymy_content">回复：%1$s</string>
+    <string name="postbar_replymy_content_noreply">回复：</string>
+    
+    <string name="postbaor_replymy_topic_del">该帖被删除，已不存在！</string>
+    <string name="postbaor_set_topic_del"> 该帖已被删除！</string>
+    
+    
+    <string name="postbar_search_topic_searchTxt_hint">请输入帖子标题关键字</string>
+    
+    <string name="postbar_topic_detail_rightmenu_onlyposter">只看楼主</string>
+    <string name="postbar_topic_detail_rightmenu_all">显示全部</string>
+    <string name="postbar_topic_detail_rightmenu_favorite">收藏帖子</string>
+    <string name="postbar_topic_detail_rightmenu_cancelfavorite">取消收藏</string>
+    <string name="postbar_topic_detail_rightmenu_report">举报帖子</string>
+    
+    <string name="postbar_topic_detail_rightmenu_favorite_ok">收藏帖子成功</string>
+    <string name="postbar_topic_detail_rightmenu_cancelfavorite_ok">取消收藏成功</string>
+    
+    <string name="postbar_reply_isdel_content">此楼层内容已被吧主删除！</string>
+    <string name="postbar_reply_isctl_content">此回复仅该层层主和楼主可见！</string>
+    
+    <string name="postbar_publish_topic_info">需要关注该贴吧后才能发帖哦！</string>
+    <string name="postbar_publish_reply_info">您需关注此贴吧后才能回帖</string>
+    
+
+    <string name="postbar_applymaster_name_isnull">姓名不可以为空</string>
+    <string name="postbar_applymaster_name_lengtherr">姓名不能少于2个汉字哦</string>
+    <string name="postbar_applymaster_idcardno_err">需要输入正确的身份证号格式哦！</string>
+    <string name="postbar_applymaster_content_isnull">需要输入申请理由哦！</string>
+    <string name="postbar_applymaster_content_minlength">申请理由不能少于10个汉字哦！</string>
+    <string name="postbar_applymaster_content_maxlength">申请理由不能超过100个汉字哦！</string>
+    <string name="postbar_applymaster_idcardimg_isnull">需要上传身份证照片哦！</string>
+    <string name="postbar_applymaster_applyok">申请发出成功，等待管理员审批。</string>
+    <string name="postbar_applymaster_count_max">一天只能申请同一游戏吧主%1$d次</string>
+    
+    <string name="postbar_show_game_tip_for_youban_uninstall">请下载游伴才能打开此贴吧哦！</string>
+    <string name="postbar_show_topic_tip_for_youban_uninstall">请下载游伴才能打开此帖子哦！</string>
+    <string name="postbar_show_gameortopic_tip_for_youban_install">手机已安装游伴，请启动游伴查看哦！</string>
+    
+    <string name="postbar_topic_right_menu_order">排序</string>
+    <string name="postbar_topic_right_menu_order_reply_time">最新回复</string>
+    <string name="postbar_topic_right_menu_order_create_time">最新发布</string>
+    <string name="postbar_topic_right_menu_order_hottest">最热帖</string>
+    <string name="postbar_topic_right_menu_tags">标签</string>
+    <string name="postbar_topic_right_menu_tags_all">全部</string>
+    <string name="postbar_topic_right_menu_tags_essence">精华</string>
+    <string name="postbar_topic_right_menu_more">更多</string>
+    <string name="postbar_topic_right_menu_more_gamedetail">游戏详情</string>
+    <string name="postbar_topic_right_menu_more_recommend">推荐</string>
+    <string name="postbar_topic_right_menu_more_master">吧主</string>
+    
+    <string name="postbar_topic_detail_right_menu_filter">过滤</string>
+    <string name="postbar_topic_detail_right_menu_filter_all">查看全部</string>
+    <string name="postbar_topic_detail_right_menu_filter_onlyposter">只看楼主</string>
+    <string name="postbar_topic_detail_right_menu_page">翻页</string>
+    <string name="postbar_topic_detail_right_menu_page_page">翻页</string>
+    <string name="postbar_topic_detail_right_menu_action">操作</string>
+    <string name="postbar_topic_detail_right_menu_action_favorite">收藏帖子</string>
+    <string name="postbar_topic_detail_right_menu_action_cancelfavorite">取消收藏</string>
+    <string name="postbar_topic_detail_right_menu_action_share">分享帖子</string>
+    <string name="postbar_topic_detail_right_menu_action_report">举报帖子</string>
+    
+    <string name="postbar_topic_detail_share_dialog_title">分享到</string>
+    <string name="postbar_topic_detail_share_dialog_item_youb">好友/公会</string>
+    <string name="postbar_topic_detail_share_dialog_item_pengyouquan">微信朋友圈</string>
+    <string name="postbar_topic_detail_share_dialog_item_weibo">新浪微博</string>
+    <string name="postbar_topic_detail_share_dialog_item_weixin">微信好友</string>
+    <string name="postbar_topic_detail_share_dialog_item_qqzone">QQ空间</string>
+    <string name="postbar_topic_detail_share_dialog_item_tencentweibo">腾讯微博</string>
+    
+    <string name="postbar_header_username_info">游伴</string>
+    <string name="postbar_header_groupname_info">公会</string>
+    <string name="postbar_header_glname_info">攻略</string>
+    <string name="postbar_header_newsname_info">新闻</string>
+    
+    <string name="postbar_topic_detail_pagenum_currentpage">%1$s/%2$s</string>
+    <string name="postbar_topic_detail_loc_info">  |  %1$s</string>   
+    <string name="postbar_topic_detail_poster_seviceid">ID  %1$s</string> 
+    
+	<!-- 分享 -->
+	<string name="postbar_topic_share_topic_content">游伴-%1$s吧帖子热辣火爆：%2$s！</string>
+	<string name="postbar_topic_share_user_content">同城游伴，精品攻略，热辣资讯，加%1$s（ID:%2$s）！</string>
+	<string name="postbar_topic_share_group_content">刀光剑影，江湖游伴，共谋公会！赶紧加入（ID:%1$s）！</string>
+	<string name="postbar_topic_share_game_content">游伴-%1$s吧帖子热辣火爆，精彩不容错过！</string>
+	<string name="postbar_topic_share_goods_content">我在“游伴“领取了“%1$s”，赶紧来抢！</string>
+	<string name="postbar_topic_share_add_qqfriend_title">邀请加入游伴</string>
+	<string name="postbar_topic_share_share_title">游伴手机客户端</string>
+	<string name="postbar_topic_share_toweixin_title">终结孤单，游我陪伴！</string>
+	
+	<string name="postbar_notify_tab_name_replyme">回复我的</string>
+    <string name="postbar_notify_tab_name_praise">赞</string>
+</resources>

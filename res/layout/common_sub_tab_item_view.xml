@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_sub_tab_bg_selector"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/global_padding4"
+        android:background="@drawable/common_sub_tab_bg_selector"
+        android:gravity="center"
+        android:text="赞"
+        android:textColor="@drawable/common_sub_tab_textcolor_selector"
+        android:textSize="@dimen/global_font_size3" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding13"
+        android:layout_marginTop="@dimen/global_padding7"
+        android:layout_toRightOf="@+id/textview"
+        android:background="@drawable/task_tag_circle"
+        android:visibility="gone" />
+
+</RelativeLayout>

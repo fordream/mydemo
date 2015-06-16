@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <com.iwgame.msgs.widget.TitleFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_top_height">
+
+        <com.iwgame.msgs.widget.BackButton
+            android:id="@+id/leftBtn"
+            android:layout_width="57dp"
+            android:layout_height="46dp"
+            android:layout_gravity="left" />
+
+        <com.iwgame.msgs.widget.TitleTextView
+            android:id="@+id/titleTxt"
+            style="@style/text_large_white_default"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:shadowColor="@color/common_shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/rightView"
+            android:layout_width="57dp"
+            android:layout_height="46dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </com.iwgame.msgs.widget.TitleFrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding9"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="@dimen/global_icon_5"
+                    android:layout_height="@dimen/global_icon_5"
+                    android:background="@drawable/group_add_avatar_bg_selector"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="63dp"
+                    android:layout_marginTop="63dp"
+                    android:src="@drawable/account_register_avatar_add" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/global_list_item_height_small"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:gravity="center"
+                    android:text="公会名称"
+                    android:textColor="@color/set_item_name_text_color"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <EditText
+                    android:id="@+id/nameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/global_padding3"
+                    android:layout_marginRight="@dimen/global_padding8"
+                    android:background="@null"
+                    android:hint="请填写公会名称（必填）"
+                    android:singleLine="true"
+                    android:textColor="@color/common_input_value_text_color"
+                    android:textColorHint="@color/common_input_hint_text_color"
+                    android:textSize="@dimen/global_font_size2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:id="@+id/gameChooseItem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/global_list_item_height_small"
+                    android:background="@drawable/common_item_top_selector"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:gravity="center|left"
+                        android:text="公会所属游戏"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:id="@+id/gameLable"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:hint="所属游戏（必填）"
+                    	android:textColor="@color/common_input_value_text_color"
+                    	android:textColorHint="@color/common_input_hint_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:id="@+id/gameJT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/favoriteLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/global_padding3"
+                    android:paddingTop="@dimen/global_padding3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:gravity="center"
+                        android:text="公会简介"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <EditText
+                        android:id="@+id/groupDesTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@null"
+                        android:hint="输入公会简介（必填）"
+                    	android:textColor="@color/common_input_value_text_color"
+                    	android:textColorHint="@color/common_input_hint_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/global_list_item_height_small"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/global_padding1"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:layout_marginRight="@dimen/global_padding8"
+                    android:layout_marginTop="@dimen/global_padding3"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:text="加入是否需要验证"
+                    android:textColor="@color/set_item_name_text_color"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <Button
+                    android:id="@+id/verifyView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/global_padding8"
+                    android:background="@drawable/group_verify_checkbox_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding8"
+                android:layout_marginRight="@dimen/global_padding8"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/act_reg_checkBox"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/global_padding1"
+                    android:singleLine="true"
+                    android:text="已阅读并同意"
+                    android:textColor="@color/common_sproto_text1_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/sproto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="游伴公会条款"
+                    android:textColor="@color/common_sproto_text2_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

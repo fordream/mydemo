@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg" >
+
+    <LinearLayout
+        android:id="@+id/contentDetailView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/group_detail_fengexian_color" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/group_detail_top_bg_color"
+                    android:paddingBottom="@dimen/global_padding8"
+                    android:paddingLeft="@dimen/global_padding8"
+                    android:paddingTop="@dimen/global_padding8" >
+
+                    <com.iwgame.msgs.widget.roundedimageview.RoundedImageView
+                        android:id="@+id/icon"
+                        android:layout_width="@dimen/global_icon8"
+                        android:layout_height="@dimen/global_icon8"
+                        android:background="@drawable/setting_avatar_bg"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/common_default_icon"
+                        iwgame:border_width="0dp"
+                        iwgame:corner_radius="3dp"
+                        iwgame:oval="false" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_icon8"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/gname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:layout_marginRight="@dimen/global_padding3"
+                            android:textColor="@color/group_detail_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="ID"
+                                android:textColor="@color/group_detail_id_text_color"
+                                android:textSize="@dimen/global_font_size8" />
+
+                            <TextView
+                                android:id="@+id/id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/global_padding3"
+                                android:layout_marginRight="@dimen/global_padding3"
+                                android:singleLine="true"
+                                android:textColor="@color/group_detail_id_text_color"
+                                android:textSize="@dimen/global_font_size8" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/editItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:clickable="true"
+                            android:orientation="horizontal"
+                            android:visibility="invisible" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/group_detial_edit_textbg_color_selector"
+                                android:drawableLeft="@drawable/group_main_set_btn"
+                                android:duplicateParentState="true"
+                                android:gravity="center"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:singleLine="true"
+                                android:text="编辑公会资料"
+                                android:textColor="@drawable/group_detial_edit_text_color_selector"
+                                android:textSize="@dimen/global_font_size3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <LinearLayout
+                    android:id="@+id/noticeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_item_top_selector"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/global_padding3"
+                    android:paddingTop="@dimen/global_padding3" >
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:text="公告"
+                        android:textColor="@color/user_detail_item_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:id="@+id/notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:textColor="@color/group_detail_notice_color"
+                        android:textSize="@dimen/global_font_size2" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/global_padding3"
+                    android:orientation="vertical"
+                    android:padding=".5dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/groupcardItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/global_list_item_height_small"
+                        android:background="@drawable/common_item_top_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:duplicateParentState="true"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="我的公会名片"
+                            android:textColor="@color/user_detail_item_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <TextView
+                            android:id="@+id/groupcard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:textColor="@drawable/common_text_color2_selector"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/gradeItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/global_list_item_height_small"
+                        android:background="@drawable/common_item_top_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="75dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:duplicateParentState="true"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="公会等级"
+                            android:textColor="@color/user_detail_item_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <TextView
+                            android:id="@+id/grade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:duplicateParentState="true"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:textColor="@color/cur_point_num"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/global_list_item_height_small"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:background="@drawable/common_content_divider_line" />
+
+                        <LinearLayout
+                            android:id="@+id/presItem"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/common_item_middle_selector"
+                            android:clickable="true"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="75dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="@dimen/global_padding8"
+                                android:duplicateParentState="true"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="会长"
+                                android:textColor="@color/user_detail_item_text_color"
+                                android:textSize="@dimen/global_font_size2" />
+
+                            <TextView
+                                android:id="@+id/pres"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="@dimen/global_padding3"
+                                android:layout_weight="1"
+                                android:duplicateParentState="true"
+                                android:gravity="center_vertical"
+                                android:textColor="@drawable/common_text_color2_selector"
+                                android:textSize="@dimen/global_font_size2" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right"
+                                android:layout_marginLeft="@dimen/global_padding3"
+                                android:layout_marginRight="@dimen/global_padding8"
+                                android:background="@drawable/common_icon_jt_selector"
+                                android:duplicateParentState="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/global_list_item_height_small"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:background="@drawable/common_content_divider_line" />
+
+                        <LinearLayout
+                            android:id="@+id/gameTagItem"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/common_item_middle_selector"
+                            android:clickable="true"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="75dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/global_padding8"
+                                android:duplicateParentState="true"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="游戏标签"
+                                android:textColor="@color/user_detail_item_text_color"
+                                android:textSize="@dimen/global_font_size2" />
+
+                            <com.iwgame.msgs.widget.roundedimageview.RoundedImageView
+                                android:id="@+id/gameIcon"
+                                android:layout_width="@dimen/global_icon_4"
+                                android:layout_height="@dimen/global_icon_4"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/global_padding3"
+                                android:duplicateParentState="true"
+                                android:scaleType="fitXY"
+                                iwgame:border_color="@color/group_detail_boder_color"
+                                iwgame:border_width="0dp"
+                                iwgame:corner_radius="3dp"
+                                iwgame:oval="false" />
+
+                            <TextView
+                                android:id="@+id/gameTag"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/global_padding3"
+                                android:layout_weight="1"
+                                android:duplicateParentState="true"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:textColor="@drawable/common_text_color2_selector"
+                                android:textSize="@dimen/global_font_size2" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right"
+                                android:layout_marginLeft="@dimen/global_padding3"
+                                android:layout_marginRight="@dimen/global_padding8"
+                                android:background="@drawable/common_icon_jt_selector"
+                                android:duplicateParentState="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/global_list_item_height_small"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:background="@drawable/common_content_divider_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/common_item_top_selector"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="75dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/global_padding8"
+                                android:duplicateParentState="true"
+                                android:gravity="center|left"
+                                android:singleLine="true"
+                                android:text="创建日期"
+                                android:textColor="@color/user_detail_item_text_color"
+                                android:textSize="@dimen/global_font_size2" />
+
+                            <TextView
+                                android:id="@+id/ctime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/global_padding3"
+                                android:duplicateParentState="true"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:textColor="@drawable/common_text_color2_selector"
+                                android:textSize="@dimen/global_font_size2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginTop="@dimen/global_padding3"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_item_top_selector"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/global_padding3"
+                    android:paddingTop="@dimen/global_padding3" >
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:text="公会简介"
+                        android:textColor="@color/user_detail_item_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:id="@+id/groupDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:textColor="@drawable/common_text_color2_selector"
+                        android:textSize="@dimen/global_font_size2" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <LinearLayout
+                    android:id="@+id/gcountItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/global_padding3"
+                    android:background="@drawable/common_bg_shap"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding=".5dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/global_list_item_height_small"
+                        android:background="@drawable/common_item_top_selector"
+                        android:duplicateParentState="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="75dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="公会成员"
+                            android:textColor="@color/user_detail_item_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <TextView
+                            android:id="@+id/gcount"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center_vertical"
+                            android:textColor="@drawable/common_text_color2_selector"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <ImageView
+                            android:id="@+id/gcountLink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/userView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/point_detail_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/global_padding1"
+                    android:paddingLeft="@dimen/global_padding1"
+                    android:paddingRight="@dimen/global_padding1"
+                    android:paddingTop="@dimen/global_padding1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <TextView
+                    android:id="@+id/moreBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/group_detail_top_bg_color"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="点击查看更多"
+                    android:textColor="@color/user_detail_item_text_color"
+                    android:textSize="@dimen/global_font_size3"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/functionBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/contentDetailView"
+        android:background="@drawable/group_manage_detail_btn_selector"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/functionTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="4dp"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:singleLine="true"
+            android:textColor="@color/common_bottom_btn_text_selector"
+            android:textSize="@dimen/global_font_size2" />
+    </LinearLayout>
+
+</RelativeLayout>

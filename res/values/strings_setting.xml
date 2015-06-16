@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 设置 -->
+    <string name="txt_verify_fail">还未输入</string>
+    <string name="role_service_name">还未选择服务器哦</string>
+    <string name="role_blank_values">还没选择哦!</string>
+    <string name="mood_not_space">签名不能为纯空格哦！</string>
+    <string name="setting_userinfo_isnull">没有获取到您的信息</string>
+    <string name="setting_addphoto_max_error">最多只能上传%1$d张相册图片哦！</string>
+    <string name="setting_modify_pwd_success">密码修改成功</string>
+    <string name="setting_add_album_success">添加照片成功</string>
+    <string name="setting_add_album_fail">添加照片失败</string>
+    <string name="setting_del_album_success">照片删除成功</string>
+    <string name="setting_del_album_fail">照片删除失败</string>
+    <!-- 系统设置提示 -->
+    <string name="setting_sys_clean_cache_title">提示</string>
+    <string name="setting_sys_clean_cache_content">确定清除缓存文件？</string>
+    <string name="setting_sys_clean_cache_success">清除成功</string>
+	<!-- 个人明细 -->
+	<string name="cur_point">当前积分</string>
+	<string name="cur_experience">当前经验值</string>
+	<string name="cur_point_detailed">明细可供查询最近7日的积分明细数据哦！</string>
+	<string name="cur_experience_value_detailed">明细可供查询最近7日的经验值明细数据哦！</string>
+	<string name="cur_no_point_detailed">最近7日内未产生积分明细纪录哦！</string>
+	<string name="cur_no_experience_value_detailed">最近7日内未产生经验值明细纪录哦！</string>
+	<string name="cur_how_get_consume_point">如何获取和耗费积分？</string>
+	<string name="experience_value_detailed">经验值明细>></string>
+	<string name="role_name_size">不能超过20个汉字或40个字符哦!</string>
+	<!-- 角色 -->
+	<string name="role_not_space">不能为纯空格哦！</string>
+	<string name="role_already_exist">该角色已存在，请重新创建角色.</string>
+	<string name="role_not_exists">该游戏角色不存在或长期未登录游戏，请稍后再试！</string>
+</resources>

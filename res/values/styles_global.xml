@@ -1,0 +1,24 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="global_page">
+        <item name="android:paddingTop">@dimen/global_padding9</item>
+        <item name="android:paddingLeft">@dimen/global_padding8</item>
+        <item name="android:paddingBottom">@dimen/global_padding8</item>
+        <item name="android:paddingRight">@dimen/global_padding8</item>
+    </style>
+
+    <style name="global_list_item">
+        <item name="android:paddingTop">@dimen/global_padding1</item>
+        <item name="android:paddingLeft">@dimen/global_padding1</item>
+        <item name="android:paddingBottom">@dimen/global_padding1</item>
+        <item name="android:paddingRight">@dimen/global_padding1</item>
+    </style>
+    
+    <style name="splendid_list_item">
+        <item name="android:paddingTop">@dimen/global_padding1</item>
+        <item name="android:paddingLeft">@dimen/global_padding2</item>
+        <item name="android:paddingBottom">@dimen/global_padding1</item>
+        <item name="android:paddingRight">@dimen/global_padding2</item>
+    </style>
+
+</resources>

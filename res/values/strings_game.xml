@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 游戏 -->
+    <string name="game_add_follow_success">关注成功</string>
+    <string name="game_cannel_follow_success">取消关注成功</string>
+    <string name="game_search_fail">搜索内容为空</string>
+    <string name="game_recommend_success">推荐成功</string>
+    <string name="game_recommend_fail">推荐失败</string>
+    <string name="game_recommend_fail_count_over">你今日推荐游戏给好友的次数已达上限了哦</string>
+    <string name="game_liked">您已经赞过</string>
+    <string name="game_disliked">您已经踩过</string>
+    <string name="game_topic_lock">该帖已被吧主锁定，不能回复哦！ </string>
+    <string name="game_download_tip">%1$s开始下载</string>
+    
+    <string name="game_title_info">我的贴吧</string>
+    <string name="game_title_followgame_info">关注的贴吧</string>
+    <string name="game_title_gamelist_info">动态</string>
+    <!-- 
+    <string name="game_desc_info">赞:%1$d | 踩:%2$d</string>
+     -->
+    <string name="game_desc_info">有%1$d人关注了贴吧</string>
+    <string name="game_desc_info2">总发帖:%1$d | 今日发帖:%2$d</string>
+    <string name="game_desc_info3">总发帖:%1$d | 今日访问:%2$d</string>
+    <string name="game_follow_info">关注</string>
+    <string name="game_follow_info2">已关注</string>
+    <string name="game_topic_count">%1$d帖</string>
+    <string name="suppport_user_list_title">有%1$d人觉得这个帖子很赞</string>
+</resources>

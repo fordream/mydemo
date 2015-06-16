@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/point_detail_bg"
+    android:orientation="vertical" >
+
+    <com.iwgame.msgs.widget.TitleFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_top_height"
+        android:background="@drawable/common_title_bg" >
+
+        <com.iwgame.msgs.widget.BackButton
+            android:id="@+id/leftBtn"
+            android:layout_width="57dp"
+            android:layout_height="46dp"
+            android:layout_gravity="left"
+            android:background="@drawable/common_return_bg" />
+
+        <com.iwgame.msgs.widget.TitleTextView
+            android:id="@+id/titleTxt"
+            style="@style/text_large_white_default"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:shadowColor="@color/common_shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:text="积分商城" />
+
+        <LinearLayout
+            android:id="@+id/rightView"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/global_padding3"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </com.iwgame.msgs.widget.TitleFrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@color/point_detail_bg"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:id="@+id/point_market_tab_hori"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:fadingEdge="none"
+            android:focusableInTouchMode="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/tab_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hor_degree"
+        android:background="@color/integral_detail_fengexian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/point_market_show_point_bg" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text="当前个人积分："
+                android:textColor="@color/progress_grade_color"
+                android:textSize="@dimen/global_font_size4" />
+
+            <TextView
+                android:id="@+id/cur_point_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="0"
+                android:textColor="@color/personal_or_group_grade_color"
+                android:textSize="@dimen/global_font_size4" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hor_degree"
+        android:background="@color/integral_detail_fengexian" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@color/point_detail_bg"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

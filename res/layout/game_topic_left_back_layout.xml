@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="57dp"
+    android:layout_height="46dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <com.iwgame.msgs.widget.BackButton
+        android:id="@+id/leftBtn"
+        android:layout_width="57dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout>

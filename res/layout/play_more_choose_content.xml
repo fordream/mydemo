@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/choose_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        <include 
+            android:id="@+id/choose1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            layout="@layout/play_more_choose_checkbox"
+            android:visibility="gone"/>
+        <include 
+            android:id="@+id/choose2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/global_padding1"
+            layout="@layout/play_more_choose_checkbox"
+             android:visibility="gone"/>
+        <include 
+            android:id="@+id/choose3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/global_padding1"
+            layout="@layout/play_more_choose_checkbox"
+             android:visibility="gone"/>
+        <include 
+            android:id="@+id/choose4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/global_padding1"
+            layout="@layout/play_more_choose_checkbox"
+             android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

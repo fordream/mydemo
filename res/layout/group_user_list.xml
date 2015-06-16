@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/show_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="@dimen/global_padding1"
+        android:layout_marginRight="@dimen/global_padding1"
+        android:layout_marginTop="@dimen/global_padding1"
+        android:background="@drawable/common_search_bg_shap"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/global_page_paddingleft"
+        android:paddingRight="@dimen/global_page_paddingright"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/common_search_btn_bg" />
+
+        <EditText
+            android:id="@+id/searchTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入昵称"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/common_search_text_color"
+            android:textColorHint="@color/common_search_hint_text_color"
+            android:textSize="@dimen/global_font_size2" />
+
+        <Button
+            android:id="@+id/cleanBtn"
+            android:layout_width="@dimen/global_clean_size"
+            android:layout_height="@dimen/global_clean_size"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/common_close_bg"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fengexian"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginTop="@dimen/global_padding1"
+        android:background="@color/list_item_fengexian"
+        android:visibility="gone"
+        />
+
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+         <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/refreshList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/common_fengexian"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        android:smoothScrollbar="true"
+        android:stackFromBottom="false" />
+
+    <LinearLayout
+        android:id="@+id/null_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+         >
+    </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

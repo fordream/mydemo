@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 字体样式 ，（大，中，小，微，）（ 白，黑，深灰，蓝，）（是否加粗，） 3个情况的组合 -->
+
+    <style name="text_large_white_default">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="text_large_white_bold">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_large_black_default">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="text_large_black_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_large_darkgray_default">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="text_large_darkgray_bold">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_large_blue_default">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="text_large_blue_bold">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_medium_white_default">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="text_medium_white_bold">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_medium_black_default">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="text_medium_black_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_medium_darkgray_default">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="text_medium_darkgray_bold">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_medium_blue_default">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="text_medium_blue_bold">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_small_white_default">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="text_small_white_bold">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_small_black_default">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="text_small_black_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_small_darkgray_default">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="text_small_darkgray_bold">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_small_blue_default">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="text_small_blue_bold">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_micro_white_default">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_micro</item>
+    </style>
+
+    <style name="text_micro_white_bold">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_micro</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_micro_black_default">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_micro</item>
+    </style>
+
+    <style name="text_micro_black_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_micro</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_micro_darkgray_default">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/text_micro</item>
+    </style>
+
+    <style name="text_micro_darkgray_bold">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/text_micro</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_micro_blue_default">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/text_micro</item>
+    </style>
+
+    <style name="text_micro_blue_bold">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/text_micro</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_medium_listrefresh_default">
+        <item name="android:textColor">@color/listrefresh_text</item>
+        <item name="android:textSize">@dimen/text_micro</item>
+    </style>
+
+    <style name="text_superscript_bold">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_verymicro</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_size2_color4_default">
+        <item name="android:textColor">@color/global_color4</item>
+        <item name="android:textSize">@dimen/global_font_size2</item>
+    </style>
+
+    <style name="text_size2_color2_default">
+        <item name="android:textColor">@color/global_color2</item>
+        <item name="android:textSize">@dimen/global_font_size2</item>
+    </style>
+
+    <style name="text_size3_color1_default">
+        <item name="android:textColor">@color/global_color1</item>
+        <item name="android:textSize">@dimen/global_font_size3</item>
+    </style>
+
+    <style name="text_size3_color6_default">
+        <item name="android:textColor">@color/global_color6</item>
+        <item name="android:textSize">@dimen/global_font_size3</item>
+    </style>
+    
+    <style name="text_size3_color7_default">
+        <item name="android:textColor">@color/global_color7</item>
+        <item name="android:textSize">@dimen/global_font_size3</item>
+    </style>
+
+    <style name="text_size3_color4_default">
+        <item name="android:textColor">@color/global_color4</item>
+        <item name="android:textSize">@dimen/global_font_size3</item>
+    </style>
+
+    <style name="text_size3_color5_default">
+        <item name="android:textColor">@color/global_color5</item>
+        <item name="android:textSize">@dimen/global_font_size3</item>
+    </style>
+
+    <style name="text_size4_color4_default">
+        <item name="android:textColor">@color/global_color4</item>
+        <item name="android:textSize">@dimen/global_font_size4</item>
+    </style>
+
+    <style name="text_size6_color1_default">
+        <item name="android:textColor">@color/global_color1</item>
+        <item name="android:textSize">@dimen/global_font_size6</item>
+    </style>
+
+    <style name="text_size2_color6_bold">
+        <item name="android:textColor">@color/global_color6</item>
+        <item name="android:textSize">@dimen/global_font_size2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_size4_color2_default">
+        <item name="android:textColor">@color/global_color2</item>
+        <item name="android:textSize">@dimen/global_font_size4</item>
+    </style>
+
+    <style name="text_size4_color1_default">
+        <item name="android:textColor">@color/global_color1</item>
+        <item name="android:textSize">@dimen/global_font_size4</item>
+    </style>
+
+    <style name="text_size5_color8_default">
+        <item name="android:textColor">@color/global_color8</item>
+        <item name="android:textSize">@dimen/global_font_size5</item>
+    </style>
+
+    <style name="text_size4_color8_default">
+        <item name="android:textColor">@color/global_color8</item>
+        <item name="android:textSize">@dimen/global_font_size4</item>
+    </style>
+
+    <style name="text_size5_color7_default">
+        <item name="android:textColor">@color/global_color7</item>
+        <item name="android:textSize">@dimen/global_font_size5</item>
+    </style>
+
+    <style name="text_size1_color4_default">
+        <item name="android:textColor">@color/global_color4</item>
+        <item name="android:textSize">@dimen/global_font_size1</item>
+    </style>
+
+    <style name="text_size1_color6_default">
+        <item name="android:textColor">@color/global_color6</item>
+        <item name="android:textSize">@dimen/global_font_size1</item>
+    </style>
+
+    <style name="text_size5_color3_default">
+        <item name="android:textColor">@color/global_color3</item>
+        <item name="android:textSize">@dimen/global_font_size5</item>
+    </style>
+
+    <style name="text_size5_color4_default">
+        <item name="android:textColor">@color/global_color4</item>
+        <item name="android:textSize">@dimen/global_font_size5</item>
+    </style>
+
+    <style name="text_size6_color7_default">
+        <item name="android:textColor">@color/global_color7</item>
+        <item name="android:textSize">@dimen/global_font_size6</item>
+    </style>
+
+    <style name="text_size2_color18_default">
+        <item name="android:textColor">@color/global_color18</item>
+        <item name="android:textSize">@dimen/global_font_size2</item>
+    </style>
+
+    <style name="text_size2_color6_default">
+        <item name="android:textColor">@color/global_color6</item>
+        <item name="android:textSize">@dimen/global_font_size2</item>
+    </style>
+    
+    <style name="text_size3_color3_default">
+        <item name="android:textColor">@color/global_color3</item>
+        <item name="android:textSize">@dimen/global_font_size3</item>
+    </style>
+    <style name="text_size5_color5_default">
+        <item name="android:textColor">@color/global_color5</item>
+        <item name="android:textSize">@dimen/global_font_size5</item>
+    </style>
+    
+     <style name="text_size3_color19_bold">
+        <item name="android:textColor">@color/global_color19</item>
+        <item name="android:textSize">@dimen/global_font_size3</item>
+         <item name="android:textStyle">bold</item>
+    </style>
+    <style name="text_size3_color19_default">
+        <item name="android:textColor">@color/global_color19</item>
+        <item name="android:textSize">@dimen/global_font_size3</item>
+    </style>
+    
+     <style name="text_size8_color3_default">
+        <item name="android:textColor">@color/global_color3</item>
+        <item name="android:textSize">@dimen/global_font_size8</item>
+    </style>
+    
+    <style name="text_size8_color19_default">
+        <item name="android:textColor">@color/global_color19</item>
+        <item name="android:textSize">@dimen/global_font_size8</item>
+    </style> 
+    <style name="text_size5_color1_default">
+        <item name="android:textColor">@color/global_color1</item>
+        <item name="android:textSize">@dimen/global_font_size5</item>
+    </style>
+    
+   
+    <style name="text_size8_color18_default">
+        <item name="android:textColor">@color/global_color18</item>
+        <item name="android:textSize">@dimen/global_font_size8</item>
+    </style>
+        <style name="text_size8_color4_default">
+        <item name="android:textColor">@color/global_color4</item>
+        <item name="android:textSize">@dimen/global_font_size8</item>
+    </style>
+    
+    
+    <style name="text_size5_color18_default">
+        <item name="android:textColor">@color/global_color18</item>
+        <item name="android:textSize">@dimen/global_font_size5</item>
+    </style>
+    
+    <style name="text_size4_color7_default">
+        <item name="android:textColor">@color/global_color7</item>
+        <item name="android:textSize">@dimen/global_font_size4</item>
+    </style>
+    
+    <style name="text_size4_color3_default">
+        <item name="android:textColor">@color/global_color3</item>
+        <item name="android:textSize">@dimen/global_font_size4</item>
+    </style>
+    
+    <style name="text_size7_color1_default">
+        <item name="android:textColor">@color/global_color1</item>
+        <item name="android:textSize">@dimen/global_font_size7</item>
+    </style>
+       <style name="text_size8_color5_default">
+        <item name="android:textColor">@color/global_color5</item>
+        <item name="android:textSize">@dimen/global_font_size8</item>
+    </style>
+    
+    
+       
+    <!-- item第一行左边字体风格 s2c6 -->  
+    <style name="text_item_first_grade_left">
+        <item name="android:textColor">@color/item_first_grade_left_color</item>
+        <item name="android:textSize">@dimen/global_font_size2</item>
+    </style>
+    <!-- item第一行左边字体风格2 -->
+    <style name="text_item_first_grade_left2">
+        <item name="android:textColor">@color/item_first_grade_left_color2</item>
+        <item name="android:textSize">@dimen/global_font_size2</item>
+    </style>
+    <!-- item第一行右边字体风格  大s2c7 -->  
+    <style name="text_item_first_grade_right1">
+        <item name="android:textColor">@color/item_first_grade_right_color</item>
+        <item name="android:textSize">@dimen/global_font_size2</item>
+    </style>
+    <!-- item第一行右边字体风格  小s3c7 -->  
+    <style name="text_item_first_grade_right2">
+        <item name="android:textColor">@color/item_first_grade_right_color</item>
+        <item name="android:textSize">@dimen/global_font_size3</item>
+    </style>
+    <!-- item第二行左边字体风格 s3c3-->  
+    <style name="text_item_second_grade">
+        <item name="android:textColor">@color/item_second_grade_color</item>
+        <item name="android:textSize">@dimen/global_font_size3</item>
+    </style>
+    <!-- item第三行左边字体风格 -->
+    <style name="text_item_third_grade">
+        <item name="android:textColor">@color/item_third_grade_color</item>
+        <item name="android:textSize">@dimen/global_font_size3</item>
+    </style>
+    <!-- 积分商城里面的文字风格 -->
+    <style name="text_item_four_grade">
+        <item name="android:textColor">@color/item_third_grade_color</item>
+        <item name="android:textSize">@dimen/global_font_size5</item>
+    </style>
+    <!-- 帖子列表Item标题颜色   s3c6-->
+    <style name="text_topic_title">
+        <item name="android:textColor">@color/item_first_grade_left_color</item>
+        <item name="android:textSize">@dimen/global_font_size2</item>
+    </style>
+    <!-- 帖子列表Item内容颜色   s3c6-->
+    <style name="text_topic_content">
+        <item name="android:textColor">@color/item_first_grade_left_color</item>
+        <item name="android:textSize">@dimen/global_font_size4</item>
+    </style>
+    <!-- 帖子列表楼主行  s5c7-->
+    <style name="text_topic_nikename">
+        <item name="android:textColor">@color/item_first_grade_right_color</item>
+        <item name="android:textSize">@dimen/global_font_size5</item>
+    </style>
+    <!-- 帖子列表日期距离  s6c7-->
+    <style name="text_topic_loc_time">
+        <item name="android:textColor">@color/item_first_grade_right_color</item>
+        <item name="android:textSize">@dimen/global_font_size6</item>
+    </style>
+    <!-- 帖子列表回复和评论数  s5c18-->
+    <style name="text_topic_comment_visit">
+        <item name="android:textColor">@color/topic_list_item_commont_text_color</item>
+        <item name="android:textSize">@dimen/global_font_size5</item>
+    </style>
+    <!-- 聊天界面时间显示  s4c7-->
+    <style name="item_chat_date_color">
+        <item name="android:textColor">@color/item_first_grade_right_color</item>
+        <item name="android:textSize">@dimen/global_font_size4</item>
+    </style>
+    <!-- 聊天界面消息文本-->
+    <style name="item_chat_msg_in_or_out">
+        <item name="android:textColor">@color/chat_msg_text_color</item>
+        <item name="android:textSize">@dimen/global_font_size2</item>
+    </style>
+    <!-- 聊天界面消息声音文本-->
+    <style name="item_chat_msg_in_or_out_2">
+        <item name="android:textColor">@color/item_first_grade_right_color</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+    <!-- 聊天界面消息声音文本-->
+    <style name="item_chat_msg_share_bottom">
+        <item name="android:textColor">@color/chat_share_bottom_text_color</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+    <!-- 聊天界面消息昵称文本-->
+    <style name="item_chat_msg_nickname">
+        <item name="android:textColor">@color/chat_msg_nickname_text_color</item>
+        <item name="android:textSize">@dimen/global_font_size4</item>
+    </style>
+    <!-- 聊天界面系统消息-->
+    <style name="item_chat_system_msg">
+        <item name="android:textColor">@color/chat_msg_in_system_text_color</item>
+        <item name="android:textSize">@dimen/global_font_size4</item>
+    </style>
+    <!-- 通讯录公会昵称字体颜色 -->
+    <style name="user_service_group_name">
+        <item name="android:textColor">@color/user_service_group_name_color</item>
+        <item name="android:textSize">@dimen/global_font_size2</item>
+    </style>
+
+</resources>

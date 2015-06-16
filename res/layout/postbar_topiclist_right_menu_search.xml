@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/global_color6"
+    android:paddingLeft="@dimen/global_padding9"
+    android:paddingRight="@dimen/global_padding9"
+    android:paddingTop="@dimen/global_padding1"
+    android:paddingBottom="@dimen/global_padding1"
+>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/global_menu_search_height"
+            android:background="@drawable/postbar_topiclist_menu_search_shap"
+            android:orientation="horizontal"
+            android:gravity="left|center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding1"
+                android:src="@drawable/common_search_btn_bg" />
+
+            <TextView
+                android:id="@+id/searchTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/global_controlgap_small"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/postbar_search_topic_searchTxt_hint"
+                android:maxLength="20"
+                android:singleLine="true"
+                style="@style/text_size3_color7_default"
+                android:gravity="left|center_vertical" 
+                />
+
+    </LinearLayout>
+
+
+</LinearLayout>

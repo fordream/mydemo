@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    style="@style/global_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg_selector" >
+
+    <LinearLayout
+        android:layout_width="@dimen/global_icon_1"
+        android:layout_height="@dimen/global_icon_1" >
+
+        <include layout="@layout/common_icon_big_gray" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/global_controlgap_large"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/labelView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/group_join_tag"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/rightview_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/labelView"
+            android:layout_marginTop="3dp" >
+
+            <ImageView
+                android:id="@+id/manageView"
+                android:layout_width="66dp"
+                android:layout_height="29dp"
+                android:background="@drawable/common_btn_selector"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/manageTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="管理"
+                android:textColor="@color/global_color1"
+                android:textSize="@dimen/global_font_size8"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/first_row"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/labelView"
+            android:orientation="horizontal" >
+            
+            <ImageView
+                android:id="@+id/tagIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:focusable="false"
+                android:src="@drawable/group_service_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/gnameTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/global_color6"
+                android:textSize="@dimen/global_font_size2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="ID:"
+                android:textColor="@color/global_color7"
+                android:textSize="@dimen/global_font_size2" />
+
+            <TextView
+                android:id="@+id/group_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/global_color7"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightViewparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/global_controlgap_large"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/center_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_row"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/rightViewparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/grade"
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:background="@drawable/common_item_vip_bg_shap"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:singleLine="true"
+                android:textColor="@color/global_color1"
+                android:textSize="@dimen/global_font_size7" />
+
+            <TextView
+                android:id="@+id/desc1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:paddingLeft="3dp"
+                android:singleLine="true"
+                android:textColor="@color/global_color3"
+                android:textSize="@dimen/global_font_size3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp" >
+
+            <com.iwgame.msgs.widget.roundedimageview.RoundedImageView
+                android:id="@+id/gameIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/common_default_icon"
+                iwgame:border_color="@color/global_color1"
+                iwgame:border_width="0dp"
+                iwgame:corner_radius="3dp"
+                iwgame:oval="false" />
+
+            <TextView
+                android:id="@+id/desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/global_color3"
+                android:textSize="@dimen/global_font_size3" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

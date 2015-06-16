@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_padding7"
+        android:layout_marginLeft="@dimen/global_padding1"
+        android:layout_marginBottom="@dimen/global_padding7"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/play_reply_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哦哦好的撒"
+            android:singleLine="true"
+            android:textSize="@dimen/global_font_size5"
+            android:textColor="#6c7fae"/>
+        <com.iwgame.msgs.widget.MyTextView
+        android:id="@+id/play_replay_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding2"
+        android:autoLink="web"
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="#7d7d7d"
+        android:textSize="@dimen/global_font_size3"
+        android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

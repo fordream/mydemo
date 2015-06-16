@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/postbar_applymaster_info"
+        style="@style/global_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/postbar_applymaster_tip_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="top"
+        android:minHeight="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/postbar_applymaster_tip_text_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minLines="2"
+            android:text="@string/postbar_applymaster_info" />
+
+        <ImageView
+            android:id="@+id/postbar_applymaster_info_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/postbar_delete_bg_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/global_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/common_input_bg_shap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/postbar_applymaster_name"
+                    style="@style/text_medium_darkgray_default"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/postbar_applymaster_name_hint"
+                    android:maxLength="20"
+                    android:minHeight="44dp"
+                    android:paddingLeft="@dimen/global_controlgap_medium"
+                    android:paddingRight="@dimen/global_controlgap_medium"
+                    android:singleLine="true"
+                    android:textColor="@color/common_input_value_text_color"
+                    android:textColorHint="@color/common_input_hint_text_color" />
+
+                <Button
+                    android:id="@+id/apply_master_name_closeBtn"
+                    android:layout_width="@dimen/global_clean_size"
+                    android:layout_height="@dimen/global_clean_size"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginLeft="@dimen/global_padding3"
+                    android:layout_marginRight="@dimen/global_padding8"
+                    android:background="@drawable/common_close_bg"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_list_divider"
+                android:focusable="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/postbar_applymaster_cardid"
+                    style="@style/text_medium_darkgray_default"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="1234567890Xx"
+                    android:gravity="center_vertical"
+                    android:hint="@string/postbar_applymaster_cardid_hint"
+                    android:maxLength="18"
+                    android:minHeight="44dp"
+                    android:paddingLeft="@dimen/global_controlgap_medium"
+                    android:paddingRight="@dimen/global_controlgap_medium"
+                    android:singleLine="true"
+                    android:textColor="@color/common_input_value_text_color"
+                    android:textColorHint="@color/common_input_hint_text_color" />
+
+                <Button
+                    android:id="@+id/apply_master_cardid_closeBtn"
+                    android:layout_width="@dimen/global_clean_size"
+                    android:layout_height="@dimen/global_clean_size"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginLeft="@dimen/global_padding3"
+                    android:background="@drawable/common_close_bg"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_controlgap_large" >
+
+                    <ImageButton
+                        android:id="@+id/postbar_applymaster_cardimg"
+                        android:layout_width="@dimen/global_icon_2"
+                        android:layout_height="@dimen/global_icon_2"
+                        android:layout_margin="@dimen/global_controlgap_small"
+                        android:background="@drawable/apply_master_phone_selector"
+                        android:padding="2dp"
+                        android:scaleType="centerCrop" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/global_controlgap_small"
+            android:background="@drawable/common_input_bg_shap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/postbar_applymaster_content"
+                style="@style/text_medium_darkgray_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="@string/postbar_applymaster_content_hint"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLength="100"
+                android:minLines="5"
+                android:padding="@dimen/global_controlgap_medium"
+                android:textColor="@color/common_input_value_text_color"
+                android:textColorHint="@color/common_input_hint_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

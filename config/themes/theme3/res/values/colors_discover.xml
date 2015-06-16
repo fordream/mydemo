@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      
+    <!-- 发现筛选分割线色 -->
+    <color name="discover_filter_div_color">#d8d8d8</color>
+    <!-- 发现筛选数字背景色 -->
+    <color name="discover_filter_num_bg_text">#73a8e6</color>
+	<!-- 发现筛tab bg色 -->
+    <color name="discover_filter_tab_bg_text">#ffffff</color>
+	<!-- 发现筛tab bg pre色 -->
+    <color name="discover_filter_tab_bg_pre_text">#f7f7f7</color>
+	<!-- 发现筛条目bg色 -->
+    <color name="discover_filter_item_bg_text">#f7f7f7</color>
+	<!-- 发现筛条目pre bg色 -->
+    <color name="discover_filter_item_bg_text_pre">#ededed</color>
+	<!-- 发现筛选文字色 -->
+    <color name="discover_filter_item_txt_text">#7d7d7d</color>
+	<!-- 发现页面标题选项卡色块bg nor-->
+    <color name="discover_title_tab_bg_nor_color">#7d7d7d</color>
+	<!-- 发现页面标题选项卡色块bg pre-->
+    <color name="discover_title_tab_bg_pre_color">#6db9ff</color>
+	<!-- 发现页面筛选背景色值1-->
+    <color name="discover_filter_content_bg_color2">#32000000</color>
+	<!-- 发现页面筛选背景色值1-->
+	<color name="discover_filter_content_bg_color1">#00000000</color>
+    
+</resources>

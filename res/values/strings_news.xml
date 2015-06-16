@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="news_sys_name">游伴小助手</string>
+    <string name="news_activity_name">活动小秘</string>
+    <string name="news_play_name">陪玩小助手</string>
+    <string name="news_sysadmin_name">系统公告</string>
+    <string name="news_friends_name">好友动态</string>
+    <string name="news_games_name">游戏动态</string>
+    <string name="news_gymy_name">帖子通知</string>
+    <string name="news_group_name">公会通知</string>
+    <string name="news_group_name_format">%1$s公会</string>
+    <string name="news_distance_format">[%1$s]</string>
+    <string name="news_friendsnews_content_format">%1$s的动态:%2$s</string>
+    <string name="news_gamesnews_content_format">%1$s发表了动态:%2$s</string>
+    <string name="news_comment_content_format">%1$s的回复:%2$s</string>
+    <string name="news_group_content_format">%1$s公会:%2$s</string>
+    <string name="news_group_content_format2">会长:%1$s</string>
+    <string name="news_menu_titlename_allnews">全部动态</string>
+    <string name="news_menu_titlename_chatinfo">聊天信息</string>
+    <string name="news_menu_titlename_friendsnews">好友动态</string>
+    <string name="news_menu_titlename_gamesnews">游戏动态</string>
+    <string name="gymy_tab_name_mynews">我的动态</string>
+    <string name="gymy_tab_name_commentmy">评论我的</string>
+    <string name="gymy_commentmy_commentcontent">回复:%1$s</string>
+    <string name="gymy_commentmy_mycontent_news">对我的动态:%1$s</string>
+    <string name="gymy_commentmy_mycontent_comment">对我的评论:%1$s</string>
+    <string name="imagebrower_save">保存</string>
+    <string name="imagebrower_send">完成</string>
+    <string name="imagebrower_report">举报</string>
+    <string name="add_news_center_title">发布动态</string>
+    <string name="add_news_left_title">取消</string>
+    <string name="add_news_right_title">发布</string>
+    <string name="news_comment_replycomment_echo">回复[%1$s]:</string>
+    <string name="news_comment_content">回复[%1$s]:%2$s</string>
+    
+    <string name="news_groupchat_name">公会聊天室消息</string>
+    <string name="news_groupchat_content_format">%1$s:%2$s</string>
+    <string name="news_groupchat_name_format">%1$s</string>
+    <string name="news_groupchat_content_format2">%1$s:%2$s</string>
+   
+
+</resources>

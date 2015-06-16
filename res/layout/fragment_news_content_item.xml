@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+ 
+<FrameLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+     >
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_list_item_height1"
+        android:background="@color/global_color1"
+        android:gravity="right|center_vertical"
+        android:tag="back"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/news_action_del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/blue"
+            android:src="@drawable/common_tab_btn_delete"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_list_item_height1"
+        android:background="@drawable/message_list_item_bg_selector"
+        android:orientation="horizontal"
+        android:tag="front" >
+
+      
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:paddingTop="@dimen/global_padding1"
+                    android:paddingBottom="@dimen/global_padding1"
+                    android:paddingLeft="@dimen/global_padding3"
+                    android:paddingRight="@dimen/global_padding3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/global_icon1"
+                        android:layout_height="@dimen/global_icon1"
+                        android:orientation="vertical" >
+
+                        <include layout="@layout/common_icon_big_gray" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|top"
+                    android:orientation="vertical"
+                    android:paddingRight="6dp"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:id="@+id/news_unreadcount"
+                        style="@style/text_superscript_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|top"
+                        android:background="@drawable/news_count_bg"
+                        android:gravity="center" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/global_page_paddingbottom"
+                android:paddingLeft="0dp"
+                android:paddingRight="@dimen/global_page_paddingright"
+                android:paddingTop="@dimen/global_page_paddingtop"
+                android:gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/news_main_name"
+                        style="@style/text_item_first_grade_left"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/news_clock" />
+
+                    <TextView
+                        android:id="@+id/news_time"
+                        style="@style/text_size3_color7_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/global_controlgap_small" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/global_controlgap_verylarge"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/news_content"
+                        style="@style/text_size3_color3_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
+       </LinearLayout>

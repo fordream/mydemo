@@ -1,0 +1,6 @@
+<!-- 全局值配置文件 -->
+<resources>
+    <!-- 设置默认的软键盘的高度为288dp -->
+    <dimen name="keyborad_height_default">288dp</dimen>
+    
+</resources>

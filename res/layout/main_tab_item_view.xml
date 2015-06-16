@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/global_bottom_height"
+    android:gravity="center|bottom"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="false">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/unreadcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/news_count_bg2"
+            android:gravity="center"
+            android:layout_gravity="bottom|right"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/setting_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="41dp"
+            android:background="@drawable/task_tag_circle" 
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+</LinearLayout>

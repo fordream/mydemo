@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- 登陆对话框中的积分字体颜色值 -->
+   <color name="login_message_point_color">#ffffff</color>
+   <!-- 升级对话中等级颜色值 -->
+   <color name="upgrade_grade_color">#ffffff</color>
+    <!-- 升级对话中等级数值颜色值 -->
+   <color name="upgrade_grade_num_color">#fee876</color>
+   <!-- 升级对话框中提示文字颜色值 -->
+   <color name="upgrade_grade_font_color">#ffffff</color>
+   <!-- 升级对话框点击链接颜色值 -->
+   <color name="upgrade_grade_link_color">#d7e1e3</color>
+   <!-- 对话框的我知道了文字颜色 -->
+   <color name="dialog_know_font_color">#ffbf26</color>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/popfirst"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/common_bottom_layout_bg"
+        android:textColor="@color/common_bottom_btn_text_selector"
+        />
+    
+    <TextView 
+        android:id="@+id/popsecond"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/common_bottom_layout_bg"
+        android:text="@string/postbar_topic_right_menu_order_create_time"
+        android:textColor="@color/common_bottom_btn_text_selector"
+        />
+
+</LinearLayout>

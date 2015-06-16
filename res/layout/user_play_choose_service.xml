@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginBottom="@dimen/global_padding2"
+        android:layout_marginTop="@dimen/global_padding2"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="@dimen/global_padding1"
+            android:layout_marginLeft="@dimen/global_padding8"
+            android:layout_marginTop="@dimen/global_padding1"
+            android:layout_weight="1"
+            android:background="@drawable/common_search_bg_shap"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/common_search_btn_bg" />
+
+            <EditText
+                android:id="@+id/search_service"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="关键字搜索服务器"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/common_search_text_color"
+                android:textColorHint="@color/common_search_hint_text_color"
+                android:textSize="@dimen/global_font_size2" />
+
+            <Button
+                android:id="@+id/play_cleanBtn"
+                android:layout_width="@dimen/global_clean_size"
+                android:layout_height="@dimen/global_clean_size"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/common_close_bg"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/global_padding8"
+            android:layout_marginRight="@dimen/global_padding8"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="支持全服"
+                android:textColor="#3a3a3a"
+                android:textSize="@dimen/global_font_size8" />
+
+            <CheckBox
+                android:id="@+id/play_choose_all"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:checked="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@drawable/common_content_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/approve_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/global_padding8"
+            android:text="暗影岛"
+            android:textColor="#3a3a3a"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="(当前默认)"
+            android:textColor="#3a3a3a"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/service_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@null"
+        android:listSelector="#00000000" >
+    </ListView>
+
+</LinearLayout>

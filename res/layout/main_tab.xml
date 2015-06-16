@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_first_bg" >
+
+    <LinearLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/global_bottom_height"
+        android:layout_alignParentBottom="true" >
+        
+        <LinearLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+    </android.support.v4.app.FragmentTabHost>
+    
+    <RelativeLayout
+        android:id="@+id/tabhost_shade" 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/global_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/extView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</RelativeLayout>

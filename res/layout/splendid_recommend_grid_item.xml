@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="@dimen/global_padding8"
+    android:paddingRight="@dimen/global_padding8"
+    android:paddingTop="@dimen/global_padding8"
+    android:paddingBottom="8dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_chat_date"
+        style="@style/item_chat_date_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:drawableLeft="@drawable/news_clock"
+        android:drawablePadding="@dimen/global_padding1"
+        android:gravity="center"
+        android:paddingLeft="@dimen/global_padding1"
+        android:paddingRight="@dimen/global_padding1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/splendid_bg_shap"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/splendid_content"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/global_padding7"
+                android:src="@drawable/news_icon_recommend3" />
+
+            <TextView
+                android:id="@+id/splendid_recommond_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/global_padding7"
+                android:text="@string/message_notify_splendid_game"
+                android:textColor="@color/global_color3"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/topic_title_fgx"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/list_item_fengexian" />
+        
+        
+        <TableLayout
+            android:id="@+id/splendid_recommend_table"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/list_second_bg"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginBottom="23dp"
+            android:stretchColumns="*" >
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

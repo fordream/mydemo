@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 任务颜色 -->
+    <!-- 标题颜色-->
+    <color name="point_task_title">#6c7fae</color>
+	<!-- 任务状态  -->
+    <color name="point_task_status3">#6c7fae</color>
+    <color name="point_task_status1">#999999</color>
+    <!-- 说明文字  -->
+    <color name="point_task_explain">#606366</color>
+       <!--YG      个人等级界面字体颜色 -->
+    <color name="person_more_exp_text_color">#73a8e6</color>
+    <color name="setting_task_skip1">#94ceff</color>
+    <color name="setting_task_skip2">#215d90</color>
+    <!--任务详情界面-->
+    <color name="task_infomation">#7d000000</color>
+    <!-- 任务条段颜色 -->
+    <color name="task_tiao_color">#74a7e6</color>
+     <!-- 任务指导背景 -->
+    <color name="task_guide">#fcefd1</color>
+    <!-- 任务详情中任务标题颜色 -->
+    <color name="task_title_color">#000000</color>
+    <!-- 任务详情中任务和积分的说明 -->
+    <color name="task_point_exp_values_color">#7d7d7d</color>
+     <!-- 任务列表中的颜色带颜色值 -->
+    <color name="task_list_color_tiao">#74a7e6</color>
+    <!-- 任务列表中条目中积分和经验值的字体颜色 -->
+    <color name="task_item_font_color">#7d7d7d</color>
+    <!-- 任务列表中子列表任务名称颜色值 -->
+    <color name="task_child_task_name_color">#000000</color>
+    <!-- 任务列表中的子列表的积分经验值颜色值 -->
+    <color name="task_child_point_exp_values_color">#7d7d7d</color>
+</resources>

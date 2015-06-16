@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 消息奖励弹出框奖励内容色值 -->
+    <color name="message_dialog_reward">#ff7826</color>
+    <!-- 消息奖励弹出框奖励描述色值 -->
+    <color name="message_dialog_reward_desc">#ffa178</color>
+    <!-- 消息奖励弹出框链接色值 -->
+    <color name="message_dialog_reward_link">#6c7fae</color>
+
+    <!-- 消息升级弹出框等级色值 -->
+    <color name="message_dialog_grade_level">#fee876</color>
+    <!-- 消息升级弹出框分割线色值 -->
+    <color name="message_dialog_grade_divid_or_ok">#ffbf26</color>
+
+    <!-- 消息登陆奖励天文本色值 -->
+    <color name="message_dialog_login_reward_day">#606366</color>
+    
+    <!-- 消息发送组件上传图片数文本色值 -->
+    <color name="message_send_add_image_txt_color">#b7b7b7</color>
+    <!-- 消息发送组件上传图片数文本色值2 -->
+    <color name="message_send_add_image_txt_color2">#e28249</color>
+    <!-- 消息发送组件添加图片声音icon文本色值 -->
+    <color name="message_send_add_image_icon_txt_color">#7d7d7d</color>
+    
+    <!-- 消息发送组件发送声音文本色值 -->
+    <color name="message_send_voice_txt_color">#7d7d7d</color>
+    <!-- 消息分享链接文本色值 -->
+    <color name="message_share_link_txt_color">#9e9e9e</color>
+    <!-- 消息分享链接线色值 -->
+    <color name="message_share_line_color">#c3c7c9</color>
+    
+</resources>

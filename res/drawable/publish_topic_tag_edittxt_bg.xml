@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+    <item Android:state_pressed="true"><shape>
+
+            <!-- 实心 -->
+            <solid Android:color="@color/topic_bottombtn_bg_pre" />
+            <!-- 圆角 -->
+            <corners Android:bottomLeftRadius="5dp" Android:bottomRightRadius="5dp" Android:topLeftRadius="5dp" Android:topRightRadius="5dp" />
+            <!-- 描边 -->
+            <stroke Android:width=".5dp" Android:color="@color/publish_topic_txt_stroke_color" />
+        </shape></item>
+    <item><shape>
+
+            <!-- 实心 -->
+            <solid Android:color="@color/public_topic_tag_submit_dis" />
+            <!-- 圆角 -->
+            <corners Android:bottomLeftRadius="5dp" Android:bottomRightRadius="5dp" Android:topLeftRadius="5dp" Android:topRightRadius="5dp" />
+            <!-- 描边 -->
+            <stroke Android:width=".5dp" Android:color="@color/publish_topic_txt_stroke_color" />
+        </shape></item>
+
+</selector>

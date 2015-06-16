@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 创建陪玩的备注提示 -->
+    <string name="play_remark_tip">建议“吸引人的标题+陪玩时间说明”注意不要超过50个字哦!</string>
+    <!-- 创建陪玩的扣扣号提示 -->
+    <string name="play_qq_tip">请输入你的QQ号</string>
+    <!-- 创建游伴的手机号码提示 -->
+    <string name="play_phont_tip">请输入常用手机号,以便U币提现</string>
+    <!-- 添加陪玩图片提示 -->
+    <string name="play_image_tip">自拍、战绩图更能吸引别人关注哦！</string>
+
+    <!-- 我的陪玩title -->
+    <string name="play_main_title">我的陪玩</string>
+    <!-- 我的陪玩tab -->
+    <string name="play_main_list_tab_created">我创建的</string>
+    <string name="play_main_list_tab_apply">我报名的</string>
+    <!-- 报名管理title -->
+    <string name="play_manage_title">报名管理</string>
+    <!-- 我的陪玩tab -->
+    <string name="play_manage_list_tab_init">待确认</string>
+    <string name="play_manage_list_tab_confirmed">已确认</string>
+    <string name="play_manage_list_tab_close">已结束</string>
+    <!-- 创建陪玩 错误码提示-->
+    <string name="no_need_values">缺少必要的参数</string>
+    <string name="no_can_edit">不可以编辑</string>
+    <string name="play_already_exist">游戏陪玩信息已经存在</string>
+    <string name="day_can_once">你今天已经编辑过该陪玩，请明天再来吧</string>
+    <string name="play_info_no_exits">游戏陪玩信息不存在</string>
+    <string name="remark_tip">建议“吸引人的标题+陪玩时间说明”注意不要超过50个字哦</string>
+</resources>

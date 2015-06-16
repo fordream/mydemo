@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="55dp"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_play_photo_selector"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:id="@+id/applyManage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="报名管理"
+                android:gravity="center"
+                android:textColor="@color/play_font_skip__selector"
+                />
+            <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                 android:background="@drawable/common_content_divider_line"/>
+            <TextView 
+                android:id="@+id/editManage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="编辑陪玩"
+                android:textColor="@color/play_font_skip__selector"
+                android:gravity="center"/>
+            <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                 android:background="@drawable/common_content_divider_line"/>
+            <TextView 
+                android:id="@+id/openOrCloseManage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="关闭陪玩"
+                android:textColor="@color/play_font_skip__selector"
+                android:gravity="center"/>
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/cancle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/add_play_photo_selector"
+            android:layout_marginTop="10dp"
+             android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="取消"
+            android:textColor="@color/play_font_skip__selector"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

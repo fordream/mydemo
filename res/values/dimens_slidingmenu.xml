@@ -1,0 +1,6 @@
+<!-- 侧滑组件的数值 -->
+<resources>
+ <dimen name="slidingmenu_offset">60dp</dimen>
+ <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">0dp</dimen>
+</resources>

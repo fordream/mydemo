@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/global_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg_selector"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/global_icon_1"
+        android:layout_height="@dimen/global_icon_1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/common_user_icon_default" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_controlgap_large"
+        android:layout_marginRight="@dimen/global_padding1"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_bg_selector"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nickNameTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/play_manage_list_item_name_color"
+            android:textSize="@dimen/global_font_size8" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_padding3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="预约："
+                android:textColor="@color/play_manage_list_item_time_color"
+                android:textSize="@dimen/global_font_size4" />
+
+            <TextView
+                android:id="@+id/applyTimeTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/play_manage_list_item_name_color"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/play_manage_list_item_time_color"
+            android:textSize="@dimen/global_font_size4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statusTxt"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="等待对方\n确认付款"
+        android:textColor="@color/play_manage_list_item_status_color"
+        android:textSize="@dimen/global_font_size8"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/statusBtn"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/common_btn_ls_selector"
+        android:focusable="false"
+        android:text="确认陪玩"
+        android:textColor="@color/common_btn_text_color"
+        android:textSize="@dimen/global_font_size4"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/statusBtn2"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/play_manage_list_item_btn_bg_dis_color"
+        android:focusable="false"
+        android:text="游戏结束"
+        android:textColor="@color/play_manage_list_item_btn_txt_dis_color"
+        android:textSize="@dimen/global_font_size4"
+        android:visibility="gone" />
+
+</LinearLayout>

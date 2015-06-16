@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filterView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/discover_filter_content_bg_color1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/point_detail_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/genderTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/score_down"
+            android:gravity="center"
+            android:paddingLeft="@dimen/global_padding2"
+            android:paddingRight="@dimen/global_padding2"
+            android:singleLine="true"
+            android:text="性别"
+            android:background="@color/discover_filter_tab_bg_text"
+            android:textColor="@color/discover_filter_item_txt_text"
+            android:textSize="@dimen/global_font_size3" />
+
+        <View
+            android:layout_width="@dimen/hor_degree"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/global_padding1"
+            android:layout_marginTop="@dimen/global_padding1"
+            android:background="@color/integral_detail_fengexian" />
+
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/score_down"
+            android:gravity="center"
+            android:paddingLeft="@dimen/global_padding2"
+            android:paddingRight="@dimen/global_padding2"
+            android:singleLine="true"
+            android:text="活跃时间"
+            android:background="@color/discover_filter_tab_bg_text"
+            android:textColor="@color/discover_filter_item_txt_text"
+            android:textSize="@dimen/global_font_size3" />
+
+        <RelativeLayout
+            android:id="@+id/serviceTab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/serviceline"
+                android:layout_width="@dimen/hor_degree"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/global_padding1"
+                android:layout_marginTop="@dimen/global_padding1"
+                android:background="@color/integral_detail_fengexian" />
+
+            <TextView
+                android:id="@+id/serviceTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/serviceline"
+                android:drawableRight="@drawable/score_down"
+                android:gravity="center"
+                android:paddingLeft="@dimen/global_padding2"
+                android:paddingRight="@dimen/global_padding2"
+                android:singleLine="true"
+                android:text="服务器"
+                android:background="@color/discover_filter_tab_bg_text"
+                android:textColor="@color/discover_filter_item_txt_text"
+                android:textSize="@dimen/global_font_size3" />
+
+            <TextView
+                android:id="@+id/serviceNunTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding2"
+                android:layout_marginTop="12.5dp"
+                android:layout_toRightOf="@+id/serviceline"
+                android:background="@drawable/discover_filter_num_bg_shap"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/global_font_size5"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/discover_filter_div_color" />
+
+    <LinearLayout
+        android:id="@+id/filterListContent"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical" />
+
+</LinearLayout>

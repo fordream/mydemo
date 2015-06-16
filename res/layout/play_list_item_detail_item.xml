@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/dname"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="@dimen/global_padding2"
+        android:singleLine="true"
+        android:textColor="@color/play_list_item_detail_dname_color"
+        android:textSize="@dimen/global_font_size4" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/play_list_item_detail_desc_color"
+        android:textSize="@dimen/global_font_size4" />
+    
+    <TextView
+        android:id="@+id/extLeftTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="("
+        android:textColor="@color/play_list_item_detail_desc_color"
+        android:visibility="gone"
+        android:textSize="@dimen/global_font_size4" />
+
+    <TextView
+        android:id="@+id/extTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:visibility="gone"
+        android:textColor="@color/play_list_item_detail_desc_color"
+        android:textSize="@dimen/global_font_size4" />
+    
+    <TextView
+        android:id="@+id/extRightTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text=")"
+        android:visibility="gone"
+        android:textColor="@color/play_list_item_detail_desc_color"
+        android:textSize="@dimen/global_font_size4" />
+
+</LinearLayout>

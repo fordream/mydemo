@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="54dp"
+       >
+       <TextView 
+	         android:id="@+id/server_name"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="@dimen/global_padding8"
+	         android:text="暗影岛"
+	         android:layout_centerVertical="true"
+	         android:textSize="15dp"
+	         android:textColor="#3a3a3a"/>
+       <TextView 
+           android:id="@+id/server_mr"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="(当前默认)"
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@id/server_name"
+           android:textSize="15dp"
+	       android:textColor="#3a3a3a"
+	       android:visibility="gone"
+           />
+		<CheckBox
+             android:id="@+id/server_check"
+             style="@style/CustomCheckboxTheme"
+             android:layout_width="24dp"
+             android:layout_height="24dp"
+             android:layout_alignParentRight="true"
+             android:focusable="false" 
+        	 android:clickable="false"  
+             android:layout_marginRight="@dimen/global_padding8"
+             android:layout_centerVertical="true"
+             android:checked="false" />
+   </RelativeLayout> 
+        <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@drawable/common_content_divider_line"/>
+
+</LinearLayout>

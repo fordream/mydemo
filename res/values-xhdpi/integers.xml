@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- 发布帖子，帖子内容在edittext中的最小行数 -->
+    <integer name="postbar_publish_topic_content_minline">4</integer>
+    <!-- 发布帖子，帖子内容在edittext中的显示出来的行数 -->
+    <integer name="postbar_publish_topic_content_line">6</integer>
+
+</resources>

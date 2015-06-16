@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:background="@drawable/common_tab_bg" >
+
+        <TextView
+            android:id="@+id/followTab"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_sub_tab_bg_selector"
+            android:gravity="center"
+            android:text="好友关注"
+            android:textColor="@drawable/game_main_tab_text_selector"
+            android:textSize="@dimen/text_medium" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/nearTab"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_sub_tab_bg_selector"
+            android:gravity="center"
+            android:text="附近的人"
+            android:textColor="@drawable/game_main_tab_text_selector"
+            android:textSize="@dimen/text_medium" >
+        </TextView>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@color/list_first_bg"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

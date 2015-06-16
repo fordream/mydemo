@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_item_fengexian" />
+
+    <LinearLayout
+        android:id="@+id/sendmsg_voice_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/send_msg_text_ll_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/sendmsgview_marginBottom"
+        android:paddingTop="@dimen/sendmsgview_marginTop"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/sendmsg_keyborad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding7"
+            android:background="@drawable/chat_msg_keyborad_selector"
+            android:text="" />
+
+        <Button
+            android:id="@+id/sendmsg_btem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding7"
+            android:background="@drawable/chat_msg_em_selector" />
+
+        <Button
+            android:id="@+id/sendmsg_btvoice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:layout_marginRight="@dimen/global_padding2"
+            android:layout_weight="1.0"
+            android:background="@drawable/chat_msg_voice_bg_selector"
+            android:text="@string/chat_userchat_voice_nor"
+            android:textColor="@color/global_color3"
+            android:textScaleX="1.0"
+            android:textSize="@dimen/global_font_size2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sendmsg_text_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/send_msg_text_ll_bg"
+        android:gravity="center"
+        android:maxHeight="@dimen/sendmsgview_edittext_maxHeight"
+        android:minHeight="@dimen/sendmsgview_height" >
+
+        <RelativeLayout
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/global_padding7"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/sendmsg_addattachments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_msg_addattachments_selector" />
+
+            <TextView
+                android:id="@+id/send_pic_count"
+                style="@style/text_size5_color1_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/news_count_bg"
+                android:gravity="center"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/sendmsg_btem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_msg_em_selector" />
+
+        <LinearLayout
+            android:id="@+id/sendmsg_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/global_padding1"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:layout_marginTop="@dimen/global_padding1"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_search_bg_shap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/sendmsg_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sendmsgview_controls_gap"
+                android:layout_marginRight="@dimen/sendmsgview_controls_gap"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="@string/sendmsgview_hint_default"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+                android:maxHeight="@dimen/sendmsgview_edittext_maxHeight"
+                android:minHeight="@dimen/sendmsgview_edittext_minHeight"
+                android:textColor="@color/common_input_value_text_color"
+                android:textColorHint="@color/common_input_hint_text_color"
+                android:textScaleX="1.0"
+                android:textSize="@dimen/global_font_size8" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sendmsg_btsend"
+            android:layout_width="52dp"
+            android:layout_height="@dimen/sendmsgview_edittext_minHeight"
+            android:layout_marginLeft="@dimen/global_padding1"
+            android:layout_marginRight="@dimen/global_padding2"
+            android:background="@drawable/common_btn_ls_selector"
+            android:text="发送"
+            android:textColor="@color/common_btn_text_color"
+            android:textSize="@dimen/global_font_size2"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/syncContentView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:layout_marginRight="@dimen/global_padding3"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="同步到: "
+                android:textColor="@color/publish_topic_sync_txt_color"
+                android:textSize="@dimen/global_font_size8" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/global_padding1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/syncContract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/post_share_album_nor" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/syncmchat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/post_share_weixin_nor" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/syncQQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/post_share_qzone_nor" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/syncSina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/post_share_sina_nor" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/syncWeibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/post_share_weibo_nor" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sendmsg_bottom_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_bg_jt_height"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/sendmsg_addattachments_panel"
+            layout="@layout/addattachments_panel"
+            android:visibility="gone" />
+
+        <com.iwgame.msgs.widget.smiley.SmileyPanel
+            android:id="@+id/sendmsg_smiley_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/send_msg_text_ll_bg"
+            android:visibility="gone" >
+        </com.iwgame.msgs.widget.smiley.SmileyPanel>
+    </LinearLayout>
+
+</LinearLayout>

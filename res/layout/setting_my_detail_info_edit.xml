@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/detailInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/global_icon_5"
+                android:layout_height="@dimen/global_icon_5"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/global_padding9"
+                android:background="@drawable/aratar_bg"
+                android:scaleType="fitXY"
+                android:padding="2dp"
+                android:src="@drawable/common_user_icon_default" >
+            </ImageView>
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			     android:orientation="horizontal"
+			     android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/global_padding1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头像编辑"
+                android:textColor="@color/group_or_user_edit_hint_color"
+                android:textSize="@dimen/global_font_size5" />
+            <ImageView
+                android:id="@+id/icon_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/tasklist_jifen_pre" />
+			</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding8"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:id="@+id/nicknameItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/common_item_top_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="昵称"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="(必填)"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:visibility="visible" />
+					<ImageView
+                		android:id="@+id/nick_name_image"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_gravity="center_vertical"
+                		android:gravity="center_vertical"
+               		 	android:layout_marginLeft="3dp"
+                		android:background="@drawable/tasklist_jifen_pre" />
+                    <TextView
+                        android:id="@+id/nickname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:gravity="center|right"
+                        android:singleLine="true"
+                        android:textColor="@color/set_item_content_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <LinearLayout
+                    android:id="@+id/sexItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/common_item_middle_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="性别"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="(必填)"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:visibility="visible" />
+					<ImageView
+                		android:id="@+id/gener_image"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_gravity="center_vertical"
+                		android:gravity="center_vertical"
+               		 	android:layout_marginLeft="3dp"
+                		android:background="@drawable/tasklist_jifen_pre" />
+                    <TextView
+                        android:id="@+id/sex"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:gravity="center|right"
+                        android:singleLine="true"
+                        android:textColor="@color/set_item_content_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <LinearLayout
+                    android:id="@+id/ageItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/common_item_middle_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="出生年份"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="(必填)"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:visibility="visible" />
+					<ImageView
+                		android:id="@+id/grith_image"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_gravity="center_vertical"
+                		android:gravity="center_vertical"
+               		 	android:layout_marginLeft="3dp"
+                		android:background="@drawable/tasklist_jifen_pre" />
+                    <TextView
+                        android:id="@+id/age"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:gravity="center|right"
+                        android:singleLine="true"
+                        android:textColor="@color/set_item_content_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <LinearLayout
+                    android:id="@+id/jobItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/common_item_middle_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="职业"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:id="@+id/job"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:gravity="center|right"
+                        android:singleLine="true"
+                        android:textColor="@color/set_item_content_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <LinearLayout
+                    android:id="@+id/cityItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/common_item_middle_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="城市"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+					<ImageView
+                		android:id="@+id/city_image"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:layout_gravity="center_vertical"
+                		android:gravity="center_vertical"
+               		 	android:layout_marginLeft="3dp"
+                		android:background="@drawable/tasklist_jifen_pre" />
+                    <TextView
+                        android:id="@+id/city"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:gravity="center|right"
+                        android:singleLine="true"
+                        android:textColor="@color/set_item_content_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <LinearLayout
+                    android:id="@+id/moodItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/common_item_bottom_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="签名"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:id="@+id/mood"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:gravity="center|right"
+                        android:singleLine="true"
+                        android:textColor="@color/set_item_content_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.5dp"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:id="@+id/gameTimeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/common_item_top_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="玩游戏时长"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:id="@+id/gameTime"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:gravity="center|right"
+                        android:singleLine="true"
+                        android:textColor="@color/set_item_content_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@drawable/common_content_divider_line" />
+
+                <LinearLayout
+                    android:id="@+id/likeGameItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/common_item_bottom_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="钟情游戏类型"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <TextView
+                        android:id="@+id/likeGame"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:gravity="center|right"
+                        android:singleLine="true"
+                        android:textColor="@color/set_item_content_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

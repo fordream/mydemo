@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_first_bg"
+    android:orientation="vertical" >
+
+     <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="请点击选择一款游戏关注同时进入游伴，大量美女玩家和大型公会等你认识哦！"
+        android:lineSpacingMultiplier="1.5"
+        android:textSize="@dimen/global_font_size8"
+        android:textColor="@color/game_regiest_recommend_tips_color"
+        android:paddingLeft="@dimen/global_padding8"
+        android:paddingRight="@dimen/global_padding8"
+        android:paddingTop="@dimen/global_padding9"
+        android:paddingBottom="@dimen/global_padding3"
+        />
+    
+    <GridView
+        android:id="@+id/gameGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:numColumns="3"
+        android:paddingBottom="@dimen/global_padding3"
+        android:paddingLeft="@dimen/global_padding3"
+        android:paddingRight="@dimen/global_padding3"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_padding4"
+        android:layout_marginBottom="@dimen/global_padding9"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginRight="@dimen/global_padding3"
+        android:layout_marginTop="@dimen/global_padding9"
+        android:background="@drawable/common_btn_ls_selector"
+        android:text="进入游伴"
+        android:textSize="@dimen/global_font_size2"
+        android:visibility="gone"
+         />
+
+</LinearLayout>

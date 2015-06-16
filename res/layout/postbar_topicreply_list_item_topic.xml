@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/topic_item_sub_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/postbar_head"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/topic_detail_head_bg_color"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/postbar_head_gamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding3"
+            android:textColor="@color/topic_detail_head_gamename_color"
+            android:textSize="@dimen/global_font_size8" />
+
+        <TextView
+            android:id="@+id/postbar_head_jumpbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/global_padding3"
+            android:background="@drawable/postbar_topicdetail_head_jumpbtn_shap"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="进入贴吧"
+            android:textColor="@color/topic_detail_head_jumpbtn_text_color"
+            android:textSize="@dimen/global_font_size3" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/postbar_head_line"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_alignBottom="@+id/postbar_head_gamename"
+        android:background="@color/public_topic_tag_title_fengexian"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="fill_parent"
+            android:background="@color/topic_item_righttag_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/global_padding2"
+            android:paddingLeft="@dimen/global_padding2"
+            android:paddingRight="@dimen/global_padding3"
+            android:paddingTop="@dimen/global_padding2" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/global_icon_2"
+                android:layout_height="@dimen/global_icon_2"
+                android:background="@color/topiclist_item_image_txt"
+                android:src="@drawable/common_user_icon_default" />
+
+            <ImageView
+                android:id="@+id/postbar_topicreply_list_header_topic_postermaster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/icon"
+                android:layout_marginLeft="@dimen/global_padding2"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/icon"
+                android:focusable="false"
+                android:src="@drawable/postbar_bazhu"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/postbar_topicreply_list_header_topic_posternickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/icon"
+                android:layout_marginLeft="@dimen/global_padding7"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/postbar_topicreply_list_header_topic_postermaster"
+                android:singleLine="true"
+                android:textColor="@color/topic_item_master_name_txt"
+                android:textSize="@dimen/global_font_size2" />
+
+            <TextView
+                android:id="@+id/postbar_topicreply_list_header_topic_posterid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding7"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@+id/followBtn"
+                android:layout_toRightOf="@+id/postbar_topicreply_list_header_topic_posternickname"
+                android:singleLine="true"
+                android:textColor="@color/topic_reply_header_posterid_color"
+                android:textSize="@dimen/global_font_size8" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:layout_below="@+id/postbar_topicreply_list_header_topic_posternickname"
+                android:layout_marginLeft="@dimen/global_padding2"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/icon"
+                android:background="@drawable/common_item_jh_shap"
+                android:drawableLeft="@drawable/user_woman_icon"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/global_font_size7" />
+
+            <ImageView
+                android:id="@+id/postMastTag"
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:focusable="false"
+                android:src="@drawable/game_detail_louzhu_tag" />
+
+            <TextView
+                android:id="@+id/postbar_topicreply_list_header_topic_createtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/postbar_topicreply_list_header_topic_posternickname"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:gravity="top"
+                android:layout_toRightOf="@+id/age"
+                android:textColor="@color/topic_reply_header_date_loc_color"
+                android:textSize="@dimen/global_font_size5" />
+
+            <TextView
+                android:id="@+id/postbar_topicreply_list_header_topic_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/postbar_topicreply_list_header_topic_createtime"
+                android:layout_toRightOf="@+id/postbar_topicreply_list_header_topic_createtime"
+                android:textColor="@color/topic_reply_header_date_loc_color"
+                android:textSize="@dimen/global_font_size5" />
+
+            <Button
+                android:id="@+id/followBtn"
+                android:layout_width="@dimen/global_follow_button_width"
+                android:layout_height="@dimen/global_follow_button_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/global_padding8"
+                android:background="@drawable/common_follow_nor"
+                android:textColor="@color/global_color18"
+                android:textSize="@dimen/global_font_size3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/topic_head_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/postbar_topicreply_list_header_topic_title"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_padding3"
+            android:layout_marginRight="@dimen/global_padding3"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:textColor="@color/topic_reply_header_title_color"
+            android:textSize="@dimen/global_font_size1" />
+
+        <ImageView
+            android:id="@+id/postbar_jihe_tab_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/global_controlgap_small"
+            android:src="@drawable/postbar_jihe_tab"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topic_reply_header_title_layout_bg"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/global_padding2"
+        android:paddingRight="@dimen/global_padding2"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/postbar_topicreply_list_header_topic_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/global_padding1"
+            android:paddingLeft="@dimen/global_padding9"
+            android:paddingRight="@dimen/global_padding9"
+            android:paddingTop="@dimen/global_padding3"
+            android:src="@drawable/postbar_share_btn" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/global_padding2"
+            android:paddingBottom="@dimen/global_padding1"
+            android:paddingTop="@dimen/global_padding3"
+            android:src="@drawable/postbar_dialogue_dis" />
+
+        <TextView
+            android:id="@+id/postbar_topicreply_list_header_topic_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/global_padding1"
+            android:layout_marginTop="@dimen/global_padding7"
+            android:textColor="@color/topic_reply_header_comments_color"
+            android:textSize="@dimen/global_font_size1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/postbar_topicreply_list_header_topic_postcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/global_padding2"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginRight="@dimen/global_padding3"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/postbar_topicreply_list_header_topic_setcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/global_padding2" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/global_padding2"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/global_padding3"
+        android:paddingRight="@dimen/global_padding3" >
+
+        <TextView
+            android:id="@+id/tagTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_padding2"
+            android:background="@drawable/postbar_btn_selector"
+            android:drawableLeft="@drawable/game_lable_nor"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="其他"
+            android:textColor="@color/topiclist_item_btn_txt"
+            android:textSize="@dimen/global_font_size5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/likeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tagTxt"
+            android:layout_marginTop="@dimen/global_padding2"
+            android:background="@drawable/postbar_btn_selector"
+            android:drawableLeft="@drawable/game_like_nor"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/global_padding1"
+            android:paddingLeft="@dimen/global_padding2"
+            android:paddingRight="@dimen/global_padding2"
+            android:paddingTop="@dimen/global_padding1"
+            android:singleLine="true"
+            android:text="赞"
+            android:textColor="@color/topiclist_item_btn_txt"
+            android:textSize="@dimen/global_font_size5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/chatTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tagTxt"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:layout_marginTop="@dimen/global_padding2"
+            android:layout_toRightOf="@+id/likeTxt"
+            android:background="@drawable/postbar_btn_selector"
+            android:drawableLeft="@drawable/game_chat_nor"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/global_padding1"
+            android:paddingLeft="@dimen/global_padding2"
+            android:paddingRight="@dimen/global_padding2"
+            android:paddingTop="@dimen/global_padding1"
+            android:singleLine="true"
+            android:text="私聊"
+            android:textColor="@color/topiclist_item_btn_txt"
+            android:textSize="@dimen/global_font_size5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/replyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tagTxt"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:layout_marginTop="@dimen/global_padding2"
+            android:layout_toRightOf="@+id/chatTxt"
+            android:background="@drawable/postbar_btn_selector"
+            android:drawableLeft="@drawable/postbar_comment"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/global_padding1"
+            android:paddingLeft="@dimen/global_padding2"
+            android:paddingRight="@dimen/global_padding2"
+            android:paddingTop="@dimen/global_padding1"
+            android:singleLine="true"
+            android:text="评论"
+            android:textColor="@color/topiclist_item_btn_txt"
+            android:textSize="@dimen/global_font_size5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/shareTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tagTxt"
+            android:layout_marginLeft="@dimen/global_padding2"
+            android:layout_marginTop="@dimen/global_padding2"
+            android:background="@drawable/postbar_btn_selector"
+            android:drawableLeft="@drawable/postbar_share"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/global_padding1"
+            android:paddingLeft="@dimen/global_padding2"
+            android:paddingRight="@dimen/global_padding2"
+            android:paddingTop="@dimen/global_padding1"
+            android:singleLine="true"
+            android:text="分享"
+            android:textColor="@color/topiclist_item_btn_txt"
+            android:textSize="@dimen/global_font_size5"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/topic_head_line" />
+
+        <LinearLayout
+            android:id="@+id/likeUsersContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/likeTxt"
+            android:layout_marginTop="@dimen/global_padding2"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <com.iwgame.msgs.widget.SquareCenterImageView
+                android:id="@+id/likeUser1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@color/topiclist_item_btn_bg"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <com.iwgame.msgs.widget.SquareCenterImageView
+                android:id="@+id/likeUser2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@color/topiclist_item_btn_bg"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <com.iwgame.msgs.widget.SquareCenterImageView
+                android:id="@+id/likeUser3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@color/topiclist_item_btn_bg"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <com.iwgame.msgs.widget.SquareCenterImageView
+                android:id="@+id/likeUser4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@color/topiclist_item_btn_bg"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <com.iwgame.msgs.widget.SquareCenterImageView
+                android:id="@+id/likeUser5"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@color/topiclist_item_btn_bg"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <com.iwgame.msgs.widget.SquareCenterImageView
+                android:id="@+id/likeUser6"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@color/topiclist_item_btn_bg"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <com.iwgame.msgs.widget.SquareCenterImageView
+                android:id="@+id/likeUser7"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@color/topiclist_item_btn_bg"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <com.iwgame.msgs.widget.SquareCenterImageView
+                android:id="@+id/likeUser8"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@color/topiclist_item_btn_bg"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <com.iwgame.msgs.widget.SquareCenterImageView
+                android:id="@+id/likeUser9"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@color/topiclist_item_btn_bg"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/likeUserCountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/postbar_topicdetail_likeusercount_shap"
+                android:drawableLeft="@drawable/game_like_nor"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:minWidth="30dp"
+                android:paddingBottom="@dimen/global_padding1"
+                android:paddingLeft="@dimen/global_padding2"
+                android:paddingRight="@dimen/global_padding2"
+                android:paddingTop="@dimen/global_padding1"
+                android:singleLine="true"
+                android:textColor="@color/topiclist_main_like_btn_txt"
+                android:textSize="@dimen/global_font_size4" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_padding3"
+        android:background="@color/topic_list_detail_down_bg" />
+
+</LinearLayout>

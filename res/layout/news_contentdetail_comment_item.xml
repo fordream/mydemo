@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFe1e1e1"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/news_comment_publishingimg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/common_default_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        android:layout_marginLeft="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            >
+
+            <TextView
+                android:id="@+id/news_comment_publishingname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/news_clock" />
+
+            <TextView
+                android:id="@+id/news_comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/news_comment_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

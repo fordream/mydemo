@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 我的U币 背景色值 -->
+    <color name="pay_main_bg">#ededed</color>
+    <!-- 我的U币 顶部背景色值 -->
+    <color name="pay_main_top_bg">#ff7826</color>
+    <!-- 我的U币 顶部'我的U币'文字色值 -->
+    <color name="pay_main_top_title_txt">#ffffff</color>
+    <!-- 我的U币 "选择充值U币"title色值 -->
+    <color name="pay_main_ubselect_title_bg">#ffffff</color>
+    <!-- 我的U币 "选择充值U币"title色值 -->
+    <color name="pay_main_ubselect_title_txt">#7d7d7d</color>
+    <!-- 我的U币 "选择充值U币"item面值元文本色值 -->
+    <color name="pay_main_ubselect_item_yuan_txt">#3a3a3a</color>
+    <!-- 我的U币 "选择充值U币"item面值文本色值 -->
+    <color name="pay_main_ubselect_item_num_txt">#000000</color>
+    <!-- 我的U币 "选择充值U币"item面值数码文本色值 -->
+    <color name="pay_main_ubselect_item_num_desc_txt">#7d7d7d</color>
+    <!-- 我的U币 "选择充值U币"item描边色值 -->
+    <color name="pay_main_ubselect_item_storke">#dadada</color>
+    <!-- 我的U币 "选择充值U币"item描边选中色值 -->
+    <color name="pay_main_ubselect_item_pre_storke">#f8ccb5</color>
+    <!-- 我的U币 "选择充值U币"item背景色值 -->
+    <color name="pay_main_ubselect_item_bg">#ffffff</color>
+    <!-- 我的U币 "选择充值U币"item背景选中色值 -->
+    <color name="pay_main_ubselect_item_pre_bg">#fff4d4</color>
+    <!-- 我的U币 "选择充值U币"item赠送数字文本色值 -->
+    <color name="pay_main_ubselect_item_give_txt">#fd7e7f</color>
+    <!-- 我的U币 "选择充值U币"item赠送数字背景色值 -->
+    <color name="pay_main_ubselect_item_give_bg">#ffffff</color>
+    <!-- 我的U币 "选择充值U币"item赠送数字背景描边色值 -->
+    <color name="pay_main_ubselect_item_give_bg_storke">#fd7e7f</color>
+    <!-- 我的U币 "选择充值U币"item赠送数字背景描边色值 -->
+    <color name="pay_main_ubselect_item_other_txt">#3a3a3a</color>
+    <!-- 我的U币 "选择充值U币"item赠送数字背景描边色值 -->
+    <color name="pay_main_ubselect_item_other_bg">#ffffff</color>
+
+    <!-- 我的U币 "选择支付"title背景 -->
+    <color name="pay_main_payselect_title_bg">#dedede</color>
+    <!-- 我的U币 "选择支付宝支付"背景色值 -->
+    <color name="pay_main_payselect_alipay_btn_bg">#ff7826</color>
+    <!-- 我的U币 "选择支付宝支付"背景色值描边 -->
+    <color name="pay_main_payselect_alipay_btn_bg_storke">#f06b1a</color>
+    <!-- 我的U币 "选择支付宝支付"背景色值 -->
+    <color name="pay_main_payselect_alipay_btn_pre_bg">#f06b1a</color>
+    <!-- 我的U币 "选择支付宝支付"不可用背景色值 -->
+    <color name="pay_main_payselect_btn_dis_bg">#c9c9c9</color>
+    <!-- 我的U币 "选择支付宝支付"不可用背景色值描边 -->
+    <color name="pay_main_payselect_btn_dis_bg_storke">#b3b3b3</color>
+    <!-- 我的U币 "选择支付宝支付"文字色值 -->
+    <color name="pay_main_payselect_alipay_btn_txt">#ffffff</color>
+
+    <!-- 我的U币 "选择微信支付"背景色值 -->
+    <color name="pay_main_payselect_wechatpay_btn_bg">#2eb842</color>
+    <!-- 我的U币 "选择微信支付"背景色值描边 -->
+    <color name="pay_main_payselect_wechatpay_btn_bg_storke">#23ac37</color>
+    <!-- 我的U币 "选择微信支付"背景pre色值 -->
+    <color name="pay_main_payselect_wechatpay_btn_pre_bg">#23a636</color>
+    <!-- 我的U币 "选择微信支付"背景pre描边色值 -->
+    <color name="pay_main_payselect_wechatpay_btn_pre_bg_storke">#1e912e</color>
+    <!-- 我的U币 "选择微信支付"文字色值 -->
+    <color name="pay_main_payselect_wechatpay_btn_txt">#ffffff</color>
+	<!-- 游币详细明细的标题颜色值 -->
+	<color name="pay_detail_title_color">#3a3a3a</color>
+	<color name="pay_detail_status_color">#9e9e9e</color>
+	<color name="pay_detail_main_title">#000000</color>
+	<!-- u币详情颜色值 -->
+	<color name="pay_detail_other_ub_color">#ff7826</color>
+	<color name="pay_detail_btn_color">#3a3a3a</color>
+</resources>

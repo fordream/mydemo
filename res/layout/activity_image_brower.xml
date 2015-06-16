@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="bottom"
+        android:background="@color/image_brower_bottom_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/leftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/image_brower_back_button_selector"
+             />
+
+        <LinearLayout
+            android:id="@+id/save_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+             >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_brower_save_button_selector"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/save_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="保存"
+                android:textColor="@color/image_brower_bottom_text_color"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/report_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            android:visibility="invisible"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_brower_report_button_selector"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/report_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="举报"
+                android:textColor="@color/image_brower_bottom_text_color"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/page_num_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:textColor="@color/image_brower_bottom_text_color"
+            android:textSize="@dimen/global_font_size2" />
+
+        <Button
+            android:id="@+id/rightBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/preview_btn_up_nor"
+            android:gravity="right" />
+    </LinearLayout>
+
+</FrameLayout>

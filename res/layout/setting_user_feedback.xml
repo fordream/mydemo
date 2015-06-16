@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <com.iwgame.msgs.widget.TitleFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_top_height" >
+
+        <com.iwgame.msgs.widget.BackButton
+            android:id="@+id/leftBtn"
+            android:layout_width="57dp"
+            android:layout_height="46dp"
+            android:layout_gravity="left" />
+
+        <com.iwgame.msgs.widget.TitleTextView
+            android:id="@+id/titleTxt"
+            style="@style/text_large_white_default"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:shadowColor="@color/common_shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/rightView"
+            android:layout_width="57dp"
+            android:layout_height="46dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </com.iwgame.msgs.widget.TitleFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginRight="@dimen/global_padding3"
+        android:layout_marginTop="@dimen/global_padding9"
+        android:background="@drawable/common_input_bg_shap"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="请输入您的反馈建议"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLength="200"
+            android:minHeight="100dp"
+            android:minLines="5"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/common_input_value_text_color"
+            android:textColorHint="@color/common_input_hint_text_color"
+            android:textSize="@dimen/global_font_size2" />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center|right"
+            android:text="300"
+            android:textColor="@color/common_input_value_text_color"
+            android:textSize="@dimen/global_font_size2"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

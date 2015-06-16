@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:background="@drawable/common_tab_bg" >
+
+        <TextView
+            android:id="@+id/groupTab"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_sub_tab_bg_selector"
+            android:gravity="center"
+            android:text="我创建的"
+            android:textColor="@drawable/game_main_tab_text_selector"
+            android:textSize="@dimen/global_font_size2" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/followTab"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_sub_tab_bg_selector"
+            android:gravity="center"
+            android:text="我报名的"
+            android:textColor="@drawable/game_main_tab_text_selector"
+            android:textSize="@dimen/global_font_size2" >
+        </TextView>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@color/list_second_bg"
+        android:flipInterval="1"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

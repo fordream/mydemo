@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_menu_dialog_bg_shap"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/goods_total"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/hor_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:background="@drawable/goods_state_press_bg"
+        android:gravity="center"
+         android:layout_marginLeft="@dimen/hor_degree"
+        android:text="全部"
+        android:textColor="@color/common_menu_dialog_item_text_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hor_degree"
+        android:background="@drawable/common_content_divider_line" />
+
+    <TextView
+        android:id="@+id/goods_jinxingzhong"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:background="@drawable/goods_state_press_bg"
+        android:gravity="center"
+         android:layout_marginLeft="@dimen/hor_degree"
+        android:text="进行中"
+        android:textColor="@color/common_menu_dialog_item_text_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hor_degree"
+        android:background="@drawable/common_content_divider_line" />
+
+    <TextView
+        android:id="@+id/goods_weikaishi"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:background="@drawable/goods_state_press_bg"
+        android:gravity="center"
+        android:text="未开始"
+         android:layout_marginLeft="@dimen/hor_degree"
+        android:textColor="@color/common_menu_dialog_item_text_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hor_degree"
+        android:background="@drawable/common_content_divider_line" />
+
+    <TextView
+        android:id="@+id/goods_duihuanwan"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:background="@drawable/goods_state_press_bg"
+        android:gravity="center"
+        android:text="兑换完"
+        android:layout_marginLeft="@dimen/hor_degree"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:textColor="@color/common_menu_dialog_item_text_color" />
+
+</LinearLayout>

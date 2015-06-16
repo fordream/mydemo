@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:text="您想看到的用户"
+        android:textColor="@color/discover_dialog_title_text_color"
+        android:textSize="@dimen/global_font_size8" />
+
+    <LinearLayout
+        android:id="@+id/sexSelect"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="@dimen/global_padding7"
+        android:layout_marginRight="@dimen/global_padding7"
+        android:layout_marginTop="@dimen/global_padding2"
+        android:orientation="vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding3"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:text="出现的时间"
+        android:textColor="@color/discover_dialog_title_text_color"
+        android:textSize="@dimen/global_font_size8" />
+
+    <LinearLayout
+        android:id="@+id/timeSelect"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="@dimen/global_padding8"
+        android:layout_marginLeft="@dimen/global_padding7"
+        android:layout_marginRight="@dimen/global_padding7"
+        android:layout_marginTop="@dimen/global_padding2"
+        android:orientation="vertical" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_title_info">消息</string>
+    
+    <string name="message_title_groupmassmsg_info">公会通知</string>
+    <string name="message_title_groupchatmsg_info">公会聊天室消息</string>
+    
+    <string name="message_action_useragreejoingroup_ok">同意加入成功</string>
+    <string name="message_action_approvemember_ok">批准成功</string>
+    <string name="message_action_refusejoingroup_ok">拒绝加入成功</string>
+    
+    <string name="message_action_useragreejoingroup_update">已同意</string>
+    <string name="message_action_refusejoingroup_update">已拒绝</string>
+    <string name="message_action_approvemember_update">已批准</string>
+    <string name="message_action_recommend_game_update">已查看推荐游戏</string>
+    <string name="message_action_recommend_group_update">已查看推荐公会</string>
+    <string name="message_action_recommend_user_update">已查看推荐用户</string>
+    <string name="message_action_ignore_user">已忽略</string>
+    <string name="message_action_follow_user_update">已关注</string>
+    
+    <string name="message_action_bundphone_update">已绑定手机</string>
+    
+    <string name="message_notify_splendid_game">推荐贴吧</string>
+    <string name="message_notify_splendid_topic">推荐帖子</string>
+    <string name="message_notify_splendid_group">推荐公会</string>
+    <string name="message_notify_splendid_user">推荐用户</string>
+    <string name="message_notify_fate_user">推荐缘分好友</string>
+</resources>

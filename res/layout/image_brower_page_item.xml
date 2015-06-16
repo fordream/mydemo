@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff000000"
+        android:gravity="center"
+        android:layout_gravity="center" >
+<!-- 
+        <com.iwgame.msgs.widget.MultiTouchImageView
+            android:id="@+id/image_brower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+  -->    
+  <com.iwgame.msgs.widget.photoview.PhotoView
+            android:id="@+id/image_brower"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />   
+    </LinearLayout>
+      <TextView
+        android:id="@+id/tv_info"       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="读取失败"
+        android:layout_gravity="center"
+         android:visibility="gone">
+    </TextView>
+    
+    
+     <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

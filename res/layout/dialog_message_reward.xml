@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_message_reward_bg"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:textColor="@color/message_dialog_reward"
+        android:textSize="@dimen/global_font_size10"
+        android:singleLine="true"
+        android:text="+50积分" />
+
+    <TextView
+        android:id="@+id/rewardDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:layout_gravity="center"
+        android:textColor="@color/message_dialog_reward_desc"
+        android:textSize="@dimen/global_font_size3"
+        android:singleLine="true"
+        android:text="发帖成功获得50积分！" />
+
+    <TextView
+        android:id="@+id/rewardLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_padding12"
+        android:layout_gravity="center"
+        android:textColor="@color/message_dialog_reward_link"
+        android:textSize="@dimen/global_font_size5"
+        android:singleLine="true"
+        android:text="看看还能挣取哪些积分?>" />
+
+</LinearLayout>

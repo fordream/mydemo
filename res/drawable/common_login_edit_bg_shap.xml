@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 实心 -->
+    <solid android:color="@color/common_input_bg_color" />
+    
+    <!-- 圆角 -->
+    <corners
+        android:bottomLeftRadius="18dp"
+        android:bottomRightRadius="18dp"
+        android:topLeftRadius="18dp"
+        android:topRightRadius="18dp" />
+    
+    <!-- 描边 -->
+    <stroke
+        android:width=".5dp"
+        android:color="@color/common_input_bg_stroke_color" />
+    
+</shape>

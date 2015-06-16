@@ -1,0 +1,4 @@
+
+<resources>
+ <dimen name="cropimage_gap">10dp</dimen>
+</resources>

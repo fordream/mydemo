@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/tab_content_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/global_font_size2"
+        android:textColor="@drawable/game_main_tab_text_selector"
+        android:background="@drawable/common_sub_tab_bg_selector"
+        android:gravity="center"
+        android:paddingLeft="@dimen/global_padding3"
+        android:paddingRight="@dimen/global_padding3"
+        />
+
+</LinearLayout>

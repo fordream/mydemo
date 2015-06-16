@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/send_msg_text_ll_bg"
+    android:gravity="center"
+    android:maxHeight="@dimen/sendmsgview_edittext_maxHeight"
+    android:minHeight="@dimen/sendmsgview_height"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/sendmsg_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/global_padding1"
+        android:layout_marginLeft="@dimen/global_padding2"
+        android:layout_marginRight="@dimen/global_padding2"
+        android:layout_marginTop="@dimen/global_padding1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/global_padding3"
+            android:gravity="center"
+            android:text="充值金额"
+            android:textColor="@color/pay_main_ubselect_item_num_txt"
+            android:textSize="@dimen/global_font_size8" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_search_bg_shap" >
+
+            <EditText
+                android:id="@+id/enterTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sendmsgview_controls_gap"
+                android:layout_marginRight="@dimen/sendmsgview_controls_gap"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="输入充值金额"
+                android:inputType="number"
+                android:maxHeight="@dimen/sendmsgview_edittext_maxHeight"
+                android:maxLength="9"
+                android:minHeight="@dimen/sendmsgview_edittext_minHeight"
+                android:textColor="@color/common_input_value_text_color"
+                android:textColorHint="@color/common_input_hint_text_color"
+                android:textScaleX="1.0"
+                android:textSize="@dimen/global_font_size8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/global_padding3"
+                android:layout_marginTop="@dimen/global_padding1"
+                android:text="元"
+                android:textColor="@color/pay_main_ubselect_item_num_txt"
+                android:textSize="@dimen/global_font_size8" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/payBtn"
+            android:layout_width="52dp"
+            android:layout_height="@dimen/sendmsgview_edittext_minHeight"
+            android:layout_marginLeft="@dimen/global_padding1"
+            android:background="@drawable/common_btn_ls_selector"
+            android:text="确定"
+            android:textColor="@color/common_btn_text_color"
+            android:textSize="@dimen/global_font_size2"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/actTipTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/global_padding1"
+        android:layout_marginLeft="@dimen/global_padding2"
+        android:layout_marginRight="@dimen/global_padding2"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/pay_main_top_bg"
+        android:textSize="@dimen/global_font_size5"
+        android:visibility="gone" />
+
+</LinearLayout>

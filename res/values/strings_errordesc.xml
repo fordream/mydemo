@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    错误码对应的描述格式 
+    <string name = "msgs_[int型，错误码绝对值]">desc</string>
+	例如：<string name = "msgs-100000">服务端返回结果为空</string>
+    -->
+    <!-- ID为空 -->
+    <string name="msgs_500001">系统内部异常，请联系管理员</string>
+    <!-- ID字符串规格不合法 -->
+    <string name="msgs_500002">系统内部异常，请联系管理员</string>
+    <!-- 类型无效 -->
+    <string name="msgs_500003">系统内部异常，请联系管理员！</string>
+    <!-- 对象没有改变 -->
+    <string name="msgs_500004">信息没有变化！</string>
+    <!-- Neo4j中对象不存在 -->
+    <string name="msgs_500005">系统内部异常，请联系管理员！</string>
+    <!-- 格式不符合 -->
+    <string name="msgs_500006">格式不符合！</string>
+    <!-- 已经在公会中 -->
+    <string name="msgs_500007">你已加入过该公会了！</string>
+    <!-- 已经在公会中 -->
+    <string name="msgs_50000701">您已经在公会中了！</string>
+    <!-- 已经在公会中 -->
+    <string name="msgs_50000702">对方已经在公会中了！</string>
+    <!-- 不在公会中 -->
+    <string name="msgs_500008"> 你已不在公会中了！</string>
+    <!-- 没有权限 -->
+    <string name="msgs_500009">对不起，您没有权限操作了！</string>
+    <!-- 超过次数 -->
+    <string name="msgs_500010">对不起，您的操作超过限制次数！</string>
+    <string name="msgs_50001001">对不起，您加入的公会已经达到最大限，无法加入该公会！</string>
+    <string name="msgs_50001002">对不起,对方加入的公会已经达到最大限，你无法同意他再加入该公会！</string>
+<!--     <string name="msgs_50001003">每日最多只能发布%1$d封帖子哦！</string> -->
+ <!-- 
+    <string name="msgs_50001003">您今日发帖数已达上限了哦!</string>
+ -->    
+     <string name="msgs_50001003">您今日发帖数已达上限了哦！最多只能发布%1$d封帖子哦！ </string>
+     
+    <string name="msgs_50001004">你当前最多只能关注%1$d款贴吧哦！ </string>
+
+    <!-- 已经申请过了 -->
+    <string name="msgs_500011">对不起，您已经申请过！</string>
+    <!-- 在黑名单中，不允许操作 -->
+    <string name="msgs_500012">对不起，您已经被对方拉黑了，不允许操作！</string>
+
+    <!-- 没有投递消息的权限 -->
+    <string name="msgs_500100">没有投递消息的权限！</string>
+    <string name="msgs_50010001">对不起，您已经被对方拉黑了！</string>
+    <string name="msgs_50010002">你已被移出该公会！</string>
+    <!-- 对自己进行操作 -->
+    <string name="msgs_500101">对不起，不允许对自己操作！</string>
+    <!-- 已经执行过了 -->
+    <string name="msgs_500102"> 已经执行过</string>
+    <!-- 已经申请过吧主 -->
+    <string name="msgs_500103">  你已申请过该贴吧吧主，请耐心等待！</string>
+    <!-- 未关注游戏不允许发帖，回帖 -->
+    <string name="msgs_500104">需要关注该贴吧后才能发帖哦！</string>
+    <!-- 没有吧主权限 -->
+    <string name="msgs_500105">对不起，您没有权限</string>
+    <!-- 贴吧信息不存在 -->
+    <string name="msgs_500106">贴吧信息不存在</string>
+    <!-- 贴吧发帖过于频繁 -->
+    <string name="msgs_500107">发帖不能太频繁哦，歇会再试吧！</string>
+    <!-- 贴吧回帖过于频繁 -->
+    <string name="msgs_500108">操作太频繁啦，歇会再试吧！</string>
+    <!-- 主贴已被删除 -->
+    <string name="msgs_500109">帖子已被删除！</string>
+
+    <!-- 此快捷操作已执行过 -->
+    <string name="msgs_500110">该操作已经被操作过，再次操作无效</string>
+    <!-- 信息不完整 -->
+    <string name="msgs_500111">信息不完整！</string>
+    <!-- 公会不存在 -->
+    <string name="msgs_500112">公会不存在！</string>
+    <!-- 公会人数已满 -->
+    <string name="msgs_500113">公会人数已满！</string>
+    <!-- 声音资源文件异常 -->
+    <string name="msgs_500114">声音资源异常</string>
+    <string name="msgs_100">网络不可用，请检查网络！</string>
+    <string name="msgs_101">网络连接异常，稍后再试！</string>
+    <string name="msgs_102">网络连接异常，稍后再试！</string>
+    <string name="msgs_200">网络连接异常，稍后再试！</string>
+    <string name="msgs_201">网络连接异常，稍后再试！</string>
+    <string name="msgs_300">未知错误</string>
+    <string name="msgs_400">用户信息为空</string>
+    <string name="msgs_500">参数不对！</string>
+    <string name="msgs_600">帖子详情为空！</string>
+    <string name="msgs_700">操作未定义</string>
+    <string name="msgs_701">参数不对</string>
+    <string name="msgs_10000">网络连接异常，稍后再试！</string>
+    <string name="msgs_10001">网络连接异常，稍后再试！</string>
+    <string name="msgs_10002">网络连接超时，请稍后再试!</string>
+    <!-- 发送声音时，保存声音文件异常，一般是存储空间不够 -->
+    <string name="msgs_900">发送异常，有可能你的存储空间不够，请检查！</string>
+    <string name="msgs_500115">你已赞过</string>
+    <string name="msgs_500116">你已踩过</string>
+    <!-- 积分相关 -->
+    <string name="msgs_500120">对不起，您的当前积分不足！</string>
+    <string name="msgs_500121">对不起，该积分任务还未完成！</string>
+    <string name="msgs_500122">对不起，该积分任务已领取过！</string>
+    <string name="msgs_500123"> 对不起，你对该公会的贡献积分已达今日上限了！ </string>
+    <string name="msgs_500124">对不起，该公会当日获取积分已达到上限！</string>
+    <string name="msgs_500125">对不起，您每日获取积分已达到上限！</string>
+    <string name="msgs_500126">对不起，您当前已是最高等级！</string>
+    <string name="msgs_500402">已经赞过</string>
+    <string name="msgs_500403">已经踩过</string>
+    
+    <!-- 全局未知错误 -->
+    <string name="ec_usnknown">网络连接异常，稍后再试！</string>
+    <string name="ec_service_error">网络连接异常，稍后再试！</string>
+
+    <!-- 服务端消息包错误 -->
+    <string name="ec_message_invalid">消息包非法</string>
+    <string name="ec_message_not_supported">消息包版本不支持</string>
+    <string name="ec_signature_invalid">签名验证失败</string>
+    <string name="ec_signature_not_exist">没有签名</string>
+    <string name="ec_signature_not_supported">不支持的签名算法</string>
+    <string name="ec_message_expired">消息包已过期</string>
+    <string name="ec_message_repeated">消息包重复</string>
+    <string name="ec_message_channel_notauth">消息通道未认证</string>
+
+    <!-- 服务端错误码 -->
+    <string name="ec_account_not_exist">帐号未注册</string>
+    <string name="ec_account_not_success">帐号注册未成功</string>
+    <string name="ec_account_password_invalid">密码不正确</string>
+    <string name="ec_account_password_invalid2">是否忘记密码了，可以使用密码找回功能重置密码哦！</string>
+    <string name="ec_account_killed">帐号已无法使用</string>
+    <string name="ec_account_locked">帐号已无法使用</string>
+    <string name="ec_account_login_ip_invalid">帐号登录IP无效</string>
+    <string name="ec_account_info_uid_blank">帐号为空</string>
+    <string name="ec_account_modify_failed">帐号修改失败</string>
+    <string name="ec_captcha_phone_invalid">请输入正确的手机号码哦！</string>
+    <string name="ec_captcha_phone_registed">你输入的手机号已被注册，请到登录页面找回密码。</string>
+    <string name="ec_captcha_phone_unregisted">该手机号已注册过！</string>
+    <string name="ec_captcha_sms_service_not_existed">短信服务不存在</string>
+    <string name="ec_captcha_sms_send_error">短信发送失败</string>
+    <string name="ec_captcha_invalid">请输入正确的验证码哦！</string>
+    <string name="ec_captcha_verify_invalid">请输入正确的验证码哦！</string>
+    <string name="ec_captcha_overcount">操作太频繁啦，歇会再试吧！ </string>
+    <string name="ec_captcha_phone_blank">你还未输入手机号哦！</string>
+    <string name="ec_captcha_code_blank">你还未输入验证码哦！</string>
+    <string name="ec_captcha_timeout">验证码超时</string>
+    <string name="ec_account_register_nickname_blank">昵称为空</string>
+    <string name="ec_account_register_nickname_invalid">昵称不合法</string>
+    <string name="ec_account_register_account_invalid">该帐号已被注册过</string>
+    <string name="ec_account_register_account_blank">帐号为空</string>
+    <string name="ec_account_register_password_blank">密码为空</string>
+    <string name="ec_account_password_reset_pass_blank">密码为空</string>
+    <string name="ec_account_password_reset_account_blank">帐号为空</string>
+    <string name="ec_account_password_reset_faield">重置密码失败</string>
+    <string name="ec_account_password_account_notfound">帐号未找到</string>
+    <string name="ec_rel_common_uid_blank">用户id为空</string>
+    <string name="ec_rel_common_user_not_found">用户未找到</string>
+    <string name="ec_rel_common_ouid_blank">要与用户建立关系的用户id为空</string>
+    <string name="ec_rel_common_ouser_notfound">要与用户建立关系的用户不存在</string>
+    <string name="ec_rel_common_mode_invalid">用户要建立取消的关系未知</string>
+    <string name="ec_rel_userrelationship_relationed">已经关注过了</string>
+    <string name="ec_rel_userrelationship_unrelaioned">还未关注过</string>
+    <string name="ec_rel_userrelationship_op_self">不能对自己进行操作</string>
+    <string name="ec_rel_search_uid_blank">要查找的用户id为空</string>
+    <string name="ec_rel_search_serialnickname_blank">要查找的用户的昵称为空</string>
+    <string name="ec_rel_search_position_blank">要查找的用户的位置为空</string>
+    <string name="ec_rel_search_addresslist_blank">要查找的用户的通讯录为空</string>
+    <string name="ec_rel_search_microblog_blank">要查找的用户的微博为空</string>
+    <string name="ec_rel_search_mode_invalid">查找的方式无效</string>
+    <string name="ec_user_addlist_blank">要保存的通讯录为空</string>
+    <string name="ec_rel_syncuser_mode_invalid">要同步的角色无效</string>
+    <string name="ec_rel_syncuser_querytype_invalid">要同步的参数无效</string>
+    <string name="ec_rel_syncuserdetail_ouids_invalid">要同步的用户格式错误</string>
+    <string name="ec_game_follow_uid_blank">用户id为空</string>
+    <string name="ec_game_follow_gid_notfound">要关注的游戏不存在</string>
+    <string name="ec_game_unfollow_uid_blank">用户id为空</string>
+    <string name="ec_game_unfollow_gid_notfound">要取消关注的游戏不存在</string>
+    <string name="ec_game_addinstall_uid_blank">要同步的用户id为空 </string>
+    <string name="ec_game_recommend_uid_blank">用户id为空</string>
+    <string name="ec_game_recommend_gid_blank">要推荐的游戏id为空</string>
+    <string name="ec_game_recommend_ouids_blank">要推荐的用户id为空</string>
+    <string name="ec_game_recommend_user_notfound">要推荐的用户不存在</string>
+    <string name="ec_game_recommend_game_notfound">要推荐 的游戏不存在</string>
+    <string name="ec_game_order_uid_blank">用户id为空</string>
+    <string name="ec_game_order_mode_valid">排序的规则无效  </string>
+    <string name="ec_game_playincr_uid_blank">用户id为空</string>
+    <string name="ec_game_playincr_gid_notfound">要添加次数的游戏不存在</string>
+    <string name="ec_game_timeincr_uid_blank">用户id为空</string>
+    <string name="ec_game_timeincr_gid_notfound">要添加时间的游戏不存在</string>
+    <string name="ec_game_timeincr_time_valid">要添加的时间无效</string>
+    <string name="rel_game_sync_uid_blank">要同步游戏的用户id为空</string>
+    <string name="rel_game_sync_user_notfound">要同步游戏的用户不存在</string>
+    <string name="ec_game_sync_detail_uid_blank">要同步的用户id为空</string>
+    <string name="ec_game_sync_detail_user_notfound">要同步的用户不存在</string>
+    <string name="ec_game_sync_detail_gameids_invalid">要同步的游戏id错误</string>
+    <string name="ec_game_syncpack_uid_blank">要同步游戏的用户id为空</string>
+    <string name="ec_game_syncpack_user_notfound">要同步游戏的用户不存在</string>
+    <string name="ec_game_syncpack_detail_uid_blank">要同步的用户id为空</string>
+    <string name="ec_game_syncpack_detail_user_notfound">要同步的用户不存在</string>
+    <string name="ec_game_syncpack_detail_gpids_blank">要同步的游戏包id错误</string>
+    <string name="ec_game_syncpack_detail_gamepackage_notfound">要同步的游戏包id错误</string>
+    <string name="ec_game_syncpack_detail_resulttype_invalid">结果类型无效</string>
+    <string name="ec_game_syncug_uid_blank">要同步游戏的用户id为空</string>
+    <string name="ec_game_syncug_user_notfound">要同步游戏的用户不存在</string>
+    <string name="ec_postbar_publishtopic_title_nonull">发布帖子标题不可以为空哦！</string>
+    <string name="ec_postbar_publishtopic_title_max">标题不能少于2个汉字或超过20个汉字哦！</string>
+    <string name="ec_postbar_publishtopic_tag_startorend_isnull">标签开始和结尾不能为空字符哦！</string>
+    <string name="ec_postbar_publishtopic_title_tag">标签不能超过9个汉字哦！</string>
+    <string name="ec_postbar_publishtopic_title_tag_min">标签不少于两个汉字哦！</string>
+    <string name="ec_postbar_publishtopic_no_tag">还未选择标签哦！</string>
+    <string name="ec_group_transfer_group_over_count">转让不成功，您或对方的加入公会数已满</string>
+    <string name="ec_group_transfer_group_no_permission">您没有权限转让</string>
+    <string name="msgs_500205">游客状态,不能操作.请绑定手机哦！</string>
+    <string name="msgs_500127">关注后才能进行备注哦！</string>
+    <string name="msgs_500204">回复内容不能全为空格哦！</string>
+    <string name="msgs_500206">该帖已被吧主锁定，不能回复哦！</string>
+    
+    <string name="ec_api_system_error_value">第三方API系统级错误</string>
+    <string name="ec_api_http_connect_error_value">与第三方API服务建立HTTP连接时发生错误</string>
+    <string name="ec_api_account_not_existed_value">第三方帐号在账号中心未注册</string>
+    <string name="ec_api_access_token_illegal_value">第三方的AccessToken非法</string>
+    <string name="ec_api_access_token_expired_value">第三方的AccessToken过期</string>
+    <string name="ec_api_access_token_revoked_value">第三方的AccessToken过期</string>
+    <string name="ec_api_openid_not_expected_value">通过第三方API获取的openID与客服端获取的openID不一致</string>
+</resources>

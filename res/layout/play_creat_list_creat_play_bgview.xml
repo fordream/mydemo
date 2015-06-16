@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudcolor"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="你还未创建陪玩内容，创建陪玩后，邀请小伙伴报名陪玩，即可一边游戏一边赚钱外快哦！"
+        android:textColor="@color/global_color7"
+        android:textSize="@dimen/global_font_size3" />
+
+    <Button
+        android:id="@+id/creatPlay"
+        android:layout_width="134dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/common_btn_ls_selector"
+        android:text="立即创建陪玩"
+        android:textColor="@color/common_btn_text_color"
+        android:textSize="@dimen/global_font_size2"
+        android:visibility="visible" />
+
+</LinearLayout>

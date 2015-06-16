@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/nullContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/detailInfo"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="@dimen/global_padding9"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/global_padding8"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="新消息提醒"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="top|left"
+                            android:singleLine="true"
+                            android:text="新消息通知在状态栏显示"
+                            android:textColor="@color/set_item_des_text_color"
+                            android:textSize="@dimen/global_font_size4" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/msgGlobalOffOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/group_verify_checkbox_pressed" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/common_set_bg_shap"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="聊天消息"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="top|left"
+                            android:singleLine="true"
+                            android:text="个人聊天和公会聊天消息"
+                            android:textColor="@color/set_item_des_text_color"
+                            android:textSize="@dimen/global_font_size4" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/chatOffOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/group_verify_checkbox_pressed" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="@dimen/global_padding3"
+                    android:background="@drawable/common_set_bg_shap"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="关于我的"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="top|left"
+                            android:singleLine="true"
+                            android:text="帖子回帖消息"
+                            android:textColor="@color/set_item_des_text_color"
+                            android:textSize="@dimen/global_font_size4" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/commentMyOffOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/group_verify_checkbox_pressed" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="@dimen/global_padding3"
+                    android:background="@drawable/common_set_bg_shap"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="精彩推荐"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="top|left"
+                            android:singleLine="true"
+                            android:text="精彩推荐消息"
+                            android:textColor="@color/set_item_des_text_color"
+                            android:textSize="@dimen/global_font_size4" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/wonderful_recommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/group_verify_checkbox_pressed" />
+                </LinearLayout>
+                
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="@dimen/global_padding3"
+                    android:background="@drawable/common_set_bg_shap"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="缘分好友"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="top|left"
+                            android:singleLine="true"
+                            android:text="缘分好友消息"
+                            android:textColor="@color/set_item_des_text_color"
+                            android:textSize="@dimen/global_font_size4" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/fate_friends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/group_verify_checkbox_pressed" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

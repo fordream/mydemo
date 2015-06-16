@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#e0e0e0" >
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:background="#656565" 
+        android:gravity="center">
+         
+         <Button
+            android:id="@+id/chat_addattachments"
+            android:layout_width="28.5dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:text=""
+            android:background="@drawable/chat_msg_addattachments" />  
+          <Button
+            android:id="@+id/chat_addvoice"
+            android:layout_width="28.5dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:text=""
+            android:background="@drawable/chat_msg_voice" />        
+          <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="6dp"
+                android:orientation="horizontal"
+                android:background="@drawable/chat_msg_edit_bg" >
+
+               <EditText
+            android:id="@+id/chat_msg_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1.0"
+            android:hint="请输入內容"
+            android:inputType="textWebEditText"
+            android:text="" 
+            android:singleLine="true"
+            android:background="@null"/>
+               
+
+                <Button
+                    android:id="@+id/chat_btem"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/chat_msg_em"
+                    />
+            </LinearLayout>
+        
+        
+
+        <Button
+            android:id="@+id/chat_btsend"
+            android:layout_width="49dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/chat_msg_send" />
+
+    </LinearLayout>
+    
+    
+      <LinearLayout android:id="@+id/chatting_bottom_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+       <include android:id="@+id/smiley_panel" layout="@layout/smiley_panel" />
+      </LinearLayout>
+
+</LinearLayout>

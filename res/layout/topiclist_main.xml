@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iwgame.msgs.widget.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_top_height"
+        android:background="@drawable/common_title_bg"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/leftView"
+                android:layout_width="57dp"
+                android:layout_height="46dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.iwgame.msgs.widget.BackButton
+                    android:id="@+id/leftBtn"
+                    android:layout_width="57dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:background="#5baee6"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/extendView_left"
+            android:layout_width="57dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center|right"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/allTxt"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/topiclist_left_title_order_pre_shap"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shadowColor="@color/common_shadow_color"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="全部"
+                android:textColor="@color/topiclist_order_txt_pre"
+                android:textSize="@dimen/global_font_size2" />
+
+            <TextView
+                android:id="@+id/newTxt"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-1dp"
+                android:background="@drawable/topiclist_middle_title_order_shap"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shadowColor="@color/common_shadow_color"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="最新"
+                android:textColor="@color/topiclist_order_txt_nor"
+                android:textSize="@dimen/global_font_size2" />
+
+            <TextView
+                android:id="@+id/hotTxt"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-1dp"
+                android:background="@drawable/topiclist_right_title_order_shap"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shadowColor="@color/common_shadow_color"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="最热"
+                android:textColor="@color/topiclist_order_txt_nor"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/extendView_right"
+            android:layout_width="57dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center|right"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:background="#5baee6"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/rightView"
+                android:layout_width="57dp"
+                android:layout_height="46dp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/contentView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/loading_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="245dp"
+                android:layout_height="88dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/common_loading_bg_shap" >
+
+                <ImageView
+                    android:id="@+id/loadingImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@anim/loading_progress_round" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loadingImageView"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="正在努力为您加载中，请耐心等待！"
+                    android:textColor="@color/global_color1"
+                    android:textSize="@dimen/global_font_size3" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomView_ImageBrower"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomHitView"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/global_bottom_height"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</com.iwgame.msgs.widget.ResizeLayout>

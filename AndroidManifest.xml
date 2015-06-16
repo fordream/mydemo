@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.youban.msgs"
+    android:versionCode="4031403"
+    android:versionName="4.3.3.5" >
+
+    <original-package android:name="com.iwgame.msgs" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 阅读消息 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 写入消息 -->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+    <application
+        android:name="com.iwgame.msgs.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitleBar2" >
+        <activity
+            android:name="com.iwgame.msgs.MainFragmentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.LaunchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.LoadDataAcitvity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.account.ui.UserMainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.account.ui.login.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.account.ui.register.SetAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.account.ui.register.BundPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.account.ui.register.VerifyCaptchaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.account.ui.register.SetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.account.ui.register.SetDetailInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.account.ui.reset.SetMobileNumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.account.ui.reset.SetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.account.ui.reset.VerifyCaptchaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.AddFriendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.UserListActicity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.UserDetailInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.UserRoleDetailInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.UserRoleDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            />
+         <activity
+            android:name="com.iwgame.msgs.module.user.ui.UserAddRoleInfoActivity"
+            android:screenOrientation="portrait"
+            />
+         <activity
+            android:name="com.iwgame.msgs.module.user.ui.UserChooseGameActivity"
+            android:screenOrientation="portrait"
+            />
+          <activity
+            android:name="com.iwgame.msgs.module.user.ui.UserRoleNatureActiviy"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.NearGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.RecommendGame2FriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.RecommendGameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.SearchGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.GameListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.chat.ui.UserChatFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name="com.iwgame.msgs.receiver.MsgsBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" >
+                </action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" >
+                </action>
+
+                <data android:scheme="package" >
+                </data>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.SysSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.ModifyPasswrodActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.AddGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.CreatGroupActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.GroupDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.GroupListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.GroupManageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.GroupManageUserListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.GroupApplyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.EditDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.chat.ui.GroupChatFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.GroupSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.BlacklistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.EditDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+		<activity
+            android:name="com.iwgame.msgs.module.play.ui.CreateUserPlayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.play.ui.CreateEnrollInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.play.ui.PlayTimeLongActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.play.ui.PlayProtocolActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.iwgame.msgs.module.play.ui.PlayServiceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <service android:name="org.openudid.OpenUDID_service" >
+            <intent-filter>
+                <action android:name="org.openudid.GETUDID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.iwgame.msgs.service.MessageService"
+            android:exported="true" />
+        <service
+            android:name="com.iwgame.msgs.service.UpdateService"
+            android:exported="true" />
+
+        <activity
+            android:name="com.iwgame.msgs.module.chat.ui.GroupSendMassMsgActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.chat.ui.SystemChatFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.chat.ui.SplendidRecommendFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name="com.iwgame.msgs.receiver.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data android:scheme="file" >
+                </data>
+            </intent-filter>
+        </receiver>
+        <!--
+        <receiver android:name="com.iwgame.msgs.receiver.NetWorkReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.ReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.chat.ui.GroupMassMsgFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.MessageRemindActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.common.ImageBrowerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.HelpFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.feedbackActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.account.ui.register.ProtocolAcitivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.postbar.ui.UserTopicListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.postbar.ui.SearchTopicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.postbar.ui.TopicDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyActionBar" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.postbar.ui.MyFavoriteTopicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.postbar.ui.PublishTopicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.postbar.ui.ApplyMasterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.postbar.ui.ReplyMyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.chat.ui.GroupMassMsgListFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.chat.ui.GroupChatListFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.guide.GuideActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.MessageTransitActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.iwgame.msgs.receiver.ReceiverMessageBroadcastReceiver" >
+            <intent-filter android:priority="@integer/receiver_priority_messagebroadcast_receiver" >
+                <action android:name="com.iwgame.msgs.receivemessage" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.iwgame.msgs.module.chat.ui.ForwardingShareContentFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.chat.ui.SysOfficialChatFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.postbar.ui.GameTopicListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyActionBar" />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.GameDetailAlikeFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.GameDetailInfoFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.GameTopicGLFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.GameTopicNewsFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.UserAddActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.ContactFriendActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.WeiboFriendActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.WeiboAuthActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.GameRegiestRecommendActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.GameDetailAlikeAcitivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.module.game.ui.GameDetailGroupActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!--
+            	AuthorizeAdapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter
+            	的类，这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。 
+            	开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            -->
+            <meta-data
+                android:name="AuthorizeAdapter"
+                android:value="cn.sharesdk.demo.MyAdapter" />
+
+            <!--
+            	QZoneWebShareAdapter表示一个继承自cn.sharesdk.tencent.qzone.QZoneWebShareAdapter
+            	的类，这个类可以监听到页面的生命周期，也可以获QQ空间网页分享权页面的各种UI控件。 
+            	开发者可以通过继承QZoneWebShareAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            -->
+            <meta-data
+                android:name="QZoneWebShareAdapter"
+                android:value="cn.sharesdk.demo.MyQZoneWebShareAdapter" />
+
+            <!--
+            	Dropbox的SSO功能需要在此处添加一个对ACTION_VIEW事件的过滤器，其中的scheme是
+            	“db-”前缀再开发者应用的加上appKey。如果此过滤器不设置，则不能完成SSO功能授权
+            -->
+            <intent-filter>
+                <data android:scheme="db-7janx53ilz11gbs" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--
+            	如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+            	事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+            	则分享结束以后不能得到正确的回调
+            -->
+            <intent-filter>
+                <data android:scheme="tencent1101819396" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.iwgame.msgs.PhotoActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.common.CropImageUI"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iwgame.msgs.common.WebBrowserActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.UserPointDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.iwgame.msgs.module.user.ui.UserExperienceDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.UserGradePolicyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.GroupGradePolicyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.ContributePointActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.GroupUserListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.PointTaskDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.PointTaskDetailPageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.PointMarketActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.ChangeRecordsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.GoodsDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.group.ui.EditGroupCardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.SelectStopTimeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.BindWeiBoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.setting.ui.ActivityDivisionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.common.ImageSendBrowerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.utils.imageselector.ImageGridActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.utils.imageselector.PhotoBucketActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.postbar.ui.PublishTopicSelectTagActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.user.ui.SupportUserListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.postbar.ui.TopicListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.play.ui.PlayDetailInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.play.ui.PlayOrderDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.iwgame.msgs.module.play.ui.UserPlayEditActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.play.ui.PlayAllCommentInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.iwgame.msgs.module.play.ui.PlayDetailsActivity"
+            android:screenOrientation="portrait" >
+             </activity>
+         <activity
+            android:name="com.iwgame.msgs.module.pay.ui.PayMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxa2a6b56b44c73c4a"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.play.ui.PlayAppealActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.iwgame.msgs.module.play.ui.EnrollServerListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.play.ui.PlayEvaluationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+         <activity
+            android:name="com.iwgame.msgs.module.pay.ui.PayDetailInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.pay.ui.PayDetailPageInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.postbar.ui.TopicNotifyFragmentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.ShareTransitActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+
+                <!-- 宣告该Activity的Action主要类型 -->
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 定义该Activity支持浏览模式 -->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 定义要处理的URL Schema -->
+                <data android:scheme="youban" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.play.ui.MainPlayListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.iwgame.msgs.module.play.ui.PlayManageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- alipay sdk end -->
+        <!-- wxpay sdk begin -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <receiver
+            android:name="net.sourceforge.simcpux.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- wxpay sdk end -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="530329f856240bbb0101194c" >
+        </meta-data>
+        <meta-data
+            android:name="APPTYPE"
+            android:value="youban" >
+        </meta-data>
+        <meta-data
+            android:name="COREDESC"
+            android:value="coredesc" >
+        </meta-data>
+        <meta-data
+            android:name="WXPAY_APPID"
+            android:value="wxa2a6b56b44c73c4a" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="no_channel" />
+        <meta-data android:value="http://183.136.130.173:81/msgs/g/a" android:name="SERVICE_CONFIG_URL"/>
+    </application>
+
+</manifest>

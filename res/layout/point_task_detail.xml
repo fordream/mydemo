@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/task_more_backgrounde">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/task_information_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/task_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/point_market_show_point_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/global_padding9"
+                android:paddingLeft="@dimen/global_padding8"
+                android:paddingTop="@dimen/global_padding9" >
+
+                <TextView
+                    android:id="@+id/point_task_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/global_padding9"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/task_title_color"
+                    android:textSize="@dimen/global_font_size1" />
+
+                <TextView
+                    android:id="@+id/point_task_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/point_task_status3"
+                    android:textSize="@dimen/global_font_size3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/global_padding3" >
+
+                    <TextView
+                        android:id="@+id/task_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="任务性质："
+                        android:textColor="@color/point_task_explain"
+                        android:textSize="@dimen/global_font_size8" />
+
+                    <TextView
+                        android:id="@+id/point_task_character"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@id/task_name"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/global_padding1"
+                        android:text=""
+                        android:textColor="@color/task_point_exp_values_color"
+                        android:textSize="@dimen/global_font_size8" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/global_padding1" >
+
+                    <TextView
+                        android:id="@+id/point_jl"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="积分奖励："
+                        android:textColor="@color/point_task_explain"
+                        android:textSize="@dimen/global_font_size8" />
+
+                    <ImageView
+                        android:id="@+id/point_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+						
+                        android:background="@drawable/tasklist_jifen_pre" />
+
+                    <TextView
+                        android:id="@+id/point_task_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/global_padding1"
+                        android:text="积分"
+                        android:textColor="@color/task_point_exp_values_color"
+                        android:textSize="@dimen/global_font_size8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/global_padding1" >
+
+                    <TextView
+                        android:id="@+id/point_jl"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="经验值奖励："
+                        android:textColor="@color/point_task_explain"
+                        android:textSize="@dimen/global_font_size8" />
+
+                    <ImageView
+                        android:id="@+id/point_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+						
+                        android:background="@drawable/tasklist_exp_pre" />
+
+                    <TextView
+                        android:id="@+id/point_task_exp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/global_padding1"
+                        android:text="积分"
+                        android:textColor="@color/task_point_exp_values_color"
+                        android:textSize="@dimen/global_font_size8" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/task_info_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task_information"
+                android:background="@color/task_more_backgrounde"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/global_padding8"
+                android:paddingTop="@dimen/global_padding8" 
+                android:paddingRight="@dimen/global_padding8"
+                android:paddingBottom="@dimen/global_padding8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/global_padding3"
+                    android:text="任务说明："
+                    android:textColor="@color/task_title_color"
+                    android:textSize="@dimen/global_font_size2" />
+
+                <LinearLayout
+                    android:id="@+id/task_explain_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical" />
+            </LinearLayout>
+           
+       	 </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/skip_task_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/task_infomation"
+        android:visibility="gone" >
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/skip_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+            android:src="@drawable/renwu_phone_btn_pre"/>
+
+        <TextView
+            android:id="@+id/skip_task_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/setting_font_skip__selector"/>
+		</LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

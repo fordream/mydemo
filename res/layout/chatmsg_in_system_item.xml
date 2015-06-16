@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/list_first_bg"
+    
+    android:paddingTop="@dimen/global_list_item_paddingtop"
+    android:paddingBottom="@dimen/global_list_item_paddingtop"
+    android:paddingLeft="@dimen/global_list_item_paddingleft"
+    android:paddingRight="@dimen/global_list_item_paddingright"
+    android:descendantFocusability="blocksDescendants"
+     >
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+         android:layout_weight="1.0"
+        android:orientation="vertical">
+       <TextView
+            android:id="@+id/item_chat_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/global_controlgap_medium"
+            android:paddingRight="@dimen/global_controlgap_medium"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:visibility="gone"
+            style="@style/item_chat_date_color"
+            android:layout_marginBottom="@dimen/global_padding1"
+            android:drawableLeft="@drawable/news_clock"
+            android:drawablePadding="@dimen/global_padding1"/>
+         
+        <com.iwgame.msgs.widget.MyTextView
+            android:id="@+id/item_chat_msg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|bottom"
+            android:singleLine="true"
+            android:lineSpacingExtra="3dp"
+            style="@style/item_chat_system_msg"
+            android:background="@drawable/chat_msg_system_bg"
+            />
+    </LinearLayout>
+
+</LinearLayout>

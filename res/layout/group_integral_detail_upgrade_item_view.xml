@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grade_bottom_line_color"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/user_vip_grade"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:layout_marginLeft="@dimen/vertical_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:layout_weight="1"
+        android:background="@color/group_person_right_top_bg_color"
+        android:gravity="center"
+        android:textColor="@color/personal_or_group_grade_color"
+        android:textSize="@dimen/global_font_size5" />
+
+    <TextView
+        android:id="@+id/cosume_point"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:layout_marginRight="@dimen/hor_degree"
+        android:layout_weight="1"
+        android:background="@color/group_person_right_top_bg_color"
+        android:gravity="center"
+        android:textColor="@color/grade_activity_right_bottom_textcolor"
+        android:textSize="@dimen/global_font_size5" />
+
+    <TextView
+        android:id="@+id/accomondate_member"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/hor_degree"
+        android:layout_marginRight="@dimen/vertical_degree"
+        android:layout_weight="1"
+        android:background="@color/group_person_right_top_bg_color"
+        android:gravity="center"
+        android:textColor="@color/grade_activity_right_bottom_textcolor"
+        android:textSize="@dimen/global_font_size5" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_list_item_height_small"
+        android:layout_marginTop="@dimen/global_padding9"
+        android:background="@drawable/common_register_bg_shap"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/act_lookuppw_mobileNumTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/global_padding8"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请填写11位手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/register_input_value_text_color"
+            android:textColorHint="@color/register_input_hint_text_color" />
+
+        <Button
+            android:id="@+id/act_lookuppw_cleanNumBtn"
+            android:layout_width="@dimen/global_clean_size"
+            android:layout_height="@dimen/global_clean_size"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/global_padding3"
+            android:layout_marginRight="@dimen/global_padding8"
+            android:background="@drawable/common_close_bg"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_padding8"
+        android:layout_marginRight="@dimen/global_padding8"
+        android:layout_marginTop="@dimen/global_padding3"
+        android:text="请输入注册时填写的手机号码"
+        android:textColor="@color/findps_line_text_color"
+        android:textSize="@dimen/global_font_size8" />
+
+    <Button
+        android:id="@+id/act_lookuppw_nextstepBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_padding4"
+        android:layout_marginLeft="@dimen/global_padding8"
+        android:layout_marginRight="@dimen/global_padding8"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:background="@drawable/commit_next_btn_selector"
+        android:text="下一步"
+        android:textColor="@color/commit_next_text_color"
+        android:textSize="@dimen/global_font_size1" />
+
+</LinearLayout>

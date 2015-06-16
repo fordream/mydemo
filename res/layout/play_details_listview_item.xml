@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/global_padding7"
+    android:paddingTop="@dimen/global_padding7" >
+
+    <ImageView
+        android:id="@+id/play_details_item_imageview"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/global_padding2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/common_default_icon" />
+
+    <TextView
+        android:id="@+id/play_details_item_tv_beizhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/play_details_item_img_gameIcon"
+        android:layout_alignLeft="@+id/play_details_item_img_gameIcon"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/play_details_item_imageview"
+        android:layout_marginTop="-2dp"
+        android:layout_marginBottom="@dimen/global_padding1"
+        android:layout_marginRight="@dimen/global_padding2"
+        android:gravity="top"
+        android:lines="2"
+        android:textColor="@color/play_list_item_detail_desc_color"
+        android:textSize="@dimen/global_font_size3" />
+
+    <com.iwgame.msgs.widget.roundedimageview.RoundedImageView
+        android:id="@+id/play_details_item_img_gameIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/play_details_item_imageview"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/global_padding2"
+        android:layout_toRightOf="@+id/play_details_item_imageview"
+        android:scaleType="fitXY"
+        android:src="@drawable/common_default_icon"
+        iwgame:border_color="@color/global_color1"
+        iwgame:border_width="0dp"
+        iwgame:corner_radius="3dp"
+        iwgame:oval="false" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/play_details_item_img_gameIcon"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/play_details_item_img_gameIcon"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="@dimen/global_padding2"
+        android:layout_toRightOf="@+id/play_details_item_img_gameIcon" >
+
+        <TextView
+            android:id="@+id/play_details_item_tv_service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/play_details_item_tv_danwei"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="@color/play_list_item_detail_dname_color"
+            android:textSize="@dimen/global_font_size4" />
+
+        <TextView
+            android:id="@+id/play_details_item_tv_playservices_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/play_details_item_tv_danwei"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/global_padding2"
+            android:layout_toLeftOf="@+id/play_details_item_tv_price"
+            android:layout_toRightOf="@+id/play_details_item_tv_service_name"
+            android:singleLine="true"
+            android:textColor="@color/play_list_item_detail_dname_color"
+            android:textSize="@dimen/global_font_size4" />
+
+        <TextView
+            android:id="@+id/play_details_item_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/play_details_item_tv_danwei"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/play_details_item_tv_danwei"
+            android:singleLine="true"
+            android:textColor="@color/play_list_item_detail_desc_color2"
+            android:textSize="@dimen/global_font_size4" />
+
+        <TextView
+            android:id="@+id/play_details_item_tv_danwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="/小时"
+            android:textColor="@color/play_list_item_detail_dname_color"
+            android:textSize="@dimen/global_font_size4" />
+    </RelativeLayout>
+
+</RelativeLayout>

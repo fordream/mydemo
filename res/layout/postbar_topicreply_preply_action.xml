@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/global_padding3"
+    android:layout_marginRight="@dimen/global_padding3"
+    android:layout_marginTop="@dimen/global_padding3"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/allReplyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondReplyContent"
+        android:drawableLeft="@drawable/comment_all"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:singleLine="true"
+        android:drawablePadding="4dp"
+        android:text="查看全部回复"
+        android:textColor="@color/topiclist_reply_item_all_txt"
+        android:textSize="@dimen/global_font_size3" />
+
+    <ImageView
+        android:id="@+id/postbar_topicreply_preply_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/global_color5"
+        android:focusable="false"
+        android:visibility="gone" />
+
+</LinearLayout>

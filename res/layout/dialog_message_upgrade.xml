@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_message_upgrade_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="LV"
+            android:textColor="@color/upgrade_grade_color"
+            android:textSize="@dimen/global_font_size10" />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="@color/upgrade_grade_num_color"
+            android:textSize="@dimen/global_font_size10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/upgradeDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:singleLine="true"
+        android:text="恭喜你升级到LV!"
+        android:textColor="@color/upgrade_grade_font_color"
+        android:textSize="@dimen/global_font_size8" />
+
+    <TextView
+        android:id="@+id/gradeLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/global_padding12"
+        android:singleLine="true"
+        android:text="点击查看等级权限>"
+        android:textColor="@color/upgrade_grade_link_color"
+        android:textSize="@dimen/global_font_size5" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height=".5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="@dimen/global_padding8"
+        android:background="@color/message_dialog_grade_divid_or_ok" />
+
+    <TextView
+        android:id="@+id/okTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/global_padding1"
+        android:layout_marginTop="@dimen/global_padding1"
+        android:singleLine="true"
+        android:text="我知道了"
+        android:textColor="@color/dialog_know_font_color"
+        android:textSize="@dimen/global_font_size2" />
+
+</LinearLayout>

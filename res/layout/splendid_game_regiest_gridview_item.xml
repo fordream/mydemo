@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iwgame="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:gravity="center">
+
+        <com.iwgame.msgs.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/global_icon8"
+            android:layout_height="@dimen/global_icon8"
+            android:layout_marginLeft="8.5dp"
+            android:layout_marginRight="8.5dp"
+            android:layout_marginTop="@dimen/global_padding2"
+            android:scaleType="fitXY"
+            android:src="@drawable/common_default_icon"
+            iwgame:border_color="@color/global_color1"
+            iwgame:border_width="0dp"
+            iwgame:corner_radius="10dp"
+            iwgame:oval="false" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="@dimen/global_padding1"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:singleLine="true"
+            android:textColor="@color/global_color6"
+            android:textSize="@dimen/global_font_size3" />
+    </RelativeLayout>
+
+</LinearLayout>

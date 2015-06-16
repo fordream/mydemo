@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listContent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/discover_filter_item_bg_text"
+    android:orientation="vertical" >
+
+    <!-- The PullToRefreshListView replaces a standard ListView widget. -->
+
+    <LinearLayout
+        android:id="@+id/twoLayerRefreshList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/parentRefreshList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@null"
+                android:divider="@drawable/common_fengexian"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="false"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:stackFromBottom="false" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/hor_degree"
+            android:layout_height="match_parent"
+            android:background="@color/integral_detail_fengexian" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/childRefreshList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@null"
+                android:divider="@drawable/common_fengexian"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="false"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:stackFromBottom="false" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nullTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="122dp"
+        android:gravity="center"
+        android:textColor="@color/progress_grade_color"
+        android:textSize="@dimen/global_font_size3"
+        android:visibility="gone" />
+
+</LinearLayout>

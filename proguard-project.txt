@@ -1,0 +1,194 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-libraryjars libs/android-support-v4.jar
+-dontwarn android.support.v4.** 
+-keep class android.support.v4.** { *; } 
+-keep interface android.support.v4.app.** { *; }
+-keep public class * extends android.support.v4.**
+-keep public class * extends android.app.Fragment
+
+-libraryjars libs/locSDK_4.0.jar
+-dontwarn com.baidu.location.** 
+-keep class com.baidu.location.** { *; } 
+-keep public class * extends com.baidu.location.** 
+
+-libraryjars libs/nineoldandroids-2.4.0.jar
+-dontwarn com.nineoldandroids.** 
+-keep class com.nineoldandroids.** { *; } 
+-keep public class * extends com.nineoldandroids.** 
+
+-libraryjars libs/ShareSDK-Core-2.5.6.jar
+-libraryjars libs/ShareSDK-QQ-2.5.6.jar
+-libraryjars libs/ShareSDK-QZone-2.5.6.jar
+-libraryjars libs/ShareSDK-SinaWeibo-2.5.6.jar
+-libraryjars libs/ShareSDK-TencentWeibo-2.5.6.jar
+-libraryjars libs/ShareSDK-Wechat-2.5.6.jar
+-libraryjars libs/ShareSDK-Wechat-Core-2.5.6.jar
+-libraryjars libs/ShareSDK-Wechat-Moments-2.5.6.jar
+-dontwarn cn.sharesdk** 
+-keep class cn.sharesdk.** { *; } 
+-keep public class * extends cn.sharesdk.** 
+
+-libraryjars libs/umeng-analytics-v5.2.4.jar
+-dontwarn com.umeng.** 
+-keep class com.umeng.** { *; } 
+-dontwarn u.aly.** 
+-keep class u.aly.** { *; } 
+-keep public class * extends com.umeng.** 
+-keep public class * extends u.aly.** 
+
+-libraryjars libs/trinea-android-common.jar
+-dontwarn cn.trinea.android.common.** 
+-keep class cn.trinea.android.common.** { *; } 
+-keep public class * extends cn.trinea.android.common.** 
+
+-libraryjars libs/pinyin4j-2.5.0.jar
+-dontwarn com.hp.hpl.sparta.** 
+-keep class com.hp.hpl.sparta.** { *; } 
+-keep public class * extends com.hp.hpl.sparta.** 
+
+-dontwarn net.sourceforge.pinyi4j.** 
+-keep class net.sourceforge.pinyi4j.** { *; } 
+-keep public class * extends net.sourceforge.pinyi4j.** 
+
+-dontwarn demo.** 
+-keep class demo.** { *; } 
+
+-libraryjars libs/slf4j-android-1.6.1-RC1.jar
+-dontwarn org.slf4j.** 
+-keep class org.slf4j.** { *; } 
+-keep public class * extends org.slf4j.** 
+
+-libraryjars libs/tinder-1.2.3.jar
+-dontwarn org.xmpp.** 
+-keep class org.xmpp.** { *; } 
+-keep public class * extends org.xmpp.** 
+-dontwarn org.jivesoftware.util.** 
+-keep class org.jivesoftware.util.** { *; } 
+-keep public class * extends org.jivesoftware.util.** 
+
+-libraryjars libs/universal-image-loader-1.9.2-SNAPSHOT.jar
+-dontwarn com.nostra13.universalimageloader.** 
+-keep class com.nostra13.universalimageloader.** { *; } 
+
+-libraryjars libs/xnode-api-2.0.1-SNAPSHOT-client.jar
+-dontwarn com.iwgame.xnode.** 
+-keep class com.iwgame.xnode.** { *; } 
+-dontwarn com.iwgame.xdispatcher.** 
+-keep class com.iwgame.xdispatcher.** { *; } 
+-dontwarn com.iwgame.xaction.event.** 
+-keep class com.iwgame.xaction.event.** { *; } 
+-dontwarn com.iwgame.xaction.service.** 
+-keep class com.iwgame.xaction.service.** { *; } 
+-dontwarn com.iwgame.report.** 
+-keep class com.iwgame.report.** { *; } 
+-dontwarn com.iwgame.captcha.** 
+-keep class com.iwgame.captcha.** { *; } 
+-dontwarn com.iwgame.channels.** 
+-keep class com.iwgame.channels.** { *; } 
+
+-dontwarn com.google.**
+
+ -dontwarn com.google.**
+ -keep class com.google.** { *; } 
+
+-libraryjars libs/msgs-api-2.0.0-SNAPSHOT-client.jar
+-dontwarn com.iwgame.msgs.service.** 
+-keep class com.iwgame.msgs.service.** { *; } 
+-dontwarn com.iwgame.msgs.event.** 
+-keep class com.iwgame.msgs.event.** { *; } 
+ -dontwarn com.iwgame.msgs.proto.**
+ -keep class com.iwgame.msgs.proto.** { *; } 
+
+ -dontwarn com.iwgame.xaction.proto.**
+  -keep class  com.iwgame.xaction.proto.** { *; } 
+
+ -dontwarn   com.iwgame.xaccount.proto.**
+  -keep class  com.iwgame.xaccount.proto.** { *; } 
+  
+  -dontwarn jeremyfeinstein.slidingmenu.** 
+-keep class jeremyfeinstein.slidingmenu.** { *; } 
+-keep public class * extends jeremyfeinstein.slidingmenu.** 
+
+
+ -dontwarn com.actionbarsherlock.** 
+-keep class com.actionbarsherlock.** { *; } 
+-keep public class * extends com.actionbarsherlock.** 
+
+ -dontwarn com.handmark.** 
+-keep class com.handmark.** { *; } 
+-keep public class * extends com.handmark.** 
+
+#-dontwarn dalvik.system.VMRuntime.** 
+-keep class dalvik.system.VMRuntime.**
+
+-libraryjars libs/libxaction.jar
+-dontwarn com.iwgame.sdk.** 
+-keep class com.iwgame.sdk.** { *; } 
+-keep public class * extends com.iwgame.sdk.** 
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.**{*;}
+
+#-keep public class * extends android.support.v4.app.FragmentActivity
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keep class com.tencent.** {*;}
+-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}
+

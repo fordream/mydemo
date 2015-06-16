@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/set_first_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/detailInfo"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding9"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:id="@+id/soundOffOnArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/global_list_item_height_small"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/soundOffOnItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="声音总开关"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <Button
+                            android:id="@+id/soundOffOn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/group_verify_checkbox_pressed" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/msgTipArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/global_list_item_height_small"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/msgTipItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_bottom_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="消息提醒"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+           <!--  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:id="@+id/weiboBindingItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/global_list_item_height_small"
+                    android:background="@drawable/common_item_bottom_selector"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/weiboBindingTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/global_padding8"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="社交帐号绑定"
+                        android:textColor="@color/set_item_name_text_color"
+                        android:textSize="@dimen/global_font_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="@dimen/global_padding3"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:background="@drawable/common_icon_jt_selector"
+                        android:duplicateParentState="true" />
+                </LinearLayout>
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/global_list_item_height_small"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/bind_telephone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/global_padding8"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="登录帐号"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+                       
+                        <ImageView
+                            android:id="@+id/bind_telephone_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/task_tag_circle"
+                            android:layout_marginLeft="6dp"
+                            android:visibility="visible" />
+                        <TextView
+                            android:id="@+id/account"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:gravity="center_vertical|right"
+                            android:singleLine="true"
+                            android:text="未绑定手机号"
+                            android:ellipsize="end"
+                            android:textColor="@color/set_item_bundtip_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <ImageView
+                            android:id="@+id/unbind_pic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pwArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/global_list_item_height_small"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/pwItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_middle_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="修改密码"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cacheArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/cacheItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_middle_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:duplicateParentState="true"
+                                android:gravity="center|left"
+                                android:singleLine="true"
+                                android:text="清理缓存"
+                                android:textColor="@color/set_item_name_text_color"
+                                android:textSize="@dimen/global_font_size2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:duplicateParentState="true"
+                                android:gravity="top|left"
+                                android:singleLine="true"
+                                android:text="清空聊天记录和图片"
+                                android:textColor="@color/set_item_des_text_color"
+                                android:textSize="@dimen/global_font_size4" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/backArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/global_list_item_height_small"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/backItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_bottom_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="黑名单"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:background="@drawable/common_set_bg_shap"
+                android:orientation="vertical"
+                android:padding=".5dp" >
+
+                <LinearLayout
+                    android:id="@+id/userBackArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/global_list_item_height_small"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/userBackItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_top_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="用户反馈"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/updataArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/global_list_item_height_small"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/updataItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_middle_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:duplicateParentState="true"
+                                android:gravity="center|left"
+                                android:singleLine="true"
+                                android:text="检测更新   "
+                                android:layout_marginLeft="@dimen/global_padding8"
+                                android:textColor="@color/set_item_name_text_color"
+                                android:textSize="@dimen/global_font_size2" />
+
+                            <ImageView
+                                android:id="@+id/newTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/common_tag_new"
+                                android:visibility="visible"
+                                android:layout_gravity="center_vertical"
+                                 />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/aboutArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/global_list_item_height_small"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@drawable/common_content_divider_line" />
+
+                    <LinearLayout
+                        android:id="@+id/aboutItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/common_item_bottom_selector"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/global_padding8"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="关于我们"
+                            android:textColor="@color/set_item_name_text_color"
+                            android:textSize="@dimen/global_font_size2" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="@dimen/global_padding3"
+                            android:layout_marginRight="@dimen/global_padding8"
+                            android:background="@drawable/common_icon_jt_selector"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/logoutBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/global_padding4"
+                android:layout_marginBottom="@dimen/global_padding3"
+                android:layout_marginLeft="@dimen/global_padding3"
+                android:layout_marginRight="@dimen/global_padding3"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:background="@drawable/commit_next_btn_selector"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="@color/commit_next_text_color"
+                android:textSize="@dimen/global_font_size2" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

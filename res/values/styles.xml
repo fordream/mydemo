@@ -1,0 +1,83 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="CustomCommonCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/common_checkbox_style</item>
+    </style>
+
+    <style name="GroupVerifyCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/group_verify_checkbox_style</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item> <!-- 自己想要的背景 -->
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+    </style>
+
+    <style name="SampleTheme.Light" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="numberPickerStyle">@style/NPWidget.Holo.Light.NumberPicker</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Theme.Sherlock.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+      
+
+   <style name="PlayRadoibutton" >  
+        <item name="android:textSize">@dimen/global_font_size8</item>  
+        <item name="android:textColor">@drawable/play_eval_detail_textcolor</item>  
+        <item name="android:gravity">center</item> 
+        <item name="android:layout_gravity">center</item>   
+        <item name="android:ellipsize">marquee</item>  
+        <item name="android:paddingLeft">10dip</item>  
+        <item name="android:layout_width">56dp</item>  
+        <item name="android:layout_height">25dp</item>  
+        <item name="android:button">@null</item>  
+        <item name="android:singleLine">true</item>  
+        <item name="android:drawablePadding">0dp</item>  
+        <item name="android:layout_weight">1.0</item>  
+    </style>  
+
+</resources>

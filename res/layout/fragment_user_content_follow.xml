@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_first_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="@dimen/global_page_paddingleft"
+        android:layout_marginRight="@dimen/global_page_paddingright"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/typeSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_bg" >
+
+            <TextView
+                android:id="@+id/typeTxt"
+                android:layout_width="75dp"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:singleLine="true"
+                android:text="全部关注"
+                style="@style/text_item_first_grade_right1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/global_padding1"
+                android:background="@drawable/user_item_down_label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="@dimen/global_padding1"
+            android:layout_weight="1"
+            android:background="@drawable/common_search_bg_shap"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/global_page_paddingleft"
+            android:paddingRight="@dimen/global_page_paddingright" >
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/common_search_btn_bg" />
+
+            <EditText
+                android:id="@+id/searchTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入昵称"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/common_search_text_color"
+                android:textColorHint="@color/common_search_hint_text_color"
+                android:textSize="@dimen/global_font_size2" />
+
+            <Button
+                android:id="@+id/cleanBtn"
+                android:layout_width="@dimen/global_clean_size"
+                android:layout_height="@dimen/global_clean_size"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/common_close_bg"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/list_item_fengexian" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/list_second_bg" >
+
+        <LinearLayout
+            android:id="@+id/listContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <!-- The PullToRefreshListView replaces a standard ListView widget. -->
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/refreshList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@null"
+                android:divider="@drawable/common_fengexian"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@color/transparent"
+                android:smoothScrollbar="true"
+                android:stackFromBottom="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nullContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <include layout="@layout/user_null_data_bg" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:fadingEdge="none"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.iwgame.msgs.widget.SideBar
+                    android:id="@+id/sideBar"
+                    android:layout_width="30dp"
+                    android:layout_height="450dp"
+                    android:layout_gravity="right|center_vertical"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

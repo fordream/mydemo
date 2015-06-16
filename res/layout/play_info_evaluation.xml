@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/global_padding3"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding8"
+                android:text="评分"
+                android:textColor="@color/global_color6"
+                android:textSize="@dimen/global_font_size8" />
+
+            <Button
+                android:id="@+id/play_evaluation_star1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:background="@drawable/peiwan_pingjia_detail2" />
+
+            <Button
+                android:id="@+id/play_evaluation_star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding3"
+                android:background="@drawable/peiwan_pingjia_detail2" />
+
+            <Button
+                android:id="@+id/play_evaluation_star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding3"
+                android:background="@drawable/peiwan_pingjia_detail2" />
+
+            <Button
+                android:id="@+id/play_evaluation_star4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding3"
+                android:background="@drawable/peiwan_pingjia_detail2" />
+
+            <Button
+                android:id="@+id/play_evaluation_star5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_padding3"
+                android:background="@drawable/peiwan_pingjia_detail2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/global_padding8"
+            android:layout_marginTop="34dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/global_padding8"
+                android:text="评价"
+                android:textColor="@color/global_color6"
+                android:textSize="@dimen/global_font_size8" />
+
+            <RadioGroup
+                android:id="@+id/play_evaluation_main_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="26dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/play_evaluation_radio_button0"
+                    style="@style/PlayRadoibutton"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/play_eval_like"
+                    
+                    android:drawableLeft="@drawable/play_eval_detail_pic"
+                    android:tag="radio_button0"
+                    android:text="好评"
+                    android:textColor="@drawable/play_eval_detail_textcolor" />
+
+                <RadioButton
+                    android:id="@+id/play_evaluation_radio_button1"
+                    style="@style/PlayRadoibutton"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="29dp"
+                    android:background="@drawable/play_eval_normal"
+                    android:drawableLeft="@drawable/play_eval_detail_pic"
+                    android:tag="radio_button1"
+                    android:text="一般"
+                    android:textColor="@drawable/play_eval_detail_textcolor" />
+
+                <RadioButton
+                    android:id="@+id/play_evaluation_radio_button2"
+                    style="@style/PlayRadoibutton"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="29dp"
+                    android:background="@drawable/play_eval_dislike"
+                    android:drawableLeft="@drawable/play_eval_detail_pic_bad"
+                    android:tag="radio_button2"
+                    android:text="差评"
+                    android:textColor="@drawable/play_eval_detail_textcolor" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/play_evaluation_induce"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginLeft="@dimen/global_padding8"
+                android:layout_marginRight="@dimen/global_padding8"
+                android:layout_weight="1"
+                android:background="@drawable/play_eval_edit_bg"
+                android:gravity="top"
+                android:hint="写下您的评论吧！不能超过50字哦"
+                android:paddingBottom="@dimen/global_padding1"
+                android:paddingLeft="@dimen/global_padding2"
+                android:paddingRight="@dimen/global_padding2"
+                android:paddingTop="@dimen/global_padding1"
+                android:textColorHint="@color/global_color7"
+                android:textSize="@dimen/global_font_size3" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

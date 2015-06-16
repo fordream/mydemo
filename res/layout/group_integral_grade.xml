@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/point_detail_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="@dimen/global_padding1"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/user_or_group_grade_btn"
+                android:layout_width="@dimen/group_upgrade_btn_width"
+                android:layout_height="@dimen/groupe_upgrade_btn_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/global_padding8"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:background="@drawable/group_level_nor"
+                android:gravity="center"
+                android:text="升级到vip3"
+                android:textColor="@color/group_grade_button_text"
+                android:textSize="@dimen/global_font_size8" />
+
+            <TextView
+                android:id="@+id/grade_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/group_level_score"
+                android:gravity="center"
+                android:textColor="@color/user_or_group_grade_num_bg"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/grade_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grade_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/global_padding2"
+                android:textColor="@color/grade_level_color"
+                android:textSize="@dimen/global_font_size2" />
+
+            <FrameLayout
+                android:id="@+id/grade_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grade_txt"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="@dimen/global_padding8" >
+
+                <ProgressBar
+                    android:id="@+id/grade_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/global_padding8"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progressbar_style5" />
+
+                <TextView
+                    android:id="@+id/user_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/global_padding8"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/progress_grade_color"
+                    android:textSize="@dimen/global_font_size6" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/need_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grade_progress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/global_padding3"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="升级还需："
+                    android:textColor="@color/cur_point_desc"
+                    android:textSize="@dimen/global_font_size3" />
+
+                <TextView
+                    android:id="@+id/show_need_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cur_point_num"
+                    android:textSize="@dimen/global_font_size3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分"
+                    android:textColor="@color/cur_point_desc"
+                    android:textSize="@dimen/global_font_size3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_or_group_upgrade_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/need_point"
+                android:layout_marginLeft="@dimen/global_padding1"
+                android:layout_marginRight="@dimen/global_padding1"
+                android:layout_marginTop="@dimen/global_icon_4"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/user_or_group_upgrade_detail"
+                android:layout_marginLeft="@dimen/global_padding1"
+                android:layout_marginRight="@dimen/global_padding1"
+                android:background="@color/grade_bottom_line_color"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
